@@ -1,1 +1,1 @@
-# multi-level-technicaldebt-visualization
+# multi-level-technical-debt-visualization
