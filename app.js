@@ -6,14 +6,13 @@ function createWindow () {
         webPreferences: {
             nodeIntegration: true
         },
-        width: 1000, height: 600
+        width: 2400, height: 1800
     });
     window.loadFile('index.html');
     const ipc = require('electron').ipcMain;
     // listen on ipc channel wait for GetSmells completed
     ipc.on('get-smell-finished', function(event,arg){
-        console.log(arg);
-        // window.loadFile('overview.html');
+        window.loadFile('overview.html');
     });
 
 };

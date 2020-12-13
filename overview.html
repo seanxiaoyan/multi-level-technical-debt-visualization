@@ -1,33 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
-
-      function drawChart() {
-
-        var data = google.visualization.arrayToDataTable([
-          ['Task', 'Hours per Day'],
-          ['Work',     11],
-          ['Eat',      2],
-          ['Commute',  2],
-          ['Watch TV', 2],
-          ['Sleep',    7]
-        ]);
-
-        var options = {
-          title: 'My Daily Activities'
-        };
-
-        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-
-        chart.draw(data, options);
-      }
+    <script type="text/javascript" src="overview/pieChart.js">
     </script>
   </head>
   <body>
-    <div id="piechart" style="width: 900px; height: 500px;"></div>
+    <section id="section-list" style="width: 250px; height: 900px;position: absolute;top: 10%;left: 0%;">
+      <a href="index.html"> change me </a>
+    </section>
+    <section id="section-chart" style = "width: 800px; height: 900px;position: absolute;top: 0%;left: 30%;">
+      <div id="piechart" style="width: 700px; height: 500px; position: relative; top: 0%; left: 60%; display: block;"></div>
+    </section>
   </body>
 </html>
