@@ -16,6 +16,10 @@ proj_name = proj_path.split('/')[-1]
 parser = configparser.ConfigParser()
 config_path = os.path.join(root_path,'GetSmells/config.ini')
 parser.read(config_path)
+
+parser.remove_section('main.projPaths')
+
+parser.add_section('main.projPaths')
 parser.set('main.projPaths', proj_name, proj_path)
 with open(config_path, 'w') as configfile:
     parser.write(configfile)

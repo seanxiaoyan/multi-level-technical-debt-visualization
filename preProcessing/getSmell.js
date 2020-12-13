@@ -2,10 +2,20 @@ const { electron } = require('process');
 
 const ipc = require('electron').ipcRenderer;
 const fs = require('fs');
+const {dialog} = require('electron').remote;
+const csv=require('csvtojson');
 
 function detectSmell(){
     //set config.ini for GetSmells
-    let proj_path = '/Users/seanxu/Desktop/calcite';
+
+    // use folder selector to get project path
+    let pathArray = dialog.showOpenDialogSync({
+        properties: ['openDirectory']
+    });
+    let proj_path = pathArray[0];
+    console.log(proj_path);
+
+
     let subprocess1 = require('child_process').spawn('python3', ['./preProcessing/setconfig.py',proj_path]);
 
 
@@ -31,26 +41,29 @@ function detectSmell(){
             let len = splits.length;
             let projName = splits[len-1];
             const csvFilePath = './GetSmells/getsmells-output/smells/'+projName+'.csv';
-            const csv=require('csvtojson') //. Make sure you have this line in order to call functions from this modules
-            csv()
-            .fromFile(csvFilePath)
-            .then((jsonObj)=>{
-                try {
-                    fs.writeFileSync('./overview/smell-all.json', JSON.stringify(jsonObj,null,2));
-                    ipc.send('get-smell-finished',"get-smell-done");
-                } catch (err) {
-                    console.error(err);
-                }
-            });
+            if (fs.existsSync(csvFilePath)){
+                csv()
+                .fromFile(csvFilePath)
+                .then((jsonObj)=>{
+                    try {
+                        fs.writeFileSync('./overview/smell-all.json', JSON.stringify(jsonObj,null,2));
+                        ipc.send('get-smell-finished',"get-smell-done");
+                    } catch (err) {
+                        console.error(err);
+                    }
+                });
+            }
+            else{
+                alert("No smell detected from the given source!")
+            }
         });
     
 
-    // process csv for overview
+    // // process csv for overview
     // let splits = proj_path.split('/');
     // let len = splits.length;
     // let projName = splits[len-1];
     // const csvFilePath = './GetSmells/getsmells-output/smells/'+projName+'.csv';
-    // const csv=require('csvtojson') //. Make sure you have this line in order to call functions from this modules
     // csv()
     // .fromFile(csvFilePath)
     // .then((jsonObj)=>{
