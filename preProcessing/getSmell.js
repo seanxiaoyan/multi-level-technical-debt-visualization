@@ -4,7 +4,7 @@ const ipc = require('electron').ipcRenderer;
 const fs = require('fs');
 
 function detectSmell(){
-    // //set config.ini for GetSmells
+    //set config.ini for GetSmells
     let proj_path = '/Users/seanxu/Desktop/calcite';
     let subprocess1 = require('child_process').spawn('python3', ['./preProcessing/setconfig.py',proj_path]);
 
@@ -45,7 +45,7 @@ function detectSmell(){
         });
     
 
-    // // process csv for overview
+    // process csv for overview
     // let splits = proj_path.split('/');
     // let len = splits.length;
     // let projName = splits[len-1];
