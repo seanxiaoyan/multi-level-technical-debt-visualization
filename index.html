@@ -3,11 +3,15 @@
     <head>
       <meta charset="UTF-8">
       <title>Multi-Level Technichal Debt Visualization</title>
+      <link rel="stylesheet" href="style.css">
       <script src="preProcessing/getSmell.js"></script>
     </head>
     <body>
       <h1>Multi-Level Technichal Debt Visualization</h1>
-      <button onclick="detectSmell()">start</button>
-      <p id="progressBar"></p>
+      <section >
+        <label for="select-folder" > Get started with choosing a source code folder: </label>
+        <button onclick="detectSmell()" id="select-folder" >select</button>
+        <p id="progressBar"></p>
+      </section>
     </body>
   </html>

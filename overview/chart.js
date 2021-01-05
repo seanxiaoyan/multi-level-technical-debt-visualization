@@ -16,7 +16,7 @@ let pieChartArray = [
 let barChartArray = [
   ["Smell Name", "Count", { role: "style" } ],
   ["Cyclic Dependency", 0, "#3366cc"],
-  ["Unstable Dependenc", 0, "#3366cc"],
+  ["Unstable Dependency", 0, "#3366cc"],
   ["God Class", 0, "#dc3912"],
   ["Data Class", 0, "#dc3912"],
   ["Lazy Class", 0, "#dc3912"],
