@@ -112,18 +112,11 @@ function drawPieChart() {
   let options = {
   };
   let chart = new google.visualization.PieChart(document.getElementById('piechart'));
-
   chart.draw(data, options);
-
-  // document.getElementById('piechart').setAttribute("style", "display: unset;");
 }
 
 function drawBarChart() {
-
-//#b87333 #e5e4e2
-
   var data = google.visualization.arrayToDataTable(barChartArray);
-
   var view = new google.visualization.DataView(data);
   view.setColumns([0, 1,
                    { calc: "stringify",
@@ -131,7 +124,6 @@ function drawBarChart() {
                      type: "string",
                      role: "annotation" },
                    2]);
-
   var options = {
     width: 700,
     height: 500,
@@ -141,4 +133,3 @@ function drawBarChart() {
   var chart = new google.visualization.BarChart(document.getElementById("barchart"));
   chart.draw(view, options);
 };
-

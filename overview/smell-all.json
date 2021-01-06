@@ -18,9 +18,9 @@
     "Shotgun_Surgery": "0",
     "Brain_Method": "0",
     "Unstable_Dependency": "0",
-    "Package_Cyclic_Dependency": "1",
-    "Total": "3",
-    "Distinct_Count": "3"
+    "Package_Cyclic_Dependency": "0",
+    "Total": "2",
+    "Distinct_Count": "2"
   },
   {
     "Name": "entities.Course",
@@ -126,7 +126,7 @@
     "Feature_Envy": "0",
     "Brain_Class": "0",
     "Hub_Like_Dependency": "0",
-    "Class_Cyclic_Dependency": "0",
+    "Class_Cyclic_Dependency": "1",
     "Unhealthy_Inheritance_Hierarchy": "0",
     "Long_Method": "1",
     "Long_Parameter_List": "1",
@@ -134,8 +134,8 @@
     "Brain_Method": "0",
     "Unstable_Dependency": "0",
     "Package_Cyclic_Dependency": "0",
-    "Total": "2",
-    "Distinct_Count": "2"
+    "Total": "3",
+    "Distinct_Count": "3"
   },
   {
     "Name": "startup.gradeKeeper",
