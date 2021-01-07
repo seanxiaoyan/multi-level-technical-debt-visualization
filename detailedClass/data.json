@@ -110,13 +110,13 @@
   [
     "calcite/geode/org/apache/calcite/adapter/geode/rel/GeodeTable",
     "calcite/geode/org/apache/calcite/adapter/geode/rel",
-    4,
+    5,
     0
   ],
   [
     "calcite/geode/org/apache/calcite/adapter/geode/rel/GeodeTable/GeodeQueryable",
     "calcite/geode/org/apache/calcite/adapter/geode/rel/GeodeTable",
-    1,
+    2,
     0
   ],
   [
@@ -200,7 +200,7 @@
   [
     "calcite/geode/org/apache/calcite/adapter/geode/rel/GeodeEmbeddedPolicy",
     "calcite/geode/org/apache/calcite/adapter/geode/rel",
-    2,
+    3,
     0
   ],
   [
@@ -284,19 +284,19 @@
   [
     "calcite/geode/org/apache/calcite/adapter/geode/rel/GeodeSchemaFactory",
     "calcite/geode/org/apache/calcite/adapter/geode/rel",
-    0,
+    1,
     0
   ],
   [
     "calcite/geode/org/apache/calcite/adapter/geode/rel/GeodeEmbeddedPolicy/RefCountPolicy",
     "calcite/geode/org/apache/calcite/adapter/geode/rel/GeodeEmbeddedPolicy",
-    0,
+    1,
     0
   ],
   [
     "calcite/geode/org/apache/calcite/adapter/geode/rel/GeodeZipsTest",
     "calcite/geode/org/apache/calcite/adapter/geode/rel",
-    3,
+    2,
     0
   ],
   [
@@ -470,7 +470,7 @@
   [
     "calcite/pig/org/apache/calcite/adapter/pig/PigTable",
     "calcite/pig/org/apache/calcite/adapter/pig",
-    2,
+    1,
     0
   ],
   [
@@ -482,7 +482,7 @@
   [
     "calcite/pig/org/apache/calcite/adapter/pig/PigRules",
     "calcite/pig/org/apache/calcite/adapter/pig",
-    1,
+    2,
     0
   ],
   [
@@ -512,7 +512,7 @@
   [
     "calcite/pig/org/apache/calcite/adapter/pig/PigRules/PigTableScanRule",
     "calcite/pig/org/apache/calcite/adapter/pig/PigRules",
-    0,
+    1,
     0
   ],
   [
@@ -902,7 +902,7 @@
   [
     "calcite/core/org/apache/calcite/interpreter/Bindables/BindableMinus",
     "calcite/core/org/apache/calcite/interpreter/Bindables",
-    2,
+    1,
     0
   ],
   [
@@ -950,7 +950,7 @@
   [
     "calcite/core/org/apache/calcite/interpreter/Bindables/BindableUnion",
     "calcite/core/org/apache/calcite/interpreter/Bindables",
-    1,
+    2,
     0
   ],
   [
@@ -1202,7 +1202,7 @@
   [
     "calcite/core/org/apache/calcite/rel/metadata/RelMdCollation",
     "calcite/core/org/apache/calcite/rel/metadata",
-    4,
+    3,
     0
   ],
   [
@@ -1232,7 +1232,7 @@
   [
     "calcite/core/org/apache/calcite/interpreter/Interpreter",
     "calcite/core/org/apache/calcite/interpreter",
-    3,
+    4,
     0
   ],
   [
@@ -1550,13 +1550,13 @@
   [
     "calcite/core/org/apache/calcite/materialize/Step",
     "calcite/core/org/apache/calcite/materialize",
-    4,
+    3,
     0
   ],
   [
     "calcite/core/org/apache/calcite/materialize/Step/Factory",
     "calcite/core/org/apache/calcite/materialize/Step",
-    1,
+    0,
     0
   ],
   [
@@ -1598,7 +1598,7 @@
   [
     "calcite/core/org/apache/calcite/materialize/LatticeSpace",
     "calcite/core/org/apache/calcite/materialize",
-    5,
+    4,
     0
   ],
   [
@@ -1772,7 +1772,7 @@
   [
     "calcite/core/org/apache/calcite/sql/validate/SqlValidatorImpl",
     "calcite/core/org/apache/calcite/sql/validate",
-    6,
+    5,
     0
   ],
   [
@@ -1814,7 +1814,7 @@
   [
     "calcite/core/org/apache/calcite/test/ExtensionDdlExecutor",
     "calcite/core/org/apache/calcite/test",
-    2,
+    1,
     0
   ],
   [
@@ -1994,7 +1994,7 @@
   [
     "calcite/core/org/apache/calcite/test/JdbcTest",
     "calcite/core/org/apache/calcite/test",
-    3,
+    2,
     0
   ],
   [
@@ -2426,7 +2426,7 @@
   [
     "calcite/core/org/apache/calcite/rel/rules/CalcRelSplitter/RelType",
     "calcite/core/org/apache/calcite/rel/rules/CalcRelSplitter",
-    1,
+    2,
     0
   ],
   [
@@ -3008,7 +3008,7 @@
   [
     "calcite/core/org/apache/calcite/sql/test/SqlTests",
     "calcite/core/org/apache/calcite/sql/test",
-    6,
+    5,
     0
   ],
   [
@@ -3026,7 +3026,7 @@
   [
     "calcite/core/org/apache/calcite/sql/test/SqlTests/RefSetResultChecker",
     "calcite/core/org/apache/calcite/sql/test/SqlTests",
-    1,
+    0,
     0
   ],
   [
@@ -3044,7 +3044,7 @@
   [
     "calcite/core/org/apache/calcite/sql/parser/SqlParserUtil",
     "calcite/core/org/apache/calcite/sql/parser",
-    3,
+    4,
     0
   ],
   [
@@ -3224,13 +3224,13 @@
   [
     "calcite/core/org/apache/calcite/model/JsonRoot",
     "calcite/core/org/apache/calcite/model",
-    0,
+    1,
     0
   ],
   [
     "calcite/core/org/apache/calcite/model/JsonSchema",
     "calcite/core/org/apache/calcite/model",
-    0,
+    1,
     0
   ],
   [
@@ -3332,7 +3332,7 @@
   [
     "calcite/core/org/apache/calcite/util/mapping/Mappings",
     "calcite/core/org/apache/calcite/util/mapping",
-    4,
+    3,
     0
   ],
   [
@@ -3464,13 +3464,13 @@
   [
     "calcite/core/org/apache/calcite/sql/SqlMatchRecognize",
     "calcite/core/org/apache/calcite/sql",
-    5,
+    4,
     0
   ],
   [
     "calcite/core/org/apache/calcite/sql/SqlMatchRecognize/SqlMatchRecognizeOperator",
     "calcite/core/org/apache/calcite/sql/SqlMatchRecognize",
-    4,
+    3,
     0
   ],
   [
@@ -3500,7 +3500,7 @@
   [
     "calcite/core/org/apache/calcite/plan/volcano/VolcanoPlanner",
     "calcite/core/org/apache/calcite/plan/volcano",
-    7,
+    8,
     0
   ],
   [
@@ -3866,7 +3866,7 @@
   [
     "calcite/core/org/apache/calcite/adapter/java/ReflectiveSchema",
     "calcite/core/org/apache/calcite/adapter/java",
-    4,
+    5,
     0
   ],
   [
@@ -3968,7 +3968,7 @@
   [
     "calcite/core/org/apache/calcite/rel/rel2sql/SqlImplementor",
     "calcite/core/org/apache/calcite/rel/rel2sql",
-    6,
+    5,
     0
   ],
   [
@@ -3980,7 +3980,7 @@
   [
     "calcite/core/org/apache/calcite/rel/rel2sql/SqlImplementor/BaseContext",
     "calcite/core/org/apache/calcite/rel/rel2sql/SqlImplementor",
-    1,
+    0,
     0
   ],
   [
@@ -4046,7 +4046,7 @@
   [
     "calcite/core/org/apache/calcite/rel/rel2sql/SqlImplementor/TableFunctionScanContext",
     "calcite/core/org/apache/calcite/rel/rel2sql/SqlImplementor",
-    1,
+    0,
     0
   ],
   [
@@ -4262,7 +4262,7 @@
   [
     "calcite/core/org/apache/calcite/adapter/enumerable/EnumerableMergeJoinRule",
     "calcite/core/org/apache/calcite/adapter/enumerable",
-    0,
+    1,
     0
   ],
   [
@@ -4274,7 +4274,7 @@
   [
     "calcite/core/org/apache/calcite/adapter/enumerable/EnumerableMergeJoin",
     "calcite/core/org/apache/calcite/adapter/enumerable",
-    3,
+    4,
     0
   ],
   [
@@ -4472,7 +4472,7 @@
   [
     "calcite/core/org/apache/calcite/rel/metadata/CachingRelMetadataProvider",
     "calcite/core/org/apache/calcite/rel/metadata",
-    2,
+    1,
     0
   ],
   [
@@ -4484,7 +4484,7 @@
   [
     "calcite/core/org/apache/calcite/rel/metadata/CachingRelMetadataProvider/CachingInvocationHandler",
     "calcite/core/org/apache/calcite/rel/metadata/CachingRelMetadataProvider",
-    1,
+    0,
     0
   ],
   [
@@ -4982,7 +4982,7 @@
   [
     "calcite/core/org/apache/calcite/sql2rel/SqlToRelConverter",
     "calcite/core/org/apache/calcite/sql2rel",
-    7,
+    6,
     0
   ],
   [
@@ -5258,13 +5258,13 @@
   [
     "calcite/core/org/apache/calcite/plan/volcano/TraitConversionTest/RandomSingleTraitRule",
     "calcite/core/org/apache/calcite/plan/volcano/TraitConversionTest",
-    0,
+    1,
     0
   ],
   [
     "calcite/core/org/apache/calcite/plan/volcano/TraitConversionTest/SimpleDistribution",
     "calcite/core/org/apache/calcite/plan/volcano/TraitConversionTest",
-    2,
+    1,
     0
   ],
   [
@@ -5306,7 +5306,7 @@
   [
     "calcite/core/org/apache/calcite/sql/parser/SqlParserUtil/OldTokenSequenceImpl",
     "calcite/core/org/apache/calcite/sql/parser/SqlParserUtil",
-    1,
+    2,
     0
   ],
   [
@@ -5324,7 +5324,7 @@
   [
     "calcite/core/org/apache/calcite/sql/parser/SqlParserUtil/TokenSequenceImpl",
     "calcite/core/org/apache/calcite/sql/parser/SqlParserUtil",
-    1,
+    2,
     0
   ],
   [
@@ -5504,7 +5504,7 @@
   [
     "calcite/core/org/apache/calcite/adapter/enumerable/PhysTypeImpl",
     "calcite/core/org/apache/calcite/adapter/enumerable",
-    5,
+    6,
     0
   ],
   [
@@ -5540,7 +5540,7 @@
   [
     "calcite/core/org/apache/calcite/profile/ProfilerImpl/CompositeCollector",
     "calcite/core/org/apache/calcite/profile/ProfilerImpl",
-    0,
+    1,
     0
   ],
   [
@@ -5552,7 +5552,7 @@
   [
     "calcite/core/org/apache/calcite/profile/ProfilerImpl/HllCompositeCollector",
     "calcite/core/org/apache/calcite/profile/ProfilerImpl",
-    1,
+    2,
     0
   ],
   [
@@ -5570,7 +5570,7 @@
   [
     "calcite/core/org/apache/calcite/profile/ProfilerImpl/SingletonCollector",
     "calcite/core/org/apache/calcite/profile/ProfilerImpl",
-    1,
+    0,
     0
   ],
   [
@@ -5636,7 +5636,7 @@
   [
     "calcite/core/org/apache/calcite/adapter/enumerable/EnumerableAggregateRule",
     "calcite/core/org/apache/calcite/adapter/enumerable",
-    1,
+    0,
     0
   ],
   [
@@ -5816,7 +5816,7 @@
   [
     "calcite/core/org/apache/calcite/rel/rules/materialize/MaterializedViewProjectJoinRule",
     "calcite/core/org/apache/calcite/rel/rules/materialize",
-    1,
+    0,
     0
   ],
   [
@@ -5948,7 +5948,7 @@
   [
     "calcite/core/org/apache/calcite/adapter/jdbc/JdbcTable",
     "calcite/core/org/apache/calcite/adapter/jdbc",
-    4,
+    5,
     0
   ],
   [
@@ -5960,7 +5960,7 @@
   [
     "calcite/core/org/apache/calcite/adapter/jdbc/JdbcImplementor",
     "calcite/core/org/apache/calcite/adapter/jdbc",
-    3,
+    2,
     0
   ],
   [
@@ -6092,7 +6092,7 @@
   [
     "calcite/core/org/apache/calcite/adapter/enumerable/EnumerableHashJoin",
     "calcite/core/org/apache/calcite/adapter/enumerable",
-    4,
+    3,
     0
   ],
   [
@@ -6302,13 +6302,13 @@
   [
     "calcite/core/org/apache/calcite/prepare/CalcitePrepareImpl/EmptyScalarTranslator",
     "calcite/core/org/apache/calcite/prepare/CalcitePrepareImpl",
-    5,
+    4,
     0
   ],
   [
     "calcite/core/org/apache/calcite/prepare/CalcitePrepareImpl/LambdaScalarTranslator",
     "calcite/core/org/apache/calcite/prepare/CalcitePrepareImpl",
-    1,
+    0,
     0
   ],
   [
@@ -6386,7 +6386,7 @@
   [
     "calcite/core/org/apache/calcite/adapter/enumerable/EnumerableInterpretable",
     "calcite/core/org/apache/calcite/adapter/enumerable",
-    3,
+    2,
     0
   ],
   [
@@ -6398,7 +6398,7 @@
   [
     "calcite/core/org/apache/calcite/sql2rel/StandardConvertletTable",
     "calcite/core/org/apache/calcite/sql2rel",
-    5,
+    6,
     0
   ],
   [
@@ -6650,7 +6650,7 @@
   [
     "calcite/core/org/apache/calcite/sql/parser/SqlParserTest/UnparsingTesterImpl",
     "calcite/core/org/apache/calcite/sql/parser/SqlParserTest",
-    3,
+    4,
     0
   ],
   [
@@ -6680,13 +6680,13 @@
   [
     "calcite/core/org/apache/calcite/tools/Hoist",
     "calcite/core/org/apache/calcite/tools",
-    1,
+    2,
     0
   ],
   [
     "calcite/core/org/apache/calcite/tools/Hoist/Hoisted",
     "calcite/core/org/apache/calcite/tools/Hoist",
-    0,
+    1,
     0
   ],
   [
@@ -6872,13 +6872,13 @@
   [
     "calcite/core/org/apache/calcite/test/RelOptTestBase",
     "calcite/core/org/apache/calcite/test",
-    3,
+    2,
     0
   ],
   [
     "calcite/core/org/apache/calcite/test/RelOptTestBase/Sql",
     "calcite/core/org/apache/calcite/test/RelOptTestBase",
-    3,
+    2,
     0
   ],
   [
@@ -7214,7 +7214,7 @@
   [
     "calcite/core/org/apache/calcite/test/SqlValidatorTest",
     "calcite/core/org/apache/calcite/test",
-    4,
+    5,
     0
   ],
   [
@@ -7382,7 +7382,7 @@
   [
     "calcite/core/org/apache/calcite/test/MockRelOptPlanner",
     "calcite/core/org/apache/calcite/test",
-    3,
+    4,
     0
   ],
   [
@@ -7586,7 +7586,7 @@
   [
     "calcite/core/org/apache/calcite/sql/SqlSampleSpec",
     "calcite/core/org/apache/calcite/sql",
-    3,
+    2,
     0
   ],
   [
@@ -8264,7 +8264,7 @@
   [
     "calcite/core/org/apache/calcite/rel/rules/LoptJoinTree",
     "calcite/core/org/apache/calcite/rel/rules",
-    4,
+    5,
     0
   ],
   [
@@ -8588,7 +8588,7 @@
   [
     "calcite/core/org/apache/calcite/plan/volcano/VolcanoPlanner/DeferringRuleCall",
     "calcite/core/org/apache/calcite/plan/volcano/VolcanoPlanner",
-    0,
+    1,
     0
   ],
   [
@@ -8618,7 +8618,7 @@
   [
     "calcite/core/org/apache/calcite/plan/volcano/TopDownRuleDriver",
     "calcite/core/org/apache/calcite/plan/volcano",
-    2,
+    3,
     0
   ],
   [
@@ -8648,7 +8648,7 @@
   [
     "calcite/core/org/apache/calcite/jdbc/CalciteJdbc41Factory",
     "calcite/core/org/apache/calcite/jdbc",
-    4,
+    5,
     0
   ],
   [
@@ -8690,7 +8690,7 @@
   [
     "calcite/core/org/apache/calcite/jdbc/CalcitePreparedStatement",
     "calcite/core/org/apache/calcite/jdbc",
-    0,
+    1,
     0
   ],
   [
@@ -8792,7 +8792,7 @@
   [
     "calcite/core/org/apache/calcite/sql/validate/AggVisitor",
     "calcite/core/org/apache/calcite/sql/validate",
-    3,
+    2,
     0
   ],
   [
@@ -8984,13 +8984,13 @@
   [
     "calcite/core/org/apache/calcite/interpreter/AggregateNode/UdaAccumulator",
     "calcite/core/org/apache/calcite/interpreter/AggregateNode",
-    0,
+    1,
     0
   ],
   [
     "calcite/core/org/apache/calcite/interpreter/AggregateNode/UdaAccumulatorFactory",
     "calcite/core/org/apache/calcite/interpreter/AggregateNode",
-    0,
+    1,
     0
   ],
   [
@@ -10202,7 +10202,7 @@
   [
     "calcite/core/org/apache/calcite/model/JsonType",
     "calcite/core/org/apache/calcite/model",
-    2,
+    1,
     0
   ],
   [
@@ -10250,13 +10250,13 @@
   [
     "calcite/core/org/apache/calcite/plan/volcano/CollationConversionTest/LeafRel",
     "calcite/core/org/apache/calcite/plan/volcano/CollationConversionTest",
-    0,
+    1,
     0
   ],
   [
     "calcite/core/org/apache/calcite/plan/volcano/CollationConversionTest/LeafTraitRule",
     "calcite/core/org/apache/calcite/plan/volcano/CollationConversionTest",
-    0,
+    1,
     0
   ],
   [
@@ -10292,7 +10292,7 @@
   [
     "calcite/core/org/apache/calcite/plan/volcano/CollationConversionTest/TestRelCollationImpl",
     "calcite/core/org/apache/calcite/plan/volcano/CollationConversionTest",
-    1,
+    0,
     0
   ],
   [
@@ -10580,7 +10580,7 @@
   [
     "calcite/core/org/apache/calcite/test/MaterializedViewSubstitutionVisitorTest",
     "calcite/core/org/apache/calcite/test",
-    4,
+    5,
     0
   ],
   [
@@ -10796,7 +10796,7 @@
   [
     "calcite/core/org/apache/calcite/util/ImmutableBeans/BeanImpl",
     "calcite/core/org/apache/calcite/util/ImmutableBeans",
-    1,
+    0,
     0
   ],
   [
@@ -10808,7 +10808,7 @@
   [
     "calcite/core/org/apache/calcite/util/ImmutableBeans/Def",
     "calcite/core/org/apache/calcite/util/ImmutableBeans",
-    1,
+    0,
     0
   ],
   [
@@ -10916,7 +10916,7 @@
   [
     "calcite/core/org/apache/calcite/sql2rel/StandardConvertletTable/TimestampAddConvertlet",
     "calcite/core/org/apache/calcite/sql2rel/StandardConvertletTable",
-    0,
+    1,
     0
   ],
   [
@@ -11318,7 +11318,7 @@
   [
     "calcite/core/org/apache/calcite/model/JsonMeasure",
     "calcite/core/org/apache/calcite/model",
-    1,
+    2,
     0
   ],
   [
@@ -11534,7 +11534,7 @@
   [
     "calcite/core/org/apache/calcite/runtime/DeterministicAutomatonTest",
     "calcite/core/org/apache/calcite/runtime",
-    1,
+    0,
     0
   ],
   [
@@ -11636,7 +11636,7 @@
   [
     "calcite/core/org/apache/calcite/sql/validate/SqlValidatorImpl/OrderExpressionExpander",
     "calcite/core/org/apache/calcite/sql/validate/SqlValidatorImpl",
-    2,
+    1,
     0
   ],
   [
@@ -11708,7 +11708,7 @@
   [
     "calcite/core/org/apache/calcite/sql/SqlSnapshot",
     "calcite/core/org/apache/calcite/sql",
-    2,
+    1,
     0
   ],
   [
@@ -11822,7 +11822,7 @@
   [
     "calcite/core/org/apache/calcite/sql/SqlSampleSpec/SqlSubstitutionSampleSpec",
     "calcite/core/org/apache/calcite/sql/SqlSampleSpec",
-    1,
+    0,
     0
   ],
   [
@@ -11840,7 +11840,7 @@
   [
     "calcite/core/org/apache/calcite/adapter/clone/ArrayTableTest",
     "calcite/core/org/apache/calcite/adapter/clone",
-    2,
+    1,
     0
   ],
   [
@@ -11864,13 +11864,13 @@
   [
     "calcite/core/org/apache/calcite/adapter/clone/ColumnLoader/ValueSet",
     "calcite/core/org/apache/calcite/adapter/clone/ColumnLoader",
-    3,
+    4,
     0
   ],
   [
     "calcite/core/org/apache/calcite/adapter/clone/ArrayTable/BitSlicedPrimitiveArray",
     "calcite/core/org/apache/calcite/adapter/clone/ArrayTable",
-    3,
+    4,
     0
   ],
   [
@@ -12014,7 +12014,7 @@
   [
     "calcite/core/org/apache/calcite/model/JsonLattice",
     "calcite/core/org/apache/calcite/model",
-    2,
+    3,
     0
   ],
   [
@@ -12728,7 +12728,7 @@
   [
     "calcite/core/org/apache/calcite/test/MockRelOptPlanner/MockRuleCall",
     "calcite/core/org/apache/calcite/test/MockRelOptPlanner",
-    0,
+    1,
     0
   ],
   [
@@ -12914,7 +12914,7 @@
   [
     "calcite/core/org/apache/calcite/interpreter/Interpreter/CompilerImpl",
     "calcite/core/org/apache/calcite/interpreter/Interpreter",
-    5,
+    6,
     0
   ],
   [
@@ -13256,7 +13256,7 @@
   [
     "calcite/core/org/apache/calcite/test/concurrent/ConcurrentTestCommandGenerator",
     "calcite/core/org/apache/calcite/test/concurrent",
-    3,
+    4,
     0
   ],
   [
@@ -13424,7 +13424,7 @@
   [
     "calcite/core/org/apache/calcite/rel/rules/LoptJoinTree/Node",
     "calcite/core/org/apache/calcite/rel/rules/LoptJoinTree",
-    2,
+    3,
     0
   ],
   [
@@ -13706,7 +13706,7 @@
   [
     "calcite/core/org/apache/calcite/runtime/Pattern/AbstractPattern",
     "calcite/core/org/apache/calcite/runtime/Pattern",
-    0,
+    1,
     0
   ],
   [
@@ -13730,7 +13730,7 @@
   [
     "calcite/core/org/apache/calcite/runtime/AutomatonBuilder",
     "calcite/core/org/apache/calcite/runtime",
-    3,
+    4,
     0
   ],
   [
@@ -14162,7 +14162,7 @@
   [
     "calcite/core/org/apache/calcite/sql/advise/SqlAdvisorGetHintsFunction",
     "calcite/core/org/apache/calcite/sql/advise",
-    3,
+    2,
     0
   ],
   [
@@ -14288,7 +14288,7 @@
   [
     "calcite/core/org/apache/calcite/test/RelMetadataTest/CompositeKeysCatalogReader",
     "calcite/core/org/apache/calcite/test/RelMetadataTest",
-    1,
+    2,
     0
   ],
   [
@@ -14402,7 +14402,7 @@
   [
     "calcite/core/org/apache/calcite/util/mapping/Mappings/PartialFunctionImpl",
     "calcite/core/org/apache/calcite/util/mapping/Mappings",
-    4,
+    3,
     0
   ],
   [
@@ -14480,7 +14480,7 @@
   [
     "calcite/core/org/apache/calcite/test/MultiJdbcSchemaJoinTest",
     "calcite/core/org/apache/calcite/test",
-    2,
+    1,
     0
   ],
   [
@@ -14504,7 +14504,7 @@
   [
     "calcite/core/org/apache/calcite/test/TopDownOptTest",
     "calcite/core/org/apache/calcite/test",
-    2,
+    3,
     0
   ],
   [
@@ -14792,7 +14792,7 @@
   [
     "calcite/core/org/apache/calcite/test/enumerable/EnumerableCalcTest",
     "calcite/core/org/apache/calcite/test/enumerable",
-    1,
+    0,
     0
   ],
   [
@@ -14822,7 +14822,7 @@
   [
     "calcite/core/org/apache/calcite/adapter/enumerable/EnumerableInterpretable/EnumerableNode",
     "calcite/core/org/apache/calcite/adapter/enumerable/EnumerableInterpretable",
-    1,
+    0,
     0
   ],
   [
@@ -14894,7 +14894,7 @@
   [
     "calcite/core/org/apache/calcite/test/enumerable/EnumerableStringComparisonTest",
     "calcite/core/org/apache/calcite/test/enumerable",
-    2,
+    3,
     0
   ],
   [
@@ -15110,7 +15110,7 @@
   [
     "calcite/core/org/apache/calcite/test/catalog/MockCatalogReader/MockViewTable/ModifiableView",
     "calcite/core/org/apache/calcite/test/catalog/MockCatalogReader/MockViewTable",
-    2,
+    1,
     0
   ],
   [
@@ -15128,7 +15128,7 @@
   [
     "calcite/core/org/apache/calcite/test/catalog/MockCatalogReader/MockViewTable/ModifiableViewWithCustomColumnResolving",
     "calcite/core/org/apache/calcite/test/catalog/MockCatalogReader/MockViewTable",
-    0,
+    1,
     0
   ],
   [
@@ -15362,7 +15362,7 @@
   [
     "calcite/core/org/apache/calcite/plan/SubstitutionVisitor/AggregateOnCalcToAggregateUnifyRule",
     "calcite/core/org/apache/calcite/plan/SubstitutionVisitor",
-    0,
+    1,
     0
   ],
   [
@@ -15446,7 +15446,7 @@
   [
     "calcite/core/org/apache/calcite/plan/SubstitutionVisitor/ScanToCalcUnifyRule",
     "calcite/core/org/apache/calcite/plan/SubstitutionVisitor",
-    1,
+    0,
     0
   ],
   [
@@ -15566,13 +15566,13 @@
   [
     "calcite/core/org/apache/calcite/plan/volcano/TopDownRuleDriver/DeriveTrait",
     "calcite/core/org/apache/calcite/plan/volcano/TopDownRuleDriver",
-    2,
+    3,
     0
   ],
   [
     "calcite/core/org/apache/calcite/plan/volcano/TopDownRuleDriver/EnsureGroupExplored",
     "calcite/core/org/apache/calcite/plan/volcano/TopDownRuleDriver",
-    1,
+    0,
     0
   ],
   [
@@ -15608,7 +15608,7 @@
   [
     "calcite/core/org/apache/calcite/plan/volcano/TopDownRuleDriver/OptimizeMExpr",
     "calcite/core/org/apache/calcite/plan/volcano/TopDownRuleDriver",
-    0,
+    1,
     0
   ],
   [
@@ -16196,13 +16196,13 @@
   [
     "calcite/core/org/apache/calcite/rex/RexMultisetUtil",
     "calcite/core/org/apache/calcite/rex",
-    3,
+    2,
     0
   ],
   [
     "calcite/core/org/apache/calcite/rex/RexMultisetUtil/RexCallMultisetOperatorCounter",
     "calcite/core/org/apache/calcite/rex/RexMultisetUtil",
-    1,
+    0,
     0
   ],
   [
@@ -16388,7 +16388,7 @@
   [
     "calcite/core/org/apache/calcite/sql/parser/parserextensiontesting/ExtensionSqlParserTest",
     "calcite/core/org/apache/calcite/sql/parser/parserextensiontesting",
-    1,
+    0,
     0
   ],
   [
@@ -16508,7 +16508,7 @@
   [
     "calcite/core/org/apache/calcite/rel/rules/CalcRelSplitter/ImplementTester",
     "calcite/core/org/apache/calcite/rel/rules/CalcRelSplitter",
-    1,
+    2,
     0
   ],
   [
@@ -17180,13 +17180,13 @@
   [
     "calcite/core/org/apache/calcite/rex/RexSqlStandardConvertletTable",
     "calcite/core/org/apache/calcite/rex",
-    2,
+    3,
     0
   ],
   [
     "calcite/core/org/apache/calcite/rex/RexSqlStandardConvertletTable/EquivConvertlet",
     "calcite/core/org/apache/calcite/rex/RexSqlStandardConvertletTable",
-    0,
+    1,
     0
   ],
   [
@@ -17276,7 +17276,7 @@
   [
     "calcite/core/org/apache/calcite/adapter/jdbc/JdbcRules/JdbcAggregateRule",
     "calcite/core/org/apache/calcite/adapter/jdbc/JdbcRules",
-    0,
+    1,
     0
   ],
   [
@@ -17330,7 +17330,7 @@
   [
     "calcite/core/org/apache/calcite/adapter/jdbc/JdbcRules/JdbcJoinRule",
     "calcite/core/org/apache/calcite/adapter/jdbc/JdbcRules",
-    3,
+    2,
     0
   ],
   [
@@ -18398,7 +18398,7 @@
   [
     "calcite/core/org/apache/calcite/sql/validate/AggFinder/AggIterable",
     "calcite/core/org/apache/calcite/sql/validate/AggFinder",
-    0,
+    1,
     0
   ],
   [
@@ -18428,7 +18428,7 @@
   [
     "calcite/core/org/apache/calcite/test/concurrent/ConcurrentTestCommandScript",
     "calcite/core/org/apache/calcite/test/concurrent",
-    6,
+    5,
     0
   ],
   [
@@ -18440,7 +18440,7 @@
   [
     "calcite/core/org/apache/calcite/test/concurrent/ConcurrentTestCommandScript/CommandParser/Binding",
     "calcite/core/org/apache/calcite/test/concurrent/ConcurrentTestCommandScript/CommandParser",
-    0,
+    1,
     0
   ],
   [
@@ -18494,7 +18494,7 @@
   [
     "calcite/core/org/apache/calcite/test/concurrent/ConcurrentTestCommandScript/SelectCommand",
     "calcite/core/org/apache/calcite/test/concurrent/ConcurrentTestCommandScript",
-    1,
+    0,
     0
   ],
   [
@@ -18602,7 +18602,7 @@
   [
     "calcite/core/org/apache/calcite/rel/stream/StreamRules/DeltaAggregateTransposeRule",
     "calcite/core/org/apache/calcite/rel/stream/StreamRules",
-    2,
+    1,
     0
   ],
   [
@@ -18860,7 +18860,7 @@
   [
     "calcite/core/org/apache/calcite/sql/SqlSnapshot/SqlSnapshotOperator",
     "calcite/core/org/apache/calcite/sql/SqlSnapshot",
-    2,
+    1,
     0
   ],
   [
@@ -19112,7 +19112,7 @@
   [
     "calcite/core/org/apache/calcite/sql2rel/SqlToRelConverter/AggConverter",
     "calcite/core/org/apache/calcite/sql2rel/SqlToRelConverter",
-    4,
+    3,
     0
   ],
   [
@@ -19124,7 +19124,7 @@
   [
     "calcite/core/org/apache/calcite/sql2rel/SqlToRelConverter/Blackboard",
     "calcite/core/org/apache/calcite/sql2rel/SqlToRelConverter",
-    5,
+    4,
     0
   ],
   [
@@ -19148,7 +19148,7 @@
   [
     "calcite/core/org/apache/calcite/sql2rel/SqlToRelConverter/HistogramShuttle",
     "calcite/core/org/apache/calcite/sql2rel/SqlToRelConverter",
-    2,
+    1,
     0
   ],
   [
@@ -19196,7 +19196,7 @@
   [
     "calcite/core/org/apache/calcite/sql2rel/RelStructuredTypeFlattener",
     "calcite/core/org/apache/calcite/sql2rel",
-    6,
+    5,
     0
   ],
   [
@@ -19256,7 +19256,7 @@
   [
     "calcite/core/org/apache/calcite/rel/rules/materialize/MaterializedViewOnlyAggregateRule",
     "calcite/core/org/apache/calcite/rel/rules/materialize",
-    1,
+    2,
     0
   ],
   [
@@ -19358,7 +19358,7 @@
   [
     "calcite/core/org/apache/calcite/test/SqlTestGen/SqlValidatorSpooler",
     "calcite/core/org/apache/calcite/test/SqlTestGen",
-    1,
+    0,
     0
   ],
   [
@@ -19544,13 +19544,13 @@
   [
     "calcite/core/org/apache/calcite/sql2rel/RelDecorrelator/DecorrelateRexShuttle",
     "calcite/core/org/apache/calcite/sql2rel/RelDecorrelator",
-    1,
+    0,
     0
   ],
   [
     "calcite/core/org/apache/calcite/sql2rel/RelDecorrelator/Frame",
     "calcite/core/org/apache/calcite/sql2rel/RelDecorrelator",
-    0,
+    1,
     0
   ],
   [
@@ -19814,7 +19814,7 @@
   [
     "calcite/core/org/apache/calcite/adapter/enumerable/RexImpTable/DatetimeArithmeticImplementor",
     "calcite/core/org/apache/calcite/adapter/enumerable/RexImpTable",
-    3,
+    2,
     0
   ],
   [
@@ -19886,7 +19886,7 @@
   [
     "calcite/core/org/apache/calcite/adapter/enumerable/RexImpTable/IsNotFalseImplementor",
     "calcite/core/org/apache/calcite/adapter/enumerable/RexImpTable",
-    0,
+    1,
     0
   ],
   [
@@ -20180,7 +20180,7 @@
   [
     "calcite/core/org/apache/calcite/test/RelOptRulesTest",
     "calcite/core/org/apache/calcite/test",
-    4,
+    3,
     0
   ],
   [
@@ -21128,7 +21128,7 @@
   [
     "calcite/core/org/apache/calcite/test/enumerable/EnumerableJoinTest",
     "calcite/core/org/apache/calcite/test/enumerable",
-    2,
+    1,
     0
   ],
   [
@@ -21194,7 +21194,7 @@
   [
     "calcite/core/org/apache/calcite/tools/PlannerTest",
     "calcite/core/org/apache/calcite/tools",
-    3,
+    2,
     0
   ],
   [
@@ -21656,7 +21656,7 @@
   [
     "calcite/core/org/apache/calcite/test/MaterializedViewRelOptRulesTest",
     "calcite/core/org/apache/calcite/test",
-    4,
+    3,
     0
   ],
   [
@@ -21692,7 +21692,7 @@
   [
     "calcite/core/org/apache/calcite/rel/rules/DateRangeRules/FilterDateRangeRule",
     "calcite/core/org/apache/calcite/rel/rules/DateRangeRules",
-    1,
+    0,
     0
   ],
   [
@@ -21788,7 +21788,7 @@
   [
     "calcite/core/org/apache/calcite/adapter/java/ReflectiveSchema/MethodTableMacro",
     "calcite/core/org/apache/calcite/adapter/java/ReflectiveSchema",
-    0,
+    1,
     0
   ],
   [
@@ -22094,13 +22094,13 @@
   [
     "calcite/core/org/apache/calcite/plan/volcano/VolcanoPlannerTraitTest",
     "calcite/core/org/apache/calcite/plan/volcano",
-    3,
+    2,
     0
   ],
   [
     "calcite/core/org/apache/calcite/plan/volcano/VolcanoPlannerTraitTest/AltTrait",
     "calcite/core/org/apache/calcite/plan/volcano/VolcanoPlannerTraitTest",
-    1,
+    2,
     0
   ],
   [
@@ -22118,7 +22118,7 @@
   [
     "calcite/core/org/apache/calcite/plan/volcano/VolcanoPlannerTraitTest/AltTraitDef",
     "calcite/core/org/apache/calcite/plan/volcano/VolcanoPlannerTraitTest",
-    1,
+    2,
     0
   ],
   [
@@ -22172,7 +22172,7 @@
   [
     "calcite/core/org/apache/calcite/plan/volcano/VolcanoPlannerTraitTest/PhysLeafRel",
     "calcite/core/org/apache/calcite/plan/volcano/VolcanoPlannerTraitTest",
-    1,
+    0,
     0
   ],
   [
@@ -22328,7 +22328,7 @@
   [
     "calcite/core/org/apache/calcite/sql/type/SqlTypeUtilTest",
     "calcite/core/org/apache/calcite/sql/type",
-    2,
+    3,
     0
   ],
   [
@@ -22778,7 +22778,7 @@
   [
     "calcite/core/org/apache/calcite/test/concurrent/ConcurrentTestCommandGenerator/FetchAndCompareCommand",
     "calcite/core/org/apache/calcite/test/concurrent/ConcurrentTestCommandGenerator",
-    3,
+    4,
     0
   ],
   [
@@ -22820,7 +22820,7 @@
   [
     "calcite/core/org/apache/calcite/jdbc/CalciteConnectionImpl/CalciteServerImpl",
     "calcite/core/org/apache/calcite/jdbc/CalciteConnectionImpl",
-    2,
+    1,
     0
   ],
   [
@@ -23240,13 +23240,13 @@
   [
     "calcite/core/org/apache/calcite/test/ScannableTableTest/BeatlesFilterableTable",
     "calcite/core/org/apache/calcite/test/ScannableTableTest",
-    2,
+    3,
     0
   ],
   [
     "calcite/core/org/apache/calcite/test/ScannableTableTest/BeatlesProjectableFilterableTable",
     "calcite/core/org/apache/calcite/test/ScannableTableTest",
-    2,
+    1,
     0
   ],
   [
@@ -23306,7 +23306,7 @@
   [
     "calcite/core/org/apache/calcite/sql2rel/RelStructuredTypeFlattener/RewriteRelVisitor",
     "calcite/core/org/apache/calcite/sql2rel/RelStructuredTypeFlattener",
-    1,
+    0,
     0
   ],
   [
@@ -23384,7 +23384,7 @@
   [
     "calcite/core/org/apache/calcite/plan/volcano/TraitPropagationTest/PhysProj",
     "calcite/core/org/apache/calcite/plan/volcano/TraitPropagationTest",
-    2,
+    1,
     0
   ],
   [
@@ -23528,7 +23528,7 @@
   [
     "calcite/core/org/apache/calcite/test/CoreQuidemTest",
     "calcite/core/org/apache/calcite/test",
-    1,
+    2,
     0
   ],
   [
@@ -23792,7 +23792,7 @@
   [
     "calcite/linq4j/org/apache/calcite/linq4j/tree/Expressions",
     "calcite/linq4j/org/apache/calcite/linq4j/tree",
-    4,
+    5,
     0
   ],
   [
@@ -23870,7 +23870,7 @@
   [
     "calcite/linq4j/org/apache/calcite/linq4j/Linq4j",
     "calcite/linq4j/org/apache/calcite/linq4j",
-    4,
+    5,
     0
   ],
   [
@@ -24008,7 +24008,7 @@
   [
     "calcite/linq4j/org/apache/calcite/linq4j/AbstractEnumerable",
     "calcite/linq4j/org/apache/calcite/linq4j",
-    0,
+    1,
     0
   ],
   [
@@ -24386,7 +24386,7 @@
   [
     "calcite/linq4j/org/apache/calcite/linq4j/test/DeterministicTest",
     "calcite/linq4j/org/apache/calcite/linq4j/test",
-    3,
+    2,
     0
   ],
   [
@@ -24440,7 +24440,7 @@
   [
     "calcite/linq4j/org/apache/calcite/linq4j/MemoryEnumerable",
     "calcite/linq4j/org/apache/calcite/linq4j",
-    0,
+    1,
     0
   ],
   [
@@ -24776,7 +24776,7 @@
   [
     "calcite/linq4j/org/apache/calcite/linq4j/DefaultEnumerable",
     "calcite/linq4j/org/apache/calcite/linq4j",
-    3,
+    2,
     0
   ],
   [
@@ -25088,7 +25088,7 @@
   [
     "calcite/linq4j/org/apache/calcite/linq4j/QueryableDefaults",
     "calcite/linq4j/org/apache/calcite/linq4j",
-    2,
+    3,
     0
   ],
   [
@@ -25478,7 +25478,7 @@
   [
     "calcite/linq4j/org/apache/calcite/linq4j/Linq4j/CompositeEnumerable",
     "calcite/linq4j/org/apache/calcite/linq4j/Linq4j",
-    1,
+    2,
     0
   ],
   [
@@ -25856,7 +25856,7 @@
   [
     "calcite/linq4j/org/apache/calcite/linq4j/tree/ConditionalStatement",
     "calcite/linq4j/org/apache/calcite/linq4j/tree",
-    2,
+    3,
     0
   ],
   [
@@ -26756,7 +26756,7 @@
   [
     "calcite/linq4j/org/apache/calcite/linq4j/Extensions",
     "calcite/linq4j/org/apache/calcite/linq4j",
-    2,
+    1,
     0
   ],
   [
@@ -27968,7 +27968,7 @@
   [
     "calcite/linq4j/org/apache/calcite/linq4j/EnumerableDefaults",
     "calcite/linq4j/org/apache/calcite/linq4j",
-    4,
+    5,
     0
   ],
   [
@@ -28016,7 +28016,7 @@
   [
     "calcite/linq4j/org/apache/calcite/linq4j/Ord",
     "calcite/linq4j/org/apache/calcite/linq4j",
-    4,
+    5,
     0
   ],
   [
@@ -28040,7 +28040,7 @@
   [
     "calcite/linq4j/org/apache/calcite/linq4j/Ord/OrdList",
     "calcite/linq4j/org/apache/calcite/linq4j/Ord",
-    1,
+    2,
     0
   ],
   [
@@ -28052,7 +28052,7 @@
   [
     "calcite/linq4j/org/apache/calcite/linq4j/Ord/OrdRandomAccessList",
     "calcite/linq4j/org/apache/calcite/linq4j/Ord",
-    0,
+    1,
     0
   ],
   [
@@ -30110,7 +30110,7 @@
   [
     "calcite/linq4j/org/apache/calcite/linq4j/EnumerableOrderedQueryable",
     "calcite/linq4j/org/apache/calcite/linq4j",
-    2,
+    3,
     0
   ],
   [
@@ -30290,7 +30290,7 @@
   [
     "calcite/linq4j/org/apache/calcite/linq4j/test/BlockBuilderTest",
     "calcite/linq4j/org/apache/calcite/linq4j/test",
-    3,
+    2,
     0
   ],
   [
@@ -31664,7 +31664,7 @@
   [
     "calcite/file/org/apache/calcite/adapter/file/FileRowConverter",
     "calcite/file/org/apache/calcite/adapter/file",
-    5,
+    4,
     0
   ],
   [
@@ -31676,7 +31676,7 @@
   [
     "calcite/file/org/apache/calcite/adapter/file/FileRowConverter/FieldDef",
     "calcite/file/org/apache/calcite/adapter/file/FileRowConverter",
-    3,
+    2,
     0
   ],
   [
@@ -31694,13 +31694,13 @@
   [
     "calcite/file/org/apache/calcite/adapter/file/CsvTable",
     "calcite/file/org/apache/calcite/adapter/file",
-    2,
+    1,
     0
   ],
   [
     "calcite/file/org/apache/calcite/adapter/file/CsvTranslatableTable",
     "calcite/file/org/apache/calcite/adapter/file",
-    4,
+    3,
     0
   ],
   [
@@ -31724,13 +31724,13 @@
   [
     "calcite/file/org/apache/calcite/adapter/file/FileSchemaFactory",
     "calcite/file/org/apache/calcite/adapter/file",
-    1,
+    0,
     0
   ],
   [
     "calcite/file/org/apache/calcite/adapter/file/FileSchema",
     "calcite/file/org/apache/calcite/adapter/file",
-    2,
+    1,
     0
   ],
   [
@@ -31796,7 +31796,7 @@
   [
     "calcite/file/org/apache/calcite/adapter/file/CsvEnumerator",
     "calcite/file/org/apache/calcite/adapter/file",
-    7,
+    6,
     0
   ],
   [
@@ -31964,31 +31964,31 @@
   [
     "calcite/redis/org/apache/calcite/adapter/redis/RedisSchema",
     "calcite/redis/org/apache/calcite/adapter/redis",
-    2,
+    3,
     0
   ],
   [
     "calcite/redis/org/apache/calcite/adapter/redis/RedisTableFactory",
     "calcite/redis/org/apache/calcite/adapter/redis",
-    2,
+    1,
     0
   ],
   [
     "calcite/redis/org/apache/calcite/adapter/redis/RedisTable",
     "calcite/redis/org/apache/calcite/adapter/redis",
-    4,
+    5,
     0
   ],
   [
     "calcite/redis/org/apache/calcite/adapter/redis/RedisJedisManager",
     "calcite/redis/org/apache/calcite/adapter/redis",
-    2,
+    3,
     0
   ],
   [
     "calcite/redis/org/apache/calcite/adapter/redis/RedisJedisManager/JedisPoolRemovalListener",
     "calcite/redis/org/apache/calcite/adapter/redis/RedisJedisManager",
-    1,
+    2,
     0
   ],
   [
@@ -32066,19 +32066,19 @@
   [
     "calcite/example/org/apache/calcite/adapter/csv/CsvProjectTableScanRule",
     "calcite/example/org/apache/calcite/adapter/csv",
-    0,
+    1,
     0
   ],
   [
     "calcite/example/org/apache/calcite/adapter/csv/CsvTableScan",
     "calcite/example/org/apache/calcite/adapter/csv",
-    1,
+    2,
     0
   ],
   [
     "calcite/example/org/apache/calcite/adapter/csv/CsvRules",
     "calcite/example/org/apache/calcite/adapter/csv",
-    1,
+    2,
     0
   ],
   [
@@ -32264,7 +32264,7 @@
   [
     "calcite/piglet/org/apache/calcite/piglet/PigRelExVisitor",
     "calcite/piglet/org/apache/calcite/piglet",
-    2,
+    3,
     0
   ],
   [
@@ -32276,7 +32276,7 @@
   [
     "calcite/piglet/org/apache/calcite/piglet/PigRelExWalker",
     "calcite/piglet/org/apache/calcite/piglet",
-    0,
+    1,
     0
   ],
   [
@@ -32306,7 +32306,7 @@
   [
     "calcite/piglet/org/apache/calcite/test/PigRelExTest",
     "calcite/piglet/org/apache/calcite/test",
-    3,
+    2,
     0
   ],
   [
@@ -32540,7 +32540,7 @@
   [
     "calcite/piglet/org/apache/calcite/piglet/PigRelOpVisitor",
     "calcite/piglet/org/apache/calcite/piglet",
-    3,
+    4,
     0
   ],
   [
@@ -32564,13 +32564,13 @@
   [
     "calcite/piglet/org/apache/calcite/piglet/PigRelOpInnerVisitor",
     "calcite/piglet/org/apache/calcite/piglet",
-    3,
+    4,
     0
   ],
   [
     "calcite/piglet/org/apache/calcite/test/PigScriptTest",
     "calcite/piglet/org/apache/calcite/test",
-    1,
+    2,
     0
   ],
   [
@@ -32834,13 +32834,13 @@
   [
     "calcite/mongodb/org/apache/calcite/adapter/mongodb/MongoFilter",
     "calcite/mongodb/org/apache/calcite/adapter/mongodb",
-    2,
+    3,
     0
   ],
   [
     "calcite/mongodb/org/apache/calcite/adapter/mongodb/MongoFilter/Translator",
     "calcite/mongodb/org/apache/calcite/adapter/mongodb/MongoFilter",
-    2,
+    3,
     0
   ],
   [
@@ -32894,7 +32894,7 @@
   [
     "calcite/mongodb/org/apache/calcite/adapter/mongodb/MongoProject",
     "calcite/mongodb/org/apache/calcite/adapter/mongodb",
-    2,
+    1,
     0
   ],
   [
@@ -32918,13 +32918,13 @@
   [
     "calcite/mongodb/org/apache/calcite/adapter/mongodb/MongoRules/MongoFilterRule",
     "calcite/mongodb/org/apache/calcite/adapter/mongodb/MongoRules",
-    1,
+    2,
     0
   ],
   [
     "calcite/mongodb/org/apache/calcite/adapter/mongodb/MongoRules/MongoProjectRule",
     "calcite/mongodb/org/apache/calcite/adapter/mongodb/MongoRules",
-    2,
+    1,
     0
   ],
   [
@@ -33110,13 +33110,13 @@
   [
     "calcite/splunk/org/apache/calcite/adapter/splunk/SplunkTable",
     "calcite/splunk/org/apache/calcite/adapter/splunk",
-    3,
+    2,
     0
   ],
   [
     "calcite/splunk/org/apache/calcite/adapter/splunk/SplunkTable/SplunkTableQueryable",
     "calcite/splunk/org/apache/calcite/adapter/splunk/SplunkTable",
-    1,
+    0,
     0
   ],
   [
@@ -33188,7 +33188,7 @@
   [
     "calcite/splunk/org/apache/calcite/adapter/splunk/SplunkPushDownRule",
     "calcite/splunk/org/apache/calcite/adapter/splunk",
-    5,
+    6,
     0
   ],
   [
@@ -33368,7 +33368,7 @@
   [
     "calcite/cassandra/org/apache/calcite/adapter/cassandra/CassandraTable",
     "calcite/cassandra/org/apache/calcite/adapter/cassandra",
-    4,
+    3,
     0
   ],
   [
@@ -33398,7 +33398,7 @@
   [
     "calcite/cassandra/org/apache/calcite/adapter/cassandra/CassandraRel/Implementor",
     "calcite/cassandra/org/apache/calcite/adapter/cassandra/CassandraRel",
-    3,
+    2,
     0
   ],
   [
@@ -33440,7 +33440,7 @@
   [
     "calcite/cassandra/org/apache/calcite/adapter/cassandra/CassandraProject",
     "calcite/cassandra/org/apache/calcite/adapter/cassandra",
-    1,
+    2,
     0
   ],
   [
@@ -33452,7 +33452,7 @@
   [
     "calcite/cassandra/org/apache/calcite/adapter/cassandra/CassandraTableScan",
     "calcite/cassandra/org/apache/calcite/adapter/cassandra",
-    2,
+    1,
     0
   ],
   [
@@ -33506,7 +33506,7 @@
   [
     "calcite/cassandra/org/apache/calcite/adapter/cassandra/CassandraFilter",
     "calcite/cassandra/org/apache/calcite/adapter/cassandra",
-    4,
+    3,
     0
   ],
   [
@@ -33554,13 +33554,13 @@
   [
     "calcite/cassandra/org/apache/calcite/adapter/cassandra/CassandraRules/CassandraProjectRule",
     "calcite/cassandra/org/apache/calcite/adapter/cassandra/CassandraRules",
-    1,
+    2,
     0
   ],
   [
     "calcite/cassandra/org/apache/calcite/adapter/cassandra/CassandraRules/CassandraSortRule",
     "calcite/cassandra/org/apache/calcite/adapter/cassandra/CassandraRules",
-    3,
+    2,
     0
   ],
   [
@@ -33800,7 +33800,7 @@
   [
     "calcite/druid/org/apache/calcite/adapter/druid/DruidTable",
     "calcite/druid/org/apache/calcite/adapter/druid",
-    2,
+    3,
     0
   ],
   [
@@ -33830,13 +33830,13 @@
   [
     "calcite/druid/org/apache/calcite/adapter/druid/VirtualColumn",
     "calcite/druid/org/apache/calcite/adapter/druid",
-    2,
+    3,
     0
   ],
   [
     "calcite/druid/org/apache/calcite/adapter/druid/VirtualColumn/Builder",
     "calcite/druid/org/apache/calcite/adapter/druid/VirtualColumn",
-    1,
+    2,
     0
   ],
   [
@@ -33914,7 +33914,7 @@
   [
     "calcite/druid/org/apache/calcite/adapter/druid/DruidConnectionImpl",
     "calcite/druid/org/apache/calcite/adapter/druid",
-    3,
+    4,
     0
   ],
   [
@@ -34034,7 +34034,7 @@
   [
     "calcite/druid/org/apache/calcite/adapter/druid/DruidQueryFilterTest",
     "calcite/druid/org/apache/calcite/adapter/druid",
-    1,
+    0,
     0
   ],
   [
@@ -34136,7 +34136,7 @@
   [
     "calcite/druid/org/apache/calcite/adapter/druid/DruidJsonFilter/JsonExpressionFilter",
     "calcite/druid/org/apache/calcite/adapter/druid/DruidJsonFilter",
-    1,
+    2,
     0
   ],
   [
@@ -34148,7 +34148,7 @@
   [
     "calcite/druid/org/apache/calcite/adapter/druid/DruidJsonFilter/JsonCompositeFilter",
     "calcite/druid/org/apache/calcite/adapter/druid/DruidJsonFilter",
-    1,
+    0,
     0
   ],
   [
@@ -34208,7 +34208,7 @@
   [
     "calcite/innodb/org/apache/calcite/adapter/innodb/InnodbSchema",
     "calcite/innodb/org/apache/calcite/adapter/innodb",
-    0,
+    1,
     0
   ],
   [
@@ -34274,7 +34274,7 @@
   [
     "calcite/innodb/org/apache/calcite/adapter/innodb/InnodbTable",
     "calcite/innodb/org/apache/calcite/adapter/innodb",
-    4,
+    5,
     0
   ],
   [
@@ -34322,13 +34322,13 @@
   [
     "calcite/innodb/org/apache/calcite/adapter/innodb/InnodbRules/InnodbFilterRule",
     "calcite/innodb/org/apache/calcite/adapter/innodb/InnodbRules",
-    0,
+    1,
     0
   ],
   [
     "calcite/innodb/org/apache/calcite/adapter/innodb/InnodbRules/InnodbProjectRule",
     "calcite/innodb/org/apache/calcite/adapter/innodb/InnodbRules",
-    2,
+    1,
     0
   ],
   [
@@ -34364,7 +34364,7 @@
   [
     "calcite/innodb/org/apache/calcite/adapter/innodb/InnodbTableScan",
     "calcite/innodb/org/apache/calcite/adapter/innodb",
-    1,
+    2,
     0
   ],
   [
@@ -34376,7 +34376,7 @@
   [
     "calcite/innodb/org/apache/calcite/adapter/innodb/InnodbProject",
     "calcite/innodb/org/apache/calcite/adapter/innodb",
-    2,
+    1,
     0
   ],
   [
@@ -34490,7 +34490,7 @@
   [
     "calcite/elasticsearch/org/apache/calcite/adapter/elasticsearch/QueryBuilders",
     "calcite/elasticsearch/org/apache/calcite/adapter/elasticsearch",
-    3,
+    4,
     0
   ],
   [
@@ -34532,7 +34532,7 @@
   [
     "calcite/elasticsearch/org/apache/calcite/adapter/elasticsearch/QueryBuilders/MatchesQueryBuilder",
     "calcite/elasticsearch/org/apache/calcite/adapter/elasticsearch/QueryBuilders",
-    1,
+    2,
     0
   ],
   [
@@ -34580,7 +34580,7 @@
   [
     "calcite/elasticsearch/org/apache/calcite/adapter/elasticsearch/PredicateAnalyzer",
     "calcite/elasticsearch/org/apache/calcite/adapter/elasticsearch",
-    1,
+    2,
     0
   ],
   [
@@ -34604,7 +34604,7 @@
   [
     "calcite/elasticsearch/org/apache/calcite/adapter/elasticsearch/ElasticsearchTable",
     "calcite/elasticsearch/org/apache/calcite/adapter/elasticsearch",
-    3,
+    4,
     0
   ],
   [
@@ -34796,7 +34796,7 @@
   [
     "calcite/elasticsearch/org/apache/calcite/adapter/elasticsearch/ElasticsearchTableScan",
     "calcite/elasticsearch/org/apache/calcite/adapter/elasticsearch",
-    1,
+    2,
     0
   ],
   [
@@ -34832,7 +34832,7 @@
   [
     "calcite/elasticsearch/org/apache/calcite/adapter/elasticsearch/ElasticsearchRules/RexToElasticsearchTranslator",
     "calcite/elasticsearch/org/apache/calcite/adapter/elasticsearch/ElasticsearchRules",
-    2,
+    1,
     0
   ],
   [
@@ -34964,7 +34964,7 @@
   [
     "calcite/elasticsearch/org/apache/calcite/adapter/elasticsearch/PredicateAnalyzer/CompoundQueryExpression",
     "calcite/elasticsearch/org/apache/calcite/adapter/elasticsearch/PredicateAnalyzer",
-    5,
+    6,
     0
   ],
   [
@@ -35006,7 +35006,7 @@
   [
     "calcite/elasticsearch/org/apache/calcite/adapter/elasticsearch/PredicateAnalyzer/Visitor",
     "calcite/elasticsearch/org/apache/calcite/adapter/elasticsearch/PredicateAnalyzer",
-    3,
+    4,
     0
   ],
   [

@@ -15,7 +15,7 @@ let pieChartArray = [
 ]
 let barChartArray = [
   ["Smell Name", "Count", { role: "style" } ],
-  ["Cyclic Dependency", 0, "#3366cc"],
+  ["Package Cyclic Dependency", 0, "#3366cc"],
   ["Unstable Dependency", 0, "#3366cc"],
   ["God Class", 0, "#dc3912"],
   ["Data Class", 0, "#dc3912"],
@@ -26,8 +26,9 @@ let barChartArray = [
   ["Hub Like Dependency", 0, "#dc3912"],
   ["Large Class", 0, "#dc3912"],
   ["Complex Class", 0, "#dc3912"],
-  ["Brain Method", 0, "#dc3912"],
-  ["Feature Envy", 0, "#ff9900"],
+  ["Class Cyclic Dependency", 0, "#dc3912"],
+  ["Feature Envy", 0, "#dc3912"],
+  ["Brain Method", 0, "#ff9900"],
   ["Long Parameter List", 0, "#ff9900"],
   ["Shotgun Surgery", 0, "#ff9900"],
   ["Long Method", 0, "#ff9900"]
@@ -82,27 +83,32 @@ for (row of smell_jsonObj){
     pieChartArray[2][1] += parseInt(row.Complex_Class);
     barChartArray[11][1] += parseInt(row.Complex_Class);
   };
+  if (row.Class_Cyclic_Dependency) {
+    pieChartArray[2][1] += parseInt(row.Class_Cyclic_Dependency);
+    barChartArray[12][1] += parseInt(row.Class_Cyclic_Dependency);
+  };
 
+  if (row.Feature_Envy) {
+    pieChartArray[2][1] += parseInt(row.Feature_Envy);
+    barChartArray[13][1] += parseInt(row.Feature_Envy);
+  };
   // sum method level smell
   if (row.Brain_Method) {
     pieChartArray[3][1] += parseInt(row.Brain_Method);
-    barChartArray[12][1] == parseInt(row.Brain_Method);
+    barChartArray[14][1] == parseInt(row.Brain_Method);
   };
-  if (row.Feature_Envy) {
-    pieChartArray[3][1] += parseInt(row.Feature_Envy);
-    barChartArray[13][1] += parseInt(row.Feature_Envy);
-  };
+
   if (row.Long_Parameter_List) {
     pieChartArray[3][1] += parseInt(row.Long_Parameter_List);
-    barChartArray[14][1] += parseInt(row.Long_Parameter_List);
+    barChartArray[15][1] += parseInt(row.Long_Parameter_List);
   };
   if (row.Shotgun_Surgery) {
     pieChartArray[3][1] += parseInt(row.Shotgun_Surgery);
-    barChartArray[15][1] += parseInt(row.Shotgun_Surgery);
+    barChartArray[16][1] += parseInt(row.Shotgun_Surgery);
   };
   if (row.Long_Method) {
     pieChartArray[3][1] += parseInt(row.Long_Method);
-    barChartArray[16][1] += parseInt(row.Long_Method);
+    barChartArray[17][1] += parseInt(row.Long_Method);
   };
 }
 
