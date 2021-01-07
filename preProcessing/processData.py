@@ -14,6 +14,13 @@ array_classlevel=[['child', 'Parent', 'size', 'color'],
 array_methodlevel=[['child', 'Parent', 'size', 'color'],
 [f'{proj_name}',None,0,0]]
 
+pieChartArray = [
+  ['Smell Name', 'Count'],
+  ['packageLevel', 0],
+  ['classLevel', 0],
+  ['methodLevel', 0]
+]
+
 
 index_dict_class = {}
 index_dict_method = {}
@@ -100,13 +107,8 @@ for folder in subfolders:
                             total_smell = 0 
                             for j in range(1,5):
                                 total_smell += int(row[j])
-
-                            if name_list[i] in index_dict_method:
-                                idx = array_methodlevel.index([name_list[i],name_list[i-1],0,0])
-                                array_methodlevel[idx] = [name_list[i],name_list[i-1],total_smell,0]
-                            else:
-                                array_methodlevel.append([name_list[i],name_list[i-1],total_smell,0])
-                                index_dict_method[name_list[i]]=1
+                            array_methodlevel.append([name_list[i],name_list[i-1],total_smell,0])
+                            pieChartArray[3][1] += total_smell
                         else:
                             if name_list[i] in index_dict_method:
                                 continue
@@ -117,7 +119,7 @@ for folder in subfolders:
 
 
 # Serializing json 
-
+json_object_piechartArray = json.dumps(pieChartArray, indent = 2) 
 json_object_class = json.dumps(array_classlevel, indent = 2) 
 json_object_method = json.dumps(array_methodlevel, indent = 2) 
   
@@ -127,3 +129,6 @@ with open("./detailedClass/data.json", "w") as outfile:
 
 with open("./detailedMethod/data.json", "w") as outfile: 
     outfile.write(json_object_method) 
+
+with open("./overview/data.json", "w") as outfile: 
+    outfile.write(json_object_piechartArray) 

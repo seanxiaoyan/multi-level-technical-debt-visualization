@@ -49,7 +49,7 @@ function detectSmell(){
                     }
                 });
                 console.log("start processing data")
-                let process_getDataArray = require('child_process').spawn('python3', ['./preProcessing/test.py',projName.toLowerCase()]);
+                let process_getDataArray = require('child_process').spawn('python3', ['./preProcessing/processData.py',projName.toLowerCase()]);
                 process_getDataArray.on('close',(code)=>{
                     console.log(`detailedClass exited with ${code}`);
                     ipc.send('get-smell-finished',"get-smell-done");
