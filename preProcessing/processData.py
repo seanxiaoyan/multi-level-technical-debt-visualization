@@ -22,9 +22,11 @@ pieChartArray = [
 ]
 
 
-index_dict_class = {}
+nonleaf_dict_class = {}
 index_dict_method = {}
-
+leaf_dict_class = {}
+self_dict = {}
+class_array_index = 1
 for folder in subfolders:
     smells_classes = os.path.join(folder,'smells-classes.csv')
     smells_methods = os.path.join(folder,'smells-methods.csv')
@@ -33,6 +35,7 @@ for folder in subfolders:
     if(os.path.exists(smells_classes)):
         folder_name = folder.split('/')[-1]
         array_classlevel.append([f'{proj_name}/{folder_name}',f'{proj_name}',0,0])
+        class_array_index+=1
         with open(smells_classes) as csv_file:
             csv_reader = csv.reader(csv_file, delimiter=',')
             line_count = 0
@@ -52,27 +55,42 @@ for folder in subfolders:
 
                     for i in range(len(name_list)):
                         if i == 0:
-                            if name_list[i] in index_dict_class:
-                                continue
+                            if name_list[i] in nonleaf_dict_class:
+                                continue # continue to avoid duplicate
                             array_classlevel.append([name_list[i],f'{proj_name}/{folder_name}',0,0])
-                            index_dict_class[name_list[i]]=1
+                            class_array_index+=1
+                            nonleaf_dict_class[name_list[i]]=class_array_index
                         elif i == len(name_list)-1:
 
                             total_smell = 0 
                             for j in range(1,12):
                                 total_smell += int(row[j])
 
-                            if name_list[i] in index_dict_class:
-                                idx = array_classlevel.index([name_list[i],name_list[i-1],0,0])
-                                array_classlevel[idx] = [name_list[i],name_list[i-1],total_smell,0]
+                            if name_list[i] in nonleaf_dict_class:
+                                newName = os.path.join(name_list[i],'-self')
+                                
+                                array_classlevel.append([newName,name_list[i],total_smell,0])
+                                class_array_index+=1
                             else:
                                 array_classlevel.append([name_list[i],name_list[i-1],total_smell,0])
-                                index_dict_class[name_list[i]]=1
+                                class_array_index+=1
+                                leaf_dict_class[name_list[i]]=class_array_index
                         else:
-                            if name_list[i] in index_dict_class:
-                                continue
+                            if name_list[i] in nonleaf_dict_class:
+                                continue # continue to avoid duplicate
+                            if name_list[i] in leaf_dict_class:
+                                #check if self has alrady created
+                                if name_list[i] not in self_dict:
+                                    idx = leaf_dict_class[name_list[i]]
+                                    newName = array_classlevel[idx][0]+'-self'
+                                    count = array_classlevel[idx][2]
+                                    array_classlevel.append([newName,name_list[i],count,0])
+                                    class_array_index+=1
+                                    self_dict[name_list[i]]=1
+                                continue # continue to avoid duplicate
                             array_classlevel.append([name_list[i],name_list[i-1],0,0])
-                            index_dict_class[name_list[i]]=1
+                            class_array_index+=1
+                            nonleaf_dict_class[name_list[i]]=class_array_index
                     line_count += 1
 
     # process csv data for method-level-smell visualizaiton
