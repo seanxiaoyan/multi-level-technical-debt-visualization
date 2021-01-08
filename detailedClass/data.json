@@ -332,7 +332,7 @@
   [
     "core/src/org/apache/calcite/adapter/java/ReflectiveSchema",
     "core/src/org/apache/calcite/adapter/java",
-    5,
+    4,
     0
   ],
   [
@@ -350,13 +350,13 @@
   [
     "core/src/org/apache/calcite/test/JdbcTest",
     "core/src/org/apache/calcite/test",
-    3,
+    2,
     0
   ],
   [
     "core/src/org/apache/calcite/test/JdbcTest-self",
     "core/src/org/apache/calcite/test/JdbcTest",
-    3,
+    2,
     0
   ],
   [
@@ -392,7 +392,7 @@
   [
     "core/src/org/apache/calcite/sql/SqlSetOptionOperatorTest",
     "core/src/org/apache/calcite/sql",
-    1,
+    0,
     0
   ],
   [
@@ -632,7 +632,7 @@
   [
     "core/src/org/apache/calcite/sql/validate/AggregatingSelectScope",
     "core/src/org/apache/calcite/sql/validate",
-    2,
+    3,
     0
   ],
   [
@@ -728,7 +728,7 @@
   [
     "core/src/org/apache/calcite/plan/RelOptUtil",
     "core/src/org/apache/calcite/plan",
-    7,
+    6,
     0
   ],
   [
@@ -1136,7 +1136,7 @@
   [
     "core/src/org/apache/calcite/plan/volcano/RelSubset",
     "core/src/org/apache/calcite/plan/volcano",
-    3,
+    4,
     0
   ],
   [
@@ -1268,7 +1268,7 @@
   [
     "core/src/org/apache/calcite/materialize/Lattice",
     "core/src/org/apache/calcite/materialize",
-    7,
+    6,
     0
   ],
   [
@@ -1316,7 +1316,7 @@
   [
     "core/src/org/apache/calcite/adapter/enumerable/EnumerableRules",
     "core/src/org/apache/calcite/adapter/enumerable",
-    3,
+    2,
     0
   ],
   [
@@ -1388,7 +1388,7 @@
   [
     "core/src/org/apache/calcite/rel/core/RelFactories",
     "core/src/org/apache/calcite/rel/core",
-    3,
+    2,
     0
   ],
   [
@@ -1400,7 +1400,7 @@
   [
     "core/src/org/apache/calcite/rex/RexUtil",
     "core/src/org/apache/calcite/rex",
-    4,
+    5,
     0
   ],
   [
@@ -1502,7 +1502,7 @@
   [
     "core/src/org/apache/calcite/runtime/Resources-self",
     "core/src/org/apache/calcite/runtime/Resources",
-    2,
+    3,
     0
   ],
   [
@@ -1634,7 +1634,7 @@
   [
     "core/src/org/apache/calcite/adapter/jdbc/JdbcConvention",
     "core/src/org/apache/calcite/adapter/jdbc",
-    2,
+    1,
     0
   ],
   [
@@ -1670,7 +1670,7 @@
   [
     "core/src/org/apache/calcite/model/ModelHandler",
     "core/src/org/apache/calcite/model",
-    5,
+    6,
     0
   ],
   [
@@ -1754,7 +1754,7 @@
   [
     "core/src/org/apache/calcite/adapter/enumerable/RexImpTable",
     "core/src/org/apache/calcite/adapter/enumerable",
-    5,
+    4,
     0
   ],
   [
@@ -1850,19 +1850,19 @@
   [
     "core/src/org/apache/calcite/rel/rel2sql/SqlImplementor",
     "core/src/org/apache/calcite/rel/rel2sql",
-    6,
+    5,
     0
   ],
   [
     "core/src/org/apache/calcite/rel/rel2sql/SqlImplementor-self",
     "core/src/org/apache/calcite/rel/rel2sql/SqlImplementor",
-    6,
+    5,
     0
   ],
   [
     "core/src/org/apache/calcite/rel/rel2sql/SqlImplementor/Result",
     "core/src/org/apache/calcite/rel/rel2sql/SqlImplementor",
-    3,
+    4,
     0
   ],
   [
@@ -2114,13 +2114,13 @@
   [
     "core/src/org/apache/calcite/jdbc/CalciteSchema",
     "core/src/org/apache/calcite/jdbc",
-    4,
+    3,
     0
   ],
   [
     "core/src/org/apache/calcite/plan/RelOptCostImpl",
     "core/src/org/apache/calcite/plan",
-    2,
+    3,
     0
   ],
   [
@@ -2198,7 +2198,7 @@
   [
     "core/src/org/apache/calcite/materialize/Lattice-self",
     "core/src/org/apache/calcite/materialize/Lattice",
-    7,
+    6,
     0
   ],
   [
@@ -2288,7 +2288,7 @@
   [
     "core/src/org/apache/calcite/plan/RelOptUtil-self",
     "core/src/org/apache/calcite/plan/RelOptUtil",
-    7,
+    6,
     0
   ],
   [
@@ -2336,7 +2336,7 @@
   [
     "core/src/org/apache/calcite/jdbc/CalciteSchema-self",
     "core/src/org/apache/calcite/jdbc/CalciteSchema",
-    4,
+    3,
     0
   ],
   [
@@ -2366,13 +2366,13 @@
   [
     "core/src/org/apache/calcite/sql2rel/SqlToRelConverter",
     "core/src/org/apache/calcite/sql2rel",
-    6,
+    7,
     0
   ],
   [
     "core/src/org/apache/calcite/sql2rel/SqlToRelConverter-self",
     "core/src/org/apache/calcite/sql2rel/SqlToRelConverter",
-    6,
+    7,
     0
   ],
   [
@@ -2390,13 +2390,13 @@
   [
     "core/src/org/apache/calcite/sql2rel/SqlToRelConverter/Blackboard",
     "core/src/org/apache/calcite/sql2rel/SqlToRelConverter",
-    4,
+    5,
     0
   ],
   [
     "core/src/org/apache/calcite/sql2rel/SqlToRelConverter/ConfigBuilder",
     "core/src/org/apache/calcite/sql2rel/SqlToRelConverter",
-    1,
+    2,
     0
   ],
   [
@@ -2420,7 +2420,7 @@
   [
     "core/src/org/apache/calcite/sql2rel/SqlToRelConverter/LookupContext",
     "core/src/org/apache/calcite/sql2rel/SqlToRelConverter",
-    0,
+    1,
     0
   ],
   [
@@ -2642,7 +2642,7 @@
   [
     "core/src/org/apache/calcite/sql/SqlSampleSpec",
     "core/src/org/apache/calcite/sql",
-    2,
+    3,
     0
   ],
   [
@@ -2654,7 +2654,7 @@
   [
     "core/src/org/apache/calcite/sql/SqlSnapshot",
     "core/src/org/apache/calcite/sql",
-    1,
+    2,
     0
   ],
   [
@@ -2684,7 +2684,7 @@
   [
     "core/src/org/apache/calcite/sql/SqlWithItem",
     "core/src/org/apache/calcite/sql",
-    2,
+    3,
     0
   ],
   [
@@ -2738,7 +2738,7 @@
   [
     "core/src/org/apache/calcite/sql/validate/MatchRecognizeScope",
     "core/src/org/apache/calcite/sql/validate",
-    3,
+    2,
     0
   ],
   [
@@ -2810,19 +2810,19 @@
   [
     "core/src/org/apache/calcite/sql/SqlSampleSpec-self",
     "core/src/org/apache/calcite/sql/SqlSampleSpec",
-    2,
+    3,
     0
   ],
   [
     "core/src/org/apache/calcite/sql/SqlSampleSpec/SqlTableSampleSpec",
     "core/src/org/apache/calcite/sql/SqlSampleSpec",
-    2,
+    3,
     0
   ],
   [
     "core/src/org/apache/calcite/sql/validate/AggregatingSelectScope-self",
     "core/src/org/apache/calcite/sql/validate/AggregatingSelectScope",
-    2,
+    3,
     0
   ],
   [
@@ -2834,7 +2834,7 @@
   [
     "core/src/org/apache/calcite/sql2rel/RelStructuredTypeFlattener",
     "core/src/org/apache/calcite/sql2rel",
-    5,
+    6,
     0
   ],
   [
@@ -2870,7 +2870,7 @@
   [
     "core/src/org/apache/calcite/sql2rel/DeduplicateCorrelateVariables",
     "core/src/org/apache/calcite/sql2rel",
-    0,
+    1,
     0
   ],
   [
@@ -2882,7 +2882,7 @@
   [
     "core/src/org/apache/calcite/sql2rel/StandardConvertletTable",
     "core/src/org/apache/calcite/sql2rel",
-    6,
+    5,
     0
   ],
   [
@@ -3764,13 +3764,13 @@
   [
     "core/src/org/apache/calcite/sql2rel/DeduplicateCorrelateVariables-self",
     "core/src/org/apache/calcite/sql2rel/DeduplicateCorrelateVariables",
-    0,
+    1,
     0
   ],
   [
     "core/src/org/apache/calcite/sql2rel/DeduplicateCorrelateVariables/DeduplicateCorrelateVariablesShuttle",
     "core/src/org/apache/calcite/sql2rel/DeduplicateCorrelateVariables",
-    0,
+    1,
     0
   ],
   [
@@ -3938,7 +3938,7 @@
   [
     "core/src/org/apache/calcite/test/HierarchySchema",
     "core/src/org/apache/calcite/test",
-    1,
+    2,
     0
   ],
   [
@@ -4046,13 +4046,13 @@
   [
     "core/src/org/apache/calcite/test/SqlTestGen/SqlValidatorSpooler",
     "core/src/org/apache/calcite/test/SqlTestGen",
-    0,
+    1,
     0
   ],
   [
     "core/src/org/apache/calcite/test/SqlTestGen/SqlValidatorSpooler-self",
     "core/src/org/apache/calcite/test/SqlTestGen/SqlValidatorSpooler",
-    0,
+    1,
     0
   ],
   [
@@ -4088,7 +4088,7 @@
   [
     "core/src/org/apache/calcite/test/SqlValidatorTest",
     "core/src/org/apache/calcite/test",
-    4,
+    5,
     0
   ],
   [
@@ -4544,7 +4544,7 @@
   [
     "core/src/org/apache/calcite/sql2rel/StandardConvertletTable-self",
     "core/src/org/apache/calcite/sql2rel/StandardConvertletTable",
-    6,
+    5,
     0
   ],
   [
@@ -4574,7 +4574,7 @@
   [
     "core/src/org/apache/calcite/sql2rel/StandardConvertletTable/TimestampAddConvertlet",
     "core/src/org/apache/calcite/sql2rel/StandardConvertletTable",
-    1,
+    0,
     0
   ],
   [
@@ -4700,7 +4700,7 @@
   [
     "core/src/org/apache/calcite/sql/util/ReflectiveSqlOperatorTable",
     "core/src/org/apache/calcite/sql/util",
-    5,
+    6,
     0
   ],
   [
@@ -4886,7 +4886,7 @@
   [
     "core/src/org/apache/calcite/adapter/enumerable/EnumerableTableScan",
     "core/src/org/apache/calcite/adapter/enumerable",
-    5,
+    4,
     0
   ],
   [
@@ -4916,7 +4916,7 @@
   [
     "core/src/org/apache/calcite/rel/rules/materialize/MaterializedViewJoinRule",
     "core/src/org/apache/calcite/rel/rules/materialize",
-    3,
+    2,
     0
   ],
   [
@@ -5048,7 +5048,7 @@
   [
     "core/src/org/apache/calcite/rex/RexSimplify",
     "core/src/org/apache/calcite/rex",
-    4,
+    5,
     0
   ],
   [
@@ -5150,7 +5150,7 @@
   [
     "core/src/org/apache/calcite/rel/rules/CalcRelSplitter/RelType",
     "core/src/org/apache/calcite/rel/rules/CalcRelSplitter",
-    2,
+    1,
     0
   ],
   [
@@ -5168,13 +5168,13 @@
   [
     "core/src/org/apache/calcite/rel/rules/materialize/MaterializedViewAggregateRule",
     "core/src/org/apache/calcite/rel/rules/materialize",
-    3,
+    4,
     0
   ],
   [
     "core/src/org/apache/calcite/rel/rules/materialize/MaterializedViewAggregateRule-self",
     "core/src/org/apache/calcite/rel/rules/materialize/MaterializedViewAggregateRule",
-    3,
+    4,
     0
   ],
   [
@@ -5450,7 +5450,7 @@
   [
     "core/src/org/apache/calcite/sql/validate/AliasNamespace",
     "core/src/org/apache/calcite/sql/validate",
-    2,
+    3,
     0
   ],
   [
@@ -5486,7 +5486,7 @@
   [
     "core/src/org/apache/calcite/util/Sources",
     "core/src/org/apache/calcite/util",
-    2,
+    3,
     0
   ],
   [
@@ -5564,13 +5564,13 @@
   [
     "core/src/org/apache/calcite/util/PrecedenceClimbingParser",
     "core/src/org/apache/calcite/util",
-    5,
+    6,
     0
   ],
   [
     "core/src/org/apache/calcite/util/PrecedenceClimbingParser-self",
     "core/src/org/apache/calcite/util/PrecedenceClimbingParser",
-    5,
+    6,
     0
   ],
   [
@@ -5702,19 +5702,19 @@
   [
     "core/src/org/apache/calcite/rex/RexMultisetUtil",
     "core/src/org/apache/calcite/rex",
-    2,
+    3,
     0
   ],
   [
     "core/src/org/apache/calcite/rex/RexMultisetUtil-self",
     "core/src/org/apache/calcite/rex/RexMultisetUtil",
-    2,
+    3,
     0
   ],
   [
     "core/src/org/apache/calcite/rex/RexMultisetUtil/RexCallMultisetOperatorCounter",
     "core/src/org/apache/calcite/rex/RexMultisetUtil",
-    0,
+    1,
     0
   ],
   [
@@ -5870,7 +5870,7 @@
   [
     "core/src/org/apache/calcite/sql2rel/RelDecorrelator/AdjustProjectForCountAggregateRule",
     "core/src/org/apache/calcite/sql2rel/RelDecorrelator",
-    1,
+    2,
     0
   ],
   [
@@ -5912,7 +5912,7 @@
   [
     "core/src/org/apache/calcite/sql2rel/RelDecorrelator/RemoveCorrelationForScalarAggregateRule",
     "core/src/org/apache/calcite/sql2rel/RelDecorrelator",
-    3,
+    2,
     0
   ],
   [
@@ -5978,7 +5978,7 @@
   [
     "core/src/org/apache/calcite/rex/RexUtil-self",
     "core/src/org/apache/calcite/rex/RexUtil",
-    4,
+    5,
     0
   ],
   [
@@ -6134,7 +6134,7 @@
   [
     "core/src/org/apache/calcite/rel/metadata/RelMdCollation",
     "core/src/org/apache/calcite/rel/metadata",
-    4,
+    3,
     0
   ],
   [
@@ -6170,19 +6170,19 @@
   [
     "core/src/org/apache/calcite/sql/parser/SqlParserTest/Checker",
     "core/src/org/apache/calcite/sql/parser/SqlParserTest",
-    0,
+    1,
     0
   ],
   [
     "core/src/org/apache/calcite/sql/parser/SqlParserTest/Sql",
     "core/src/org/apache/calcite/sql/parser/SqlParserTest",
-    1,
+    2,
     0
   ],
   [
     "core/src/org/apache/calcite/sql/parser/SqlParserTest/SqlList",
     "core/src/org/apache/calcite/sql/parser/SqlParserTest",
-    1,
+    0,
     0
   ],
   [
@@ -6194,13 +6194,13 @@
   [
     "core/src/org/apache/calcite/sql/parser/SqlParserTest/UnparsingTesterImpl",
     "core/src/org/apache/calcite/sql/parser/SqlParserTest",
-    4,
+    3,
     0
   ],
   [
     "core/src/org/apache/calcite/sql/parser/SqlParserTest/UnparsingTesterImpl-self",
     "core/src/org/apache/calcite/sql/parser/SqlParserTest/UnparsingTesterImpl",
-    4,
+    3,
     0
   ],
   [
@@ -6236,7 +6236,7 @@
   [
     "core/src/org/apache/calcite/sql/pretty/SqlPrettyWriter",
     "core/src/org/apache/calcite/sql/pretty",
-    5,
+    6,
     0
   ],
   [
@@ -6248,7 +6248,7 @@
   [
     "core/src/org/apache/calcite/tools/Hoist",
     "core/src/org/apache/calcite/tools",
-    1,
+    2,
     0
   ],
   [
@@ -6266,13 +6266,13 @@
   [
     "core/src/org/apache/calcite/tools/Hoist-self",
     "core/src/org/apache/calcite/tools/Hoist",
-    1,
+    2,
     0
   ],
   [
     "core/src/org/apache/calcite/tools/Hoist/Hoisted",
     "core/src/org/apache/calcite/tools/Hoist",
-    0,
+    1,
     0
   ],
   [
@@ -6320,7 +6320,7 @@
   [
     "core/src/org/apache/calcite/adapter/enumerable/EnumerableTableScanRule",
     "core/src/org/apache/calcite/adapter/enumerable",
-    1,
+    0,
     0
   ],
   [
@@ -6512,13 +6512,13 @@
   [
     "core/src/org/apache/calcite/plan/volcano/TopDownRuleDriver/EnsureGroupExplored",
     "core/src/org/apache/calcite/plan/volcano/TopDownRuleDriver",
-    0,
+    1,
     0
   ],
   [
     "core/src/org/apache/calcite/plan/volcano/TopDownRuleDriver/ExploreInput",
     "core/src/org/apache/calcite/plan/volcano/TopDownRuleDriver",
-    0,
+    1,
     0
   ],
   [
@@ -6536,13 +6536,13 @@
   [
     "core/src/org/apache/calcite/plan/volcano/TopDownRuleDriver/OptimizeInput1",
     "core/src/org/apache/calcite/plan/volcano/TopDownRuleDriver",
-    0,
+    1,
     0
   ],
   [
     "core/src/org/apache/calcite/plan/volcano/TopDownRuleDriver/OptimizeInputs",
     "core/src/org/apache/calcite/plan/volcano/TopDownRuleDriver",
-    2,
+    1,
     0
   ],
   [
@@ -6668,7 +6668,7 @@
   [
     "core/src/org/apache/calcite/sql/validate/AggFinder",
     "core/src/org/apache/calcite/sql/validate",
-    1,
+    2,
     0
   ],
   [
@@ -6770,13 +6770,13 @@
   [
     "core/src/org/apache/calcite/rex/RexProgramTestBase",
     "core/src/org/apache/calcite/rex",
-    3,
+    2,
     0
   ],
   [
     "core/src/org/apache/calcite/rex/RexProgramTestBase-self",
     "core/src/org/apache/calcite/rex/RexProgramTestBase",
-    3,
+    2,
     0
   ],
   [
@@ -6884,13 +6884,13 @@
   [
     "core/src/org/apache/calcite/test/ModelTest",
     "core/src/org/apache/calcite/test",
-    2,
+    3,
     0
   ],
   [
     "core/src/org/apache/calcite/model/JsonColumn",
     "core/src/org/apache/calcite/model",
-    1,
+    2,
     0
   ],
   [
@@ -6932,7 +6932,7 @@
   [
     "core/src/org/apache/calcite/model/JsonTable",
     "core/src/org/apache/calcite/model",
-    0,
+    1,
     0
   ],
   [
@@ -7040,7 +7040,7 @@
   [
     "core/src/org/apache/calcite/util/PrecedenceClimbingParser/TokenList",
     "core/src/org/apache/calcite/util/PrecedenceClimbingParser",
-    1,
+    2,
     0
   ],
   [
@@ -7112,13 +7112,13 @@
   [
     "core/src/org/apache/calcite/adapter/jdbc/JdbcTableScan",
     "core/src/org/apache/calcite/adapter/jdbc",
-    1,
+    0,
     0
   ],
   [
     "core/src/org/apache/calcite/adapter/jdbc/JdbcTable",
     "core/src/org/apache/calcite/adapter/jdbc",
-    5,
+    4,
     0
   ],
   [
@@ -7154,7 +7154,7 @@
   [
     "core/src/org/apache/calcite/rel/rules/CalcRelSplitter/ImplementTester",
     "core/src/org/apache/calcite/rel/rules/CalcRelSplitter",
-    2,
+    1,
     0
   ],
   [
@@ -7544,13 +7544,13 @@
   [
     "core/src/org/apache/calcite/test/RelOptRulesTest",
     "core/src/org/apache/calcite/test",
-    4,
+    3,
     0
   ],
   [
     "core/src/org/apache/calcite/test/RelOptRulesTest-self",
     "core/src/org/apache/calcite/test/RelOptRulesTest",
-    4,
+    3,
     0
   ],
   [
@@ -7646,13 +7646,13 @@
   [
     "core/src/org/apache/calcite/rel/rules/ReduceExpressionsRule",
     "core/src/org/apache/calcite/rel/rules",
-    2,
+    3,
     0
   ],
   [
     "core/src/org/apache/calcite/rel/rules/ReduceExpressionsRule-self",
     "core/src/org/apache/calcite/rel/rules/ReduceExpressionsRule",
-    2,
+    3,
     0
   ],
   [
@@ -7760,7 +7760,7 @@
   [
     "core/src/org/apache/calcite/runtime/Geometries",
     "core/src/org/apache/calcite/runtime",
-    1,
+    2,
     0
   ],
   [
@@ -8786,13 +8786,13 @@
   [
     "core/src/org/apache/calcite/materialize/TileSuggester",
     "core/src/org/apache/calcite/materialize",
-    2,
+    1,
     0
   ],
   [
     "core/src/org/apache/calcite/materialize/TileSuggester-self",
     "core/src/org/apache/calcite/materialize/TileSuggester",
-    2,
+    1,
     0
   ],
   [
@@ -8852,7 +8852,7 @@
   [
     "core/src/org/apache/calcite/adapter/clone/ArrayTableTest",
     "core/src/org/apache/calcite/adapter/clone",
-    2,
+    1,
     0
   ],
   [
@@ -9026,7 +9026,7 @@
   [
     "core/src/org/apache/calcite/rex/RexSimplify-self",
     "core/src/org/apache/calcite/rex/RexSimplify",
-    4,
+    5,
     0
   ],
   [
@@ -9212,7 +9212,7 @@
   [
     "core/src/org/apache/calcite/sql/type/SqlTypeCoercionRule",
     "core/src/org/apache/calcite/sql/type",
-    5,
+    6,
     0
   ],
   [
@@ -9230,13 +9230,13 @@
   [
     "core/src/org/apache/calcite/test/HepPlannerTest",
     "core/src/org/apache/calcite/test",
-    3,
+    2,
     0
   ],
   [
     "core/src/org/apache/calcite/test/HepPlannerTest-self",
     "core/src/org/apache/calcite/test/HepPlannerTest",
-    3,
+    2,
     0
   ],
   [
@@ -9302,7 +9302,7 @@
   [
     "core/src/org/apache/calcite/rel/rules/LoptJoinTree",
     "core/src/org/apache/calcite/rel/rules",
-    4,
+    5,
     0
   ],
   [
@@ -9374,7 +9374,7 @@
   [
     "core/src/org/apache/calcite/adapter/java/ReflectiveSchema-self",
     "core/src/org/apache/calcite/adapter/java/ReflectiveSchema",
-    5,
+    4,
     0
   ],
   [
@@ -9410,7 +9410,7 @@
   [
     "core/src/org/apache/calcite/adapter/java/ReflectiveSchema/MethodTableMacro",
     "core/src/org/apache/calcite/adapter/java/ReflectiveSchema",
-    1,
+    0,
     0
   ],
   [
@@ -9920,19 +9920,19 @@
   [
     "core/src/org/apache/calcite/adapter/enumerable/EnumerableInterpretable",
     "core/src/org/apache/calcite/adapter/enumerable",
-    2,
+    3,
     0
   ],
   [
     "core/src/org/apache/calcite/adapter/enumerable/EnumerableInterpretable-self",
     "core/src/org/apache/calcite/adapter/enumerable/EnumerableInterpretable",
-    2,
+    3,
     0
   ],
   [
     "core/src/org/apache/calcite/adapter/enumerable/EnumerableInterpretable/EnumerableNode",
     "core/src/org/apache/calcite/adapter/enumerable/EnumerableInterpretable",
-    0,
+    1,
     0
   ],
   [
@@ -10196,7 +10196,7 @@
   [
     "core/src/org/apache/calcite/rel/rel2sql/SqlImplementor/Builder",
     "core/src/org/apache/calcite/rel/rel2sql/SqlImplementor",
-    1,
+    2,
     0
   ],
   [
@@ -10250,7 +10250,7 @@
   [
     "core/src/org/apache/calcite/rel/rel2sql/SqlImplementor/MatchRecognizeContext",
     "core/src/org/apache/calcite/rel/rel2sql/SqlImplementor",
-    1,
+    0,
     0
   ],
   [
@@ -10316,7 +10316,7 @@
   [
     "core/src/org/apache/calcite/rel/metadata/CachingRelMetadataProvider",
     "core/src/org/apache/calcite/rel/metadata",
-    2,
+    1,
     0
   ],
   [
@@ -11150,7 +11150,7 @@
   [
     "core/src/org/apache/calcite/test/MutableRelTest",
     "core/src/org/apache/calcite/test",
-    1,
+    2,
     0
   ],
   [
@@ -11180,7 +11180,7 @@
   [
     "core/src/org/apache/calcite/rel/rules/materialize/MaterializedViewProjectJoinRule",
     "core/src/org/apache/calcite/rel/rules/materialize",
-    1,
+    0,
     0
   ],
   [
@@ -11420,7 +11420,7 @@
   [
     "core/src/org/apache/calcite/sql/type/SqlTypeMappingRules",
     "core/src/org/apache/calcite/sql/type",
-    0,
+    1,
     0
   ],
   [
@@ -11438,13 +11438,13 @@
   [
     "core/src/org/apache/calcite/jdbc/CalciteConnectionImpl",
     "core/src/org/apache/calcite/jdbc",
-    3,
+    4,
     0
   ],
   [
     "core/src/org/apache/calcite/jdbc/CalciteConnectionImpl-self",
     "core/src/org/apache/calcite/jdbc/CalciteConnectionImpl",
-    3,
+    4,
     0
   ],
   [
@@ -11468,7 +11468,7 @@
   [
     "core/src/org/apache/calcite/jdbc/CalciteConnectionImpl/CalciteServerImpl",
     "core/src/org/apache/calcite/jdbc/CalciteConnectionImpl",
-    1,
+    2,
     0
   ],
   [
@@ -11720,7 +11720,7 @@
   [
     "core/src/org/apache/calcite/test/ReflectiveSchemaTest/CatchallSchema",
     "core/src/org/apache/calcite/test/ReflectiveSchemaTest",
-    0,
+    1,
     0
   ],
   [
@@ -11768,7 +11768,7 @@
   [
     "core/src/org/apache/calcite/adapter/enumerable/RexImpTable-self",
     "core/src/org/apache/calcite/adapter/enumerable/RexImpTable",
-    5,
+    4,
     0
   ],
   [
@@ -12206,7 +12206,7 @@
   [
     "core/src/org/apache/calcite/rel/metadata/RelMdCollation-self",
     "core/src/org/apache/calcite/rel/metadata/RelMdCollation",
-    4,
+    3,
     0
   ],
   [
@@ -12236,7 +12236,7 @@
   [
     "core/src/org/apache/calcite/adapter/enumerable/EnumerableNestedLoopJoin",
     "core/src/org/apache/calcite/adapter/enumerable",
-    4,
+    3,
     0
   ],
   [
@@ -12656,13 +12656,13 @@
   [
     "core/src/org/apache/calcite/util/Sources-self",
     "core/src/org/apache/calcite/util/Sources",
-    2,
+    3,
     0
   ],
   [
     "core/src/org/apache/calcite/util/Sources/FileSource",
     "core/src/org/apache/calcite/util/Sources",
-    2,
+    3,
     0
   ],
   [
@@ -12698,7 +12698,7 @@
   [
     "core/src/org/apache/calcite/runtime/Pattern/SymbolPattern",
     "core/src/org/apache/calcite/runtime/Pattern",
-    1,
+    0,
     0
   ],
   [
@@ -12806,13 +12806,13 @@
   [
     "core/src/org/apache/calcite/test/SqlToRelConverterTest",
     "core/src/org/apache/calcite/test",
-    3,
+    4,
     0
   ],
   [
     "core/src/org/apache/calcite/test/SqlToRelConverterTest-self",
     "core/src/org/apache/calcite/test/SqlToRelConverterTest",
-    3,
+    4,
     0
   ],
   [
@@ -12908,7 +12908,7 @@
   [
     "core/src/org/apache/calcite/test/MaterializedViewSubstitutionVisitorTest",
     "core/src/org/apache/calcite/test",
-    5,
+    4,
     0
   ],
   [
@@ -13544,13 +13544,13 @@
   [
     "core/src/org/apache/calcite/runtime/Geometries-self",
     "core/src/org/apache/calcite/runtime/Geometries",
-    1,
+    2,
     0
   ],
   [
     "core/src/org/apache/calcite/runtime/Geometries/SimpleGeom",
     "core/src/org/apache/calcite/runtime/Geometries",
-    1,
+    2,
     0
   ],
   [
@@ -13736,7 +13736,7 @@
   [
     "core/src/org/apache/calcite/interpreter/Interpreter",
     "core/src/org/apache/calcite/interpreter",
-    3,
+    4,
     0
   ],
   [
@@ -14000,13 +14000,13 @@
   [
     "core/src/org/apache/calcite/rel/core/RelFactories-self",
     "core/src/org/apache/calcite/rel/core/RelFactories",
-    3,
+    2,
     0
   ],
   [
     "core/src/org/apache/calcite/rel/core/RelFactories/Struct",
     "core/src/org/apache/calcite/rel/core/RelFactories",
-    1,
+    0,
     0
   ],
   [
@@ -14078,7 +14078,7 @@
   [
     "core/src/org/apache/calcite/test/concurrent/ConcurrentTestCommandScript/PrepareCommand",
     "core/src/org/apache/calcite/test/concurrent/ConcurrentTestCommandScript",
-    0,
+    1,
     0
   ],
   [
@@ -14420,13 +14420,13 @@
   [
     "core/src/org/apache/calcite/rel/rules/materialize/MaterializedViewOnlyAggregateRule",
     "core/src/org/apache/calcite/rel/rules/materialize",
-    1,
+    2,
     0
   ],
   [
     "core/src/org/apache/calcite/plan/RelWriterTest",
     "core/src/org/apache/calcite/plan",
-    1,
+    2,
     0
   ],
   [
@@ -14444,7 +14444,7 @@
   [
     "core/src/org/apache/calcite/rex/RexSqlStandardConvertletTable",
     "core/src/org/apache/calcite/rex",
-    2,
+    3,
     0
   ],
   [
@@ -14714,7 +14714,7 @@
   [
     "core/src/org/apache/calcite/plan/volcano/VolcanoCost",
     "core/src/org/apache/calcite/plan/volcano",
-    2,
+    3,
     0
   ],
   [
@@ -15110,7 +15110,7 @@
   [
     "core/src/org/apache/calcite/plan/SubstitutionVisitor/AbstractUnifyRule",
     "core/src/org/apache/calcite/plan/SubstitutionVisitor",
-    4,
+    3,
     0
   ],
   [
@@ -15122,7 +15122,7 @@
   [
     "core/src/org/apache/calcite/plan/SubstitutionVisitor/AggregateToAggregateUnifyRule",
     "core/src/org/apache/calcite/plan/SubstitutionVisitor",
-    1,
+    0,
     0
   ],
   [
@@ -15146,7 +15146,7 @@
   [
     "core/src/org/apache/calcite/plan/SubstitutionVisitor/IntersectOnCalcsToIntersectUnifyRule",
     "core/src/org/apache/calcite/plan/SubstitutionVisitor",
-    0,
+    1,
     0
   ],
   [
@@ -15188,7 +15188,7 @@
   [
     "core/src/org/apache/calcite/plan/SubstitutionVisitor/QueryOperand",
     "core/src/org/apache/calcite/plan/SubstitutionVisitor",
-    1,
+    0,
     0
   ],
   [
@@ -15692,7 +15692,7 @@
   [
     "core/src/org/apache/calcite/sql/parser/SqlUnParserTest",
     "core/src/org/apache/calcite/sql/parser",
-    0,
+    1,
     0
   ],
   [
@@ -15704,13 +15704,13 @@
   [
     "core/src/org/apache/calcite/rel/rules/LoptSemiJoinOptimizer",
     "core/src/org/apache/calcite/rel/rules",
-    4,
+    5,
     0
   ],
   [
     "core/src/org/apache/calcite/rel/rules/LoptJoinTree-self",
     "core/src/org/apache/calcite/rel/rules/LoptJoinTree",
-    4,
+    5,
     0
   ],
   [
@@ -16088,7 +16088,7 @@
   [
     "core/src/org/apache/calcite/runtime/Resources/Inst",
     "core/src/org/apache/calcite/runtime/Resources",
-    5,
+    6,
     0
   ],
   [
@@ -16442,7 +16442,7 @@
   [
     "core/src/org/apache/calcite/sql/type/SqlTypeMappingRules-self",
     "core/src/org/apache/calcite/sql/type/SqlTypeMappingRules",
-    0,
+    1,
     0
   ],
   [
@@ -16868,7 +16868,7 @@
   [
     "core/src/org/apache/calcite/sql2rel/RelStructuredTypeFlattener-self",
     "core/src/org/apache/calcite/sql2rel/RelStructuredTypeFlattener",
-    5,
+    6,
     0
   ],
   [
@@ -16880,7 +16880,7 @@
   [
     "core/src/org/apache/calcite/sql2rel/RelStructuredTypeFlattener/RewriteRexShuttle",
     "core/src/org/apache/calcite/sql2rel/RelStructuredTypeFlattener",
-    2,
+    3,
     0
   ],
   [
@@ -17132,13 +17132,13 @@
   [
     "core/src/org/apache/calcite/test/InterpreterTest/MyDataContext",
     "core/src/org/apache/calcite/test/InterpreterTest",
-    2,
+    1,
     0
   ],
   [
     "core/src/org/apache/calcite/test/InterpreterTest/Sql",
     "core/src/org/apache/calcite/test/InterpreterTest",
-    0,
+    1,
     0
   ],
   [
@@ -17198,7 +17198,7 @@
   [
     "core/src/org/apache/calcite/plan/volcano/TraitPropagationTest/PhysProj",
     "core/src/org/apache/calcite/plan/volcano/TraitPropagationTest",
-    2,
+    1,
     0
   ],
   [
@@ -17336,7 +17336,7 @@
   [
     "core/src/org/apache/calcite/rel/rules/DateRangeRules/FilterDateRangeRule",
     "core/src/org/apache/calcite/rel/rules/DateRangeRules",
-    1,
+    0,
     0
   ],
   [
@@ -17366,13 +17366,13 @@
   [
     "core/src/org/apache/calcite/jdbc/CalciteRemoteDriverTest",
     "core/src/org/apache/calcite/jdbc",
-    6,
+    5,
     0
   ],
   [
     "core/src/org/apache/calcite/jdbc/CalciteRemoteDriverTest-self",
     "core/src/org/apache/calcite/jdbc/CalciteRemoteDriverTest",
-    6,
+    5,
     0
   ],
   [
@@ -17438,7 +17438,7 @@
   [
     "core/src/org/apache/calcite/test/HierarchySchema-self",
     "core/src/org/apache/calcite/test/HierarchySchema",
-    1,
+    2,
     0
   ],
   [
@@ -17450,7 +17450,7 @@
   [
     "core/src/org/apache/calcite/rel/metadata/CachingRelMetadataProvider-self",
     "core/src/org/apache/calcite/rel/metadata/CachingRelMetadataProvider",
-    2,
+    1,
     0
   ],
   [
@@ -17462,7 +17462,7 @@
   [
     "core/src/org/apache/calcite/rel/metadata/CachingRelMetadataProvider/CachingInvocationHandler",
     "core/src/org/apache/calcite/rel/metadata/CachingRelMetadataProvider",
-    1,
+    0,
     0
   ],
   [
@@ -17504,7 +17504,7 @@
   [
     "core/src/org/apache/calcite/sql/parser/parserextensiontesting/ExtensionSqlParserTest",
     "core/src/org/apache/calcite/sql/parser/parserextensiontesting",
-    1,
+    0,
     0
   ],
   [
@@ -17678,7 +17678,7 @@
   [
     "core/src/org/apache/calcite/plan/volcano/VolcanoPlannerTraitTest/AltTrait",
     "core/src/org/apache/calcite/plan/volcano/VolcanoPlannerTraitTest",
-    1,
+    2,
     0
   ],
   [
@@ -17756,7 +17756,7 @@
   [
     "core/src/org/apache/calcite/plan/volcano/VolcanoPlannerTraitTest/PhysLeafRule",
     "core/src/org/apache/calcite/plan/volcano/VolcanoPlannerTraitTest",
-    1,
+    0,
     0
   ],
   [
@@ -18122,7 +18122,7 @@
   [
     "core/src/org/apache/calcite/adapter/enumerable/RexImpTable/IsNullImplementor",
     "core/src/org/apache/calcite/adapter/enumerable/RexImpTable",
-    1,
+    0,
     0
   ],
   [
@@ -18608,7 +18608,7 @@
   [
     "core/src/org/apache/calcite/rel/rules/SpatialRules/FilterHilbertRule",
     "core/src/org/apache/calcite/rel/rules/SpatialRules",
-    1,
+    2,
     0
   ],
   [
@@ -18908,13 +18908,13 @@
   [
     "core/src/org/apache/calcite/prepare/LixToRelTranslator",
     "core/src/org/apache/calcite/prepare",
-    1,
+    2,
     0
   ],
   [
     "core/src/org/apache/calcite/prepare/LixToRelTranslator-self",
     "core/src/org/apache/calcite/prepare/LixToRelTranslator",
-    1,
+    2,
     0
   ],
   [
@@ -18932,13 +18932,13 @@
   [
     "core/src/org/apache/calcite/prepare/QueryableRelBuilder",
     "core/src/org/apache/calcite/prepare",
-    3,
+    4,
     0
   ],
   [
     "core/src/org/apache/calcite/prepare/CalcitePrepareImpl/EmptyScalarTranslator",
     "core/src/org/apache/calcite/prepare/CalcitePrepareImpl",
-    5,
+    4,
     0
   ],
   [
@@ -19094,13 +19094,13 @@
   [
     "core/src/org/apache/calcite/sql/test/SqlAdvisorTest",
     "core/src/org/apache/calcite/sql/test",
-    4,
+    3,
     0
   ],
   [
     "core/src/org/apache/calcite/sql/test/SqlAdvisorTest-self",
     "core/src/org/apache/calcite/sql/test/SqlAdvisorTest",
-    4,
+    3,
     0
   ],
   [
@@ -19664,7 +19664,7 @@
   [
     "core/src/org/apache/calcite/rel/rules/ReduceExpressionsRule/CaseShuttle",
     "core/src/org/apache/calcite/rel/rules/ReduceExpressionsRule",
-    0,
+    1,
     0
   ],
   [
@@ -19724,13 +19724,13 @@
   [
     "core/src/org/apache/calcite/rel/rules/LoptSemiJoinOptimizer-self",
     "core/src/org/apache/calcite/rel/rules/LoptSemiJoinOptimizer",
-    4,
+    5,
     0
   ],
   [
     "core/src/org/apache/calcite/rel/rules/LoptSemiJoinOptimizer/FactorCostComparator",
     "core/src/org/apache/calcite/rel/rules/LoptSemiJoinOptimizer",
-    0,
+    1,
     0
   ],
   [
@@ -19772,13 +19772,13 @@
   [
     "core/src/org/apache/calcite/rex/RexSqlStandardConvertletTable-self",
     "core/src/org/apache/calcite/rex/RexSqlStandardConvertletTable",
-    2,
+    3,
     0
   ],
   [
     "core/src/org/apache/calcite/rex/RexSqlStandardConvertletTable/EquivConvertlet",
     "core/src/org/apache/calcite/rex/RexSqlStandardConvertletTable",
-    0,
+    1,
     0
   ],
   [
@@ -19844,7 +19844,7 @@
   [
     "core/src/org/apache/calcite/sql/util/ReflectiveSqlOperatorTable-self",
     "core/src/org/apache/calcite/sql/util/ReflectiveSqlOperatorTable",
-    5,
+    6,
     0
   ],
   [
@@ -19856,7 +19856,7 @@
   [
     "core/src/org/apache/calcite/sql/util/ReflectiveSqlOperatorTable/CaseSensitiveKey",
     "core/src/org/apache/calcite/sql/util/ReflectiveSqlOperatorTable",
-    0,
+    1,
     0
   ],
   [
@@ -19982,13 +19982,13 @@
   [
     "core/src/org/apache/calcite/plan/volcano/VolcanoCost-self",
     "core/src/org/apache/calcite/plan/volcano/VolcanoCost",
-    2,
+    3,
     0
   ],
   [
     "core/src/org/apache/calcite/plan/volcano/VolcanoCost/Factory",
     "core/src/org/apache/calcite/plan/volcano/VolcanoCost",
-    1,
+    2,
     0
   ],
   [
@@ -20006,19 +20006,19 @@
   [
     "core/src/org/apache/calcite/sql/SqlSnapshot-self",
     "core/src/org/apache/calcite/sql/SqlSnapshot",
-    1,
+    2,
     0
   ],
   [
     "core/src/org/apache/calcite/sql/SqlSnapshot/SqlSnapshotOperator",
     "core/src/org/apache/calcite/sql/SqlSnapshot",
-    1,
+    2,
     0
   ],
   [
     "core/src/org/apache/calcite/sql/SqlSnapshot/SqlSnapshotOperator-self",
     "core/src/org/apache/calcite/sql/SqlSnapshot/SqlSnapshotOperator",
-    1,
+    2,
     0
   ],
   [
@@ -20126,13 +20126,13 @@
   [
     "core/src/org/apache/calcite/plan/volcano/RelSubset-self",
     "core/src/org/apache/calcite/plan/volcano/RelSubset",
-    3,
+    4,
     0
   ],
   [
     "core/src/org/apache/calcite/plan/volcano/RelSubset/CheapestPlanReplacer",
     "core/src/org/apache/calcite/plan/volcano/RelSubset",
-    2,
+    3,
     0
   ],
   [
@@ -20462,7 +20462,7 @@
   [
     "core/src/org/apache/calcite/interpreter/Interpreter-self",
     "core/src/org/apache/calcite/interpreter/Interpreter",
-    3,
+    4,
     0
   ],
   [
@@ -20528,7 +20528,7 @@
   [
     "core/src/org/apache/calcite/interpreter/Nodes/CoreCompiler",
     "core/src/org/apache/calcite/interpreter/Nodes",
-    1,
+    2,
     0
   ],
   [
@@ -21050,7 +21050,7 @@
   [
     "core/src/org/apache/calcite/jdbc/CalciteSchema/TableEntryImpl",
     "core/src/org/apache/calcite/jdbc/CalciteSchema",
-    1,
+    0,
     0
   ],
   [
@@ -21134,7 +21134,7 @@
   [
     "core/src/org/apache/calcite/prepare/CalcitePrepareImpl/LambdaScalarTranslator",
     "core/src/org/apache/calcite/prepare/CalcitePrepareImpl",
-    1,
+    0,
     0
   ],
   [
@@ -21674,7 +21674,7 @@
   [
     "core/src/org/apache/calcite/prepare/QueryableRelBuilder-self",
     "core/src/org/apache/calcite/prepare/QueryableRelBuilder",
-    3,
+    4,
     0
   ],
   [
@@ -22244,13 +22244,13 @@
   [
     "core/src/org/apache/calcite/test/MaterializedViewRelOptRulesTest",
     "core/src/org/apache/calcite/test",
-    3,
+    4,
     0
   ],
   [
     "core/src/org/apache/calcite/test/SqlStatisticProviderTest",
     "core/src/org/apache/calcite/test",
-    0,
+    1,
     0
   ],
   [
@@ -22868,7 +22868,7 @@
   [
     "core/src/org/apache/calcite/rel/rules/materialize/MaterializedViewJoinRule-self",
     "core/src/org/apache/calcite/rel/rules/materialize/MaterializedViewJoinRule",
-    3,
+    2,
     0
   ],
   [
@@ -22970,7 +22970,7 @@
   [
     "core/src/org/apache/calcite/test/FoodmartTest",
     "core/src/org/apache/calcite/test",
-    3,
+    2,
     0
   ],
   [
@@ -23030,7 +23030,7 @@
   [
     "core/src/org/apache/calcite/profile/ProfilerImpl/Collector",
     "core/src/org/apache/calcite/profile/ProfilerImpl",
-    1,
+    2,
     0
   ],
   [
@@ -23042,7 +23042,7 @@
   [
     "core/src/org/apache/calcite/profile/ProfilerImpl/HllCollector",
     "core/src/org/apache/calcite/profile/ProfilerImpl",
-    0,
+    1,
     0
   ],
   [
@@ -23066,7 +23066,7 @@
   [
     "core/src/org/apache/calcite/profile/ProfilerImpl/SingletonCollector",
     "core/src/org/apache/calcite/profile/ProfilerImpl",
-    0,
+    1,
     0
   ],
   [
@@ -23852,7 +23852,7 @@
   [
     "core/src/org/apache/calcite/test/enumerable/EnumerableJoinTest",
     "core/src/org/apache/calcite/test/enumerable",
-    1,
+    2,
     0
   ],
   [
@@ -24068,7 +24068,7 @@
   [
     "core/src/org/apache/calcite/sql/validate/AggChecker",
     "core/src/org/apache/calcite/sql/validate",
-    2,
+    3,
     0
   ],
   [
@@ -24176,13 +24176,13 @@
   [
     "core/src/org/apache/calcite/rel/rules/LoptJoinTree/Node",
     "core/src/org/apache/calcite/rel/rules/LoptJoinTree",
-    2,
+    3,
     0
   ],
   [
     "core/src/org/apache/calcite/sql/pretty/SqlPrettyWriter-self",
     "core/src/org/apache/calcite/sql/pretty/SqlPrettyWriter",
-    5,
+    6,
     0
   ],
   [
@@ -24194,43 +24194,43 @@
   [
     "core/src/org/apache/calcite/sql/pretty/SqlPrettyWriter/FrameImpl",
     "core/src/org/apache/calcite/sql/pretty/SqlPrettyWriter",
-    2,
+    3,
     0
   ],
   [
     "core/src/org/apache/calcite/sql/pretty/SqlPrettyWriter/FrameImpl-self",
     "core/src/org/apache/calcite/sql/pretty/SqlPrettyWriter/FrameImpl",
-    2,
+    3,
     0
   ],
   [
     "core/src/org/apache/calcite/sql/pretty/SqlPrettyWriter/FrameImpl/Save",
     "core/src/org/apache/calcite/sql/pretty/SqlPrettyWriter/FrameImpl",
-    0,
+    1,
     0
   ],
   [
     "core/src/org/apache/calcite/plan/RelOptCostImpl-self",
     "core/src/org/apache/calcite/plan/RelOptCostImpl",
-    2,
+    3,
     0
   ],
   [
     "core/src/org/apache/calcite/plan/RelOptCostImpl/Factory",
     "core/src/org/apache/calcite/plan/RelOptCostImpl",
-    1,
+    2,
     0
   ],
   [
     "core/src/org/apache/calcite/sql/SqlWithItem-self",
     "core/src/org/apache/calcite/sql/SqlWithItem",
-    2,
+    3,
     0
   ],
   [
     "core/src/org/apache/calcite/sql/SqlWithItem/SqlWithItemOperator",
     "core/src/org/apache/calcite/sql/SqlWithItem",
-    0,
+    1,
     0
   ],
   [
@@ -24278,7 +24278,7 @@
   [
     "core/src/org/apache/calcite/adapter/jdbc/JdbcTable-self",
     "core/src/org/apache/calcite/adapter/jdbc/JdbcTable",
-    5,
+    4,
     0
   ],
   [
@@ -24644,7 +24644,7 @@
   [
     "core/src/org/apache/calcite/adapter/jdbc/JdbcRules/JdbcJoinRule",
     "core/src/org/apache/calcite/adapter/jdbc/JdbcRules",
-    2,
+    3,
     0
   ],
   [
@@ -24710,7 +24710,7 @@
   [
     "core/src/org/apache/calcite/adapter/jdbc/JdbcRules/JdbcValuesRule",
     "core/src/org/apache/calcite/adapter/jdbc/JdbcRules",
-    1,
+    0,
     0
   ],
   [
@@ -24788,7 +24788,7 @@
   [
     "core/src/org/apache/calcite/plan/volcano/CollationConversionTest/RootSingleRel",
     "core/src/org/apache/calcite/plan/volcano/CollationConversionTest",
-    1,
+    0,
     0
   ],
   [
@@ -24806,7 +24806,7 @@
   [
     "core/src/org/apache/calcite/plan/volcano/CollationConversionTest/TestRelCollationTraitDef",
     "core/src/org/apache/calcite/plan/volcano/CollationConversionTest",
-    1,
+    2,
     0
   ],
   [
@@ -25028,13 +25028,13 @@
   [
     "core/src/org/apache/calcite/util/UtilTest",
     "core/src/org/apache/calcite/util",
-    3,
+    4,
     0
   ],
   [
     "core/src/org/apache/calcite/util/UtilTest-self",
     "core/src/org/apache/calcite/util/UtilTest",
-    3,
+    4,
     0
   ],
   [
@@ -25112,13 +25112,13 @@
   [
     "core/src/org/apache/calcite/interpreter/Bindables/BindableFilter",
     "core/src/org/apache/calcite/interpreter/Bindables",
-    2,
+    1,
     0
   ],
   [
     "core/src/org/apache/calcite/interpreter/Bindables/BindableFilterRule",
     "core/src/org/apache/calcite/interpreter/Bindables",
-    1,
+    0,
     0
   ],
   [
@@ -25142,13 +25142,13 @@
   [
     "core/src/org/apache/calcite/interpreter/Bindables/BindableMatch",
     "core/src/org/apache/calcite/interpreter/Bindables",
-    1,
+    2,
     0
   ],
   [
     "core/src/org/apache/calcite/interpreter/Bindables/BindableMatchRule",
     "core/src/org/apache/calcite/interpreter/Bindables",
-    0,
+    1,
     0
   ],
   [
@@ -26066,13 +26066,13 @@
   [
     "core/src/org/apache/calcite/tools/PlannerTest",
     "core/src/org/apache/calcite/tools",
-    3,
+    2,
     0
   ],
   [
     "core/src/org/apache/calcite/tools/PlannerTest-self",
     "core/src/org/apache/calcite/tools/PlannerTest",
-    3,
+    2,
     0
   ],
   [
@@ -26252,13 +26252,13 @@
   [
     "core/src/org/apache/calcite/sql/validate/AggFinder-self",
     "core/src/org/apache/calcite/sql/validate/AggFinder",
-    1,
+    2,
     0
   ],
   [
     "core/src/org/apache/calcite/sql/validate/AggFinder/AggIterable",
     "core/src/org/apache/calcite/sql/validate/AggFinder",
-    0,
+    1,
     0
   ],
   [

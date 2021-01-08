@@ -10,11 +10,7 @@ try {
 }
 dataArray = JSON.parse(data_json);
 
-dataArray.forEach(myFunction);
-let count = 0;
-function myFunction(value, index, array) {
-    count += value[2]
-  }
+
 
 
 function drawChart() {

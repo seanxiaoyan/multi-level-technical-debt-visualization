@@ -92,7 +92,7 @@
   [
     "core/src/org/apache/calcite/util-self",
     "core/src/org/apache/calcite/util",
-    0,
+    1,
     0
   ],
   [
@@ -116,7 +116,7 @@
   [
     "core/src/org/apache/calcite/adapter",
     "core/src/org/apache/calcite",
-    1,
+    0,
     0
   ],
   [
@@ -146,7 +146,7 @@
   [
     "core/src/org/apache/calcite/rex",
     "core/src/org/apache/calcite",
-    0,
+    1,
     0
   ],
   [
@@ -188,7 +188,7 @@
   [
     "core/src/org/apache/calcite/rel/core",
     "core/src/org/apache/calcite/rel",
-    1,
+    0,
     0
   ],
   [
@@ -200,7 +200,7 @@
   [
     "core/src/org/apache/calcite/rel/metadata",
     "core/src/org/apache/calcite/rel",
-    2,
+    3,
     0
   ],
   [
@@ -254,7 +254,7 @@
   [
     "core/src/org/apache/calcite/schema",
     "core/src/org/apache/calcite",
-    1,
+    0,
     0
   ],
   [
@@ -308,7 +308,7 @@
   [
     "core/src/org/apache/calcite/schema-self",
     "core/src/org/apache/calcite/schema",
-    0,
+    1,
     0
   ],
   [
@@ -344,7 +344,7 @@
   [
     "core/src/org/apache/calcite/rel/convert",
     "core/src/org/apache/calcite/rel",
-    2,
+    1,
     0
   ],
   [

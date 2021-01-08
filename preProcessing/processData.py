@@ -5,7 +5,7 @@ import json
 
 
 proj_name = sys.argv[1]
-data_path='./GetSmells/getsmells-output/smells/{}/'.format(proj_name)
+data_path='../GetSmells/getsmells-output/smells/{}/'.format(proj_name)
 subfolders = [ f.path for f in os.scandir(data_path) if f.is_dir() ]
 
 array_packagelevel=[['child', 'Parent', 'size', 'color'],
@@ -69,38 +69,28 @@ for folder in subfolders:
                             name_list[i] = os.path.join(name_list[i-1],temp)
 
                     # count 
-
+                    total_smell = 0 
+                    for j in range(1,3):
+                        total_smell += int(row[j])
                     for i in range(len(name_list)):
-
                         if i == len(name_list)-1:
-                            total_smell = 0 
-                            for j in range(1,3):
-                                total_smell += int(row[j])
-
                             if name_list[i] in nonleaf_dict_package:
                                 newName = name_list[i]+'-self'             
                                 array_packagelevel.append([newName,name_list[i],total_smell,0])
-                                pieChartArray[1][1] += total_smell
                                 package_array_index+=1
-
+                                print(newName,total_smell)
                             else:
                                 if i == 0:
                                     array_packagelevel.append([name_list[i],f'{proj_name}/{folder_name}',total_smell,0])
-                                    pieChartArray[1][1] += total_smell
-                                    package_array_index+=1
-                                    leaf_dict_package[name_list[i]]=package_array_index
-
                                 else:
                                     array_packagelevel.append([name_list[i],name_list[i-1],total_smell,0])
-                                    package_array_index+=1
-                                    pieChartArray[1][1] += total_smell
-                                    leaf_dict_package[name_list[i]]=package_array_index
+                                package_array_index+=1                      
+                                leaf_dict_package[name_list[i]]=package_array_index
+                                print(name_list[i],total_smell)
+                            pieChartArray[1][1] += total_smell
+                       
 
                         else:
-                            total_smell = 0 
-                            for j in range(1,3):
-                                total_smell += int(row[j])
-
                             if name_list[i] in nonleaf_dict_package:
                                 continue # to avoid duplicate
 
@@ -118,16 +108,13 @@ for folder in subfolders:
 
 
                             if i == 0:
-                                array_packagelevel.append([name_list[i],f'{proj_name}/{folder_name}',total_smell,0])
-                                pieChartArray[1][1] += total_smell
-                                package_array_index+=1
-                                nonleaf_dict_package[name_list[i]]=package_array_index
-
+                                array_packagelevel.append([name_list[i],f'{proj_name}/{folder_name}',0,0])
                             else:
-                                array_packagelevel.append([name_list[i],name_list[i-1],total_smell,0])
-                                pieChartArray[1][1] += total_smell
-                                package_array_index+=1
-                                nonleaf_dict_package[name_list[i]]=package_array_index
+                                array_packagelevel.append([name_list[i],name_list[i-1],0,0])
+                      
+                            
+                            package_array_index+=1
+                            nonleaf_dict_package[name_list[i]]=package_array_index
 
                     line_count += 1
 
@@ -255,14 +242,14 @@ json_object_class = json.dumps(array_classlevel, indent = 2)
 json_object_method = json.dumps(array_methodlevel, indent = 2) 
   
 # Writing to data.json 
-with open("./detailedPackage/data.json", "w") as outfile: 
+with open("../detailedPackage/data.json", "w") as outfile: 
     outfile.write(json_object_package) 
 
-with open("./detailedClass/data.json", "w") as outfile: 
+with open("../detailedClass/data.json", "w") as outfile: 
     outfile.write(json_object_class) 
 
-with open("./detailedMethod/data.json", "w") as outfile: 
+with open("../detailedMethod/data.json", "w") as outfile: 
     outfile.write(json_object_method) 
 
-with open("./overview/pieChartData.json", "w") as outfile: 
+with open("../overview/pieChartData.json", "w") as outfile: 
     outfile.write(json_object_piechartArray) 
