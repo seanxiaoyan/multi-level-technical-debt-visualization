@@ -5,14 +5,18 @@ try {
 } catch (err) {
   console.error(err)
 }
+
+let pieChart_data_json;
+try {
+   pieChart_data_json = fs.readFileSync('./overview/pieChartData.json', 'utf8');
+} catch (err) {
+  console.error(err)
+}
+let pieChartArray = JSON.parse(pieChart_data_json);
+
 smell_jsonObj = JSON.parse(smell_json_str);
 
-let pieChartArray = [
-  ['Smell Name', 'Count'],
-  ['packageLevel', 0],
-  ['classLevel', 0],
-  ['methodLevel', 0]
-]
+
 let barChartArray = [
   ["Smell Name", "Count", { role: "style" } ],
   ["Package Cyclic Dependency", 0, "#3366cc"],
@@ -38,76 +42,61 @@ let barChartArray = [
 for (row of smell_jsonObj){
   // sum package level smell
   if (row.Unstable_Dependency) {
-    pieChartArray[1][1] += parseInt(row.Unstable_Dependency);
+    
     barChartArray[2][1] += parseInt(row.Unstable_Dependency);
   };
   if (row.Package_Cyclic_Dependency) {
-    pieChartArray[1][1] += parseInt(row.Package_Cyclic_Dependency);
+    
     barChartArray[1][1] += parseInt(row.Package_Cyclic_Dependency);
   };
 
   // sum class level smell
   if (row.God_Class) {
-    pieChartArray[2][1] += parseInt(row.God_Class);
     barChartArray[3][1] += parseInt(row.God_Class);
   };
   if (row.Data_Class) {
-    pieChartArray[2][1] += parseInt(row.Data_Class);
     barChartArray[4][1] += parseInt(row.Data_Class);
   };
   if (row.Lazy_Class) {
-    pieChartArray[2][1] += parseInt(row.Lazy_Class);
     barChartArray[5][1] += parseInt(row.Lazy_Class);
   };
   if (row.Refused_Request) {
-    pieChartArray[2][1] += parseInt(row.Refused_Request);
     barChartArray[6][1] += parseInt(row.Refused_Request);
   };
   if (row.Brain_Class) {
-    pieChartArray[2][1] += parseInt(row.Brain_Class);
     barChartArray[7][1] += parseInt(row.Brain_Class);
   };
   if (row.Unhealthy_Inheritance_Hierarchy) {
-    pieChartArray[2][1] += parseInt(row.Unhealthy_Inheritance_Hierarchy);
     barChartArray[8][1] += parseInt(row.Unhealthy_Inheritance_Hierarchy);
   };
   if (row.Hub_Like_Dependency) {
-    pieChartArray[2][1] += parseInt(row.Hub_Like_Dependency);
     barChartArray[9][1] += parseInt(row.Hub_Like_Dependency);
   };
   if (row.Large_Class) {
-    pieChartArray[2][1] += parseInt(row.Large_Class);
     barChartArray[10][1] += parseInt(row.Large_Class);
   };
   if (row.Complex_Class) {
-    pieChartArray[2][1] += parseInt(row.Complex_Class);
     barChartArray[11][1] += parseInt(row.Complex_Class);
   };
   if (row.Class_Cyclic_Dependency) {
-    pieChartArray[2][1] += parseInt(row.Class_Cyclic_Dependency);
     barChartArray[12][1] += parseInt(row.Class_Cyclic_Dependency);
   };
 
   if (row.Feature_Envy) {
-    pieChartArray[2][1] += parseInt(row.Feature_Envy);
     barChartArray[13][1] += parseInt(row.Feature_Envy);
   };
   // sum method level smell
   if (row.Brain_Method) {
-    pieChartArray[3][1] += parseInt(row.Brain_Method);
     barChartArray[14][1] == parseInt(row.Brain_Method);
   };
 
   if (row.Long_Parameter_List) {
-    pieChartArray[3][1] += parseInt(row.Long_Parameter_List);
     barChartArray[15][1] += parseInt(row.Long_Parameter_List);
   };
   if (row.Shotgun_Surgery) {
-    pieChartArray[3][1] += parseInt(row.Shotgun_Surgery);
     barChartArray[16][1] += parseInt(row.Shotgun_Surgery);
   };
   if (row.Long_Method) {
-    pieChartArray[3][1] += parseInt(row.Long_Method);
     barChartArray[17][1] += parseInt(row.Long_Method);
   };
 }
