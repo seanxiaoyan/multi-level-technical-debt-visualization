@@ -26,7 +26,7 @@ function drawChart() {
     });
 
     function showStaticTooltip(row, size, value) {
-        return  '# of smells detected: ' +size;
+        return size;
       }
 
 };

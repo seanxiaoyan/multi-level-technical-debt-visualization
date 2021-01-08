@@ -1,14 +1,22 @@
-let dataArray = [
-    ['Location', 'Parent', 'Market trade volume (size)', 'Market increase/decrease (color)'],
-    ['Global',    null,                 0,                               0],
-    ['A',   'Global',             0,                               0],
-    ['B',   'Global',             0,                               0],
-];
+const fs = require('fs');
+const csv=require('csvtojson');
+const ipc = require('electron').ipcRenderer;
 
-
-for (var n = 0; n < 100; n++) {
-    dataArray.push([n.toString(),   'A',             1,                               0])
+let data_json;
+try {
+   data_json = fs.readFileSync('./detailedPackage/data.json', 'utf8');
+} catch (err) {
+  console.error(err)
 }
+dataArray = JSON.parse(data_json);
+
+dataArray.forEach(myFunction);
+let count = 0;
+function myFunction(value, index, array) {
+    count += value[2]
+  }
+
+
 function drawChart() {
     var data = google.visualization.arrayToDataTable(dataArray);
 
@@ -24,7 +32,7 @@ function drawChart() {
     });
 
     function showStaticTooltip(row, size, value) {
-        return  '# of smells detected: ' +size;
+        return size;
       }
 
-  }
+};
