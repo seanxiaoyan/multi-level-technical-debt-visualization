@@ -1,0 +1,91 @@
+[
+  [
+    "Smell Name",
+    "Count"
+  ],
+  [
+    "God Class",
+    89,
+    "#dc3912"
+  ],
+  [
+    "Lazy Class",
+    773,
+    "#dc3912"
+  ],
+  [
+    "Complex Class",
+    191,
+    "#dc3912"
+  ],
+  [
+    "Large Class",
+    574,
+    "#dc3912"
+  ],
+  [
+    "Refused Request",
+    124,
+    "#dc3912"
+  ],
+  [
+    "Data Class",
+    972,
+    "#dc3912"
+  ],
+  [
+    "Feature Envy",
+    234,
+    "#dc3912"
+  ],
+  [
+    "Brain Class",
+    0,
+    "#dc3912"
+  ],
+  [
+    "Hub Like Dependency",
+    155,
+    "#dc3912"
+  ],
+  [
+    "Class Cyclic Dependency",
+    193,
+    "#dc3912"
+  ],
+  [
+    "Unhealthy Inheritance",
+    213,
+    "#dc3912"
+  ],
+  [
+    "Long Method",
+    7545,
+    "#ff9900"
+  ],
+  [
+    "Long Parameter List",
+    6657,
+    "#ff9900"
+  ],
+  [
+    "Shotgun Surgery",
+    864,
+    "#ff9900"
+  ],
+  [
+    "Brain Method",
+    5,
+    "#ff9900"
+  ],
+  [
+    "Unstable Dependency",
+    24,
+    "#3366cc"
+  ],
+  [
+    "Package Cyclic Dependency",
+    7,
+    "#3366cc"
+  ]
+]

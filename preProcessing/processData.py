@@ -24,6 +24,28 @@ pieChartArray = [
   ['methodLevel', 0]
 ]
 
+barChartArray = [
+  ["Smell Name", "Count"],
+  ["God Class", 0, "#dc3912"],
+  ["Lazy Class", 0, "#dc3912"],
+  ["Complex Class", 0, "#dc3912"],
+  ["Large Class", 0, "#dc3912"],
+  ["Refused Request", 0, "#dc3912"],
+  ["Data Class", 0, "#dc3912"],
+  ["Feature Envy", 0, "#dc3912"],
+  ["Brain Class", 0, "#dc3912"],
+  ["Hub Like Dependency", 0, "#dc3912"],
+  ["Class Cyclic Dependency", 0, "#dc3912"],
+  ["Unhealthy Inheritance", 0, "#dc3912"],
+  ["Long Method", 0, "#ff9900"],
+  ["Long Parameter List", 0, "#ff9900"],
+  ["Shotgun Surgery", 0, "#ff9900"],
+  ["Brain Method", 0, "#ff9900"],
+  ["Unstable Dependency", 0, "#3366cc"],
+  ["Package Cyclic Dependency", 0, "#3366cc"]
+  
+]
+
 # package
 nonleaf_dict_package = {}
 leaf_dict_package = {}
@@ -71,6 +93,8 @@ for folder in subfolders:
                     # count 
                     total_smell = 0 
                     for j in range(1,3):
+                        bar_chart_array_index = 15+j
+                        barChartArray[bar_chart_array_index][1]+=int(row[j])
                         total_smell += int(row[j])
                     for i in range(len(name_list)):
                         if i == len(name_list)-1:
@@ -78,7 +102,6 @@ for folder in subfolders:
                                 newName = name_list[i]+'-self'             
                                 array_packagelevel.append([newName,name_list[i],total_smell,0])
                                 package_array_index+=1
-                                print(newName,total_smell)
                             else:
                                 if i == 0:
                                     array_packagelevel.append([name_list[i],f'{proj_name}/{folder_name}',total_smell,0])
@@ -86,7 +109,6 @@ for folder in subfolders:
                                     array_packagelevel.append([name_list[i],name_list[i-1],total_smell,0])
                                 package_array_index+=1                      
                                 leaf_dict_package[name_list[i]]=package_array_index
-                                print(name_list[i],total_smell)
                             pieChartArray[1][1] += total_smell
                        
 
@@ -153,6 +175,7 @@ for folder in subfolders:
                             total_smell = 0 
 
                             for j in range(1,12):
+                                barChartArray[j][1]+=int(row[j])
                                 total_smell += int(row[j])
                             if name_list[i] in nonleaf_dict_class:
                                 newName = name_list[i]+'-self'             
@@ -221,6 +244,8 @@ for folder in subfolders:
                         elif i == len(name_list)-1:
                             total_smell = 0 
                             for j in range(1,5):
+                                bar_chart_array_index = 11+j
+                                barChartArray[bar_chart_array_index][1]+=int(row[j])
                                 total_smell += int(row[j])
                             array_methodlevel.append([name_list[i],name_list[i-1],total_smell,0])
                             pieChartArray[3][1] += total_smell
@@ -237,6 +262,7 @@ for folder in subfolders:
 
 # Serializing json 
 json_object_piechartArray = json.dumps(pieChartArray, indent = 2) 
+json_object_barchartArray = json.dumps(barChartArray, indent = 2) 
 json_object_package = json.dumps(array_packagelevel, indent = 2) 
 json_object_class = json.dumps(array_classlevel, indent = 2) 
 json_object_method = json.dumps(array_methodlevel, indent = 2) 
@@ -253,3 +279,6 @@ with open("../detailedMethod/data.json", "w") as outfile:
 
 with open("../overview/pieChartData.json", "w") as outfile: 
     outfile.write(json_object_piechartArray) 
+
+with open("../overview/barChartData.json", "w") as outfile: 
+    outfile.write(json_object_barchartArray) 
