@@ -10,12 +10,12 @@ function createWindow () {
         },
         width: 2400, height: 1800
     });
-    window.loadFile('./overview/overview.html');
-    // const ipc = require('electron').ipcMain;
-    // // listen on ipc channel wait for GetSmells completed
-    // ipc.on('get-smell-finished', function(event,arg){
-    //     window.loadFile('./overview/overview.html');
-    // });
+    window.loadFile('index.html');
+    const ipc = require('electron').ipcMain;
+    // listen on ipc channel wait for GetSmells completed
+    ipc.on('get-smell-finished', function(event,arg){
+        window.loadFile('./overview/overview.html');
+    });
 
 
 };

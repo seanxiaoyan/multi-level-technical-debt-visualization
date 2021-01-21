@@ -5,7 +5,7 @@ import json
 
 
 proj_name = sys.argv[1]
-data_path='../GetSmells/getsmells-output/smells/{}/'.format(proj_name)
+data_path='./GetSmells/getsmells-output/smells/{}/'.format(proj_name)
 subfolders = [ f.path for f in os.scandir(data_path) if f.is_dir() ]
 
 array_packagelevel=[['child', 'Parent', 'size', 'color'],
@@ -268,17 +268,17 @@ json_object_class = json.dumps(array_classlevel, indent = 2)
 json_object_method = json.dumps(array_methodlevel, indent = 2) 
   
 # Writing to data.json 
-with open("../detailedPackage/data.json", "w") as outfile: 
+with open("./detailedPackage/data.json", "w") as outfile: 
     outfile.write(json_object_package) 
 
-with open("../detailedClass/data.json", "w") as outfile: 
+with open("./detailedClass/data.json", "w") as outfile: 
     outfile.write(json_object_class) 
 
-with open("../detailedMethod/data.json", "w") as outfile: 
+with open("./detailedMethod/data.json", "w") as outfile: 
     outfile.write(json_object_method) 
 
-with open("../overview/pieChartData.json", "w") as outfile: 
+with open("./overview/pieChartData.json", "w") as outfile: 
     outfile.write(json_object_piechartArray) 
 
-with open("../overview/barChartData.json", "w") as outfile: 
+with open("./overview/barChartData.json", "w") as outfile: 
     outfile.write(json_object_barchartArray) 

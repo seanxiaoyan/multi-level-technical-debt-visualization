@@ -10,23 +10,72 @@
       </script>
 
   </head>
-  <body>
-    <h1>Method Level Smell</h1>
+  <body style="width: 2400px; margin: 0px auto; line-height: 23px; padding: 10px;">
+    
 
-    <section id="section-list" style="background: gray; width: 180px; height: 900px;position: absolute;top: 0%;left: 0%;">
-      <a href="../index.html" style="position: absolute;left: 10%; "> Back </a>
-      <ul class='wraplist' >
-        <a href="../overview/overview.html" style="position:absolute; left:10%; top:10%;">Overview</a>
-        <a href="../detailedPackage/viewPackage.html" style="position:absolute; left:10%; top:15%;">Detailed View</a>
-          <ul class="sub-menu" style="display:block;position:absolute; left:10%; top:20%;">
-              <li> <a href="../detailedPackage/viewPackage.html"> <span>Package Level</span> </a> </li>
-              <li> <a href="../detailedClass/viewClass.html"> <span>Class level</span> </a> </li>
-              <li> <a href="../detailedMethod/viewMethod.html"> <span>Method level</span> </a> </li>
-          </ul>
-      </ul>
-    </section>
-    <section id="section-chart" style = "width: 1000px; height: 1000px;position: absolute;top: 10%;left: 20%;">
-        <div id="chart_div" style="width: 1100px; height: 700px;"></div>
-    </section>
-  </body>
+    <h1 style="position: absolute; left: 40%;" >Method Level Code smell</h1>
+    <div style="float: left; width: 120px; position: absolute; top: 10%;">
+        <div id="div1"  style="width: 90px; padding: 10px;">
+            <section id="section-list" style=" width: 180px; height: 900px;position: absolute;top: 0%;left: 0%;">
+                <a href="../index.html" style="position: absolute;left: 10%; "> Back </a>
+                <ul class='wraplist' >
+                  <a href="../overview/overview.html" style="position:absolute; left:10%; top:10%;">Overview</a>
+                  <a href="../detailedPackage/viewPackage.html" style="position:absolute; left:10%; top:15%;">Detailed View</a>
+                    <ul class="sub-menu" style="display:block;position:absolute; left:10%; top:20%;">
+                        <li> <a href="../detailedPackage/viewPackage.html"> <span>Package Level</span> </a> </li>
+                        <li> <a href="../detailedClass/viewClass.html"> <span>Class level</span> </a> </li>
+                        <li> <a href="../detailedMethod/viewMethod.html"> <span>Method level</span> </a> </li>
+                    </ul>
+                </ul>
+              </section>
+    </div>
+
+        </div>
+
+        <section id="section-chart" style = "width: 1000px; height: 1000px;position: absolute;top: 10%;left: 20%;">
+            <div id="chart_div" style="width: 1100px; height: 700px;"></div>
+        </section>
+
+    <script type="text/javascript">
+        function htmlScroll() {
+            var top = document.body.scrollTop || document.documentElement.scrollTop;
+            if (elFix.data_top < top) {
+                elFix.style.position = 'fixed';
+                elFix.style.top = 0;
+                elFix.style.left = elFix.data_left;
+            }
+            else {
+                elFix.style.position = 'static';
+            }
+        }
+
+        function htmlPosition(obj) {
+            var o = obj;
+            var t = o.offsetTop;
+            var l = o.offsetLeft;
+            while (o = o.offsetParent) {
+                t += o.offsetTop;
+                l += o.offsetLeft;
+            }
+            obj.data_top = t;
+            obj.data_left = l;
+        }
+
+        var oldHtmlWidth = document.documentElement.offsetWidth;
+        window.onresize = function () {
+            var newHtmlWidth = document.documentElement.offsetWidth;
+            if (oldHtmlWidth == newHtmlWidth) {
+                return;
+            }
+            oldHtmlWidth = newHtmlWidth;
+            elFix.style.position = 'static';
+            htmlPosition(elFix);
+            htmlScroll();
+        }
+        window.onscroll = htmlScroll;
+
+        var elFix = document.getElementById('div1');
+        htmlPosition(elFix);
+    </script>
+</body>
 </html>
