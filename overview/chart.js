@@ -49,7 +49,7 @@ function drawBarChart() {
                      role: "annotation" },
                    2]);
   var options = {
-    title: "Code smell count",
+    title: "Detailed code smells count",
     width: 1000,
     height: 750,
     bar: {groupWidth: "95%"},
