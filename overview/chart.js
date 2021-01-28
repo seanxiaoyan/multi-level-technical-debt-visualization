@@ -4,7 +4,7 @@ let pieChart_data_json;
 try {
    pieChart_data_json = fs.readFileSync('./overview/pieChartData.json', 'utf8');
 } catch (err) {
-  console.error(err)
+  console.error(err);
 }
 let pieChartArray = JSON.parse(pieChart_data_json);
 
@@ -12,7 +12,7 @@ let barChart_data_json;
 try {
    barChart_data_json = fs.readFileSync('./overview/barChartData.json', 'utf8');
 } catch (err) {
-  console.error(err)
+  console.error(err);
 }
 let barChartArray = JSON.parse(barChart_data_json);
 barChartArray[0].push({ role: "style" })
@@ -32,7 +32,7 @@ function drawPieChart() {
   document.getElementById("smell-class").innerHTML = 'Number of class Level code smell: '+ pieChartArray[2][1].toString();
   document.getElementById("smell-method").innerHTML = 'Number of method level code smell: '+ pieChartArray[3][1].toString();
   let data = google.visualization.arrayToDataTable(pieChartArray);
-  let options = {sliceVisibilityThreshold: 0.00001
+  let options = {sliceVisibilityThreshold: 0.001
   };
   let chart = new google.visualization.PieChart(document.getElementById('piechart'));
   chart.draw(data, options);

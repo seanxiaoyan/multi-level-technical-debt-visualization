@@ -1,46 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <link rel="stylesheet" href="../style.css">
-    <meta charset="UTF-8">
-    <title>VisTool</title>
-</head>
-<body style="width: 2400px; margin: 0px auto; line-height: 23px; padding: 10px;">
-    
-    <div>
-        <h1 style="position: absolute; left: 40%;" >Overview</h1>
-        <div style="float: left; width: 120px; position: absolute; top: 10%;">
-            <div id="div1" style="width: 90px; padding: 10px;">
-                <section id="section-list" style=" width: 180px; height: 900px;position: absolute;top: 0%;left: 0%;">
-                    <a href="../index.html" style="position: absolute;left: 10%; "> Back </a>
-                    <ul class='wraplist' >
-                      <a href="../overview/overview.html" style="position:absolute; left:10%; top:10%;">Overview</a>
-                      <a href="../detailedPackage/viewPackage.html" style="position:absolute; left:10%; top:15%;">Detailed View</a>
-                        <ul class="sub-menu" style="display:block;position:absolute; left:10%; top:20%;">
-                            <li> <a href="../detailedPackage/viewPackage.html"> <span>Package Level</span> </a> </li>
-                            <li> <a href="../detailedClass/viewClass.html"> <span>Class level</span> </a> </li>
-                            <li> <a href="../detailedMethod/viewMethod.html"> <span>Method level</span> </a> </li>
-                        </ul>
-                    </ul>
-                  </section>
-            </div>
-        </div>
 
-        <div style="position: absolute;top: 26%;left: 22%;">
-            <p id="project-name">Project Name</p>
-            <p id="total-smell">Total number of code smell</p>
-            <p id="smell-package">Package level code smell</p>
-            <p id="smell-class">Class level code smell</p>
-            <p id="smell-method">Method level code smell</p>
-        </div>
-        <div style="position: absolute;top: 10%; left: 15%; width: 1250px;  ">
-            <section id="section-chart" style = "width: 800px; height: 900px;position: absolute;top: 0%;left: 13%;">
-                <div id="piechart" style="width: 700px; height: 500px; position: relative; top: 0%; left: 32%; display: block;"></div>
-                <div id="barchart" style="width: 1000px; height: 4000px; position: relative; top: 0%; left: 0%; display: block;"></div>
-              </section>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-        </div>
-    </div>
+    <title>SB Admin 2 - Dashboard</title>
+
+    <!-- Custom fonts for this template-->
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="../style/sb-admin-2.min.css" rel="stylesheet">
 
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="chart.js"></script>
@@ -49,47 +26,89 @@
       google.charts.setOnLoadCallback(drawPieChart);
       google.charts.setOnLoadCallback(drawBarChart);
     </script>
-<script type="text/javascript">
-    function htmlScroll() {
-        var top = document.body.scrollTop || document.documentElement.scrollTop;
-        if (elFix.data_top < top) {
-            elFix.style.position = 'fixed';
-            elFix.style.top = 0;
-            elFix.style.left = elFix.data_left;
-        }
-        else {
-            elFix.style.position = 'static';
-        }
-    }
 
-    function htmlPosition(obj) {
-        var o = obj;
-        var t = o.offsetTop;
-        var l = o.offsetLeft;
-        while (o = o.offsetParent) {
-            t += o.offsetTop;
-            l += o.offsetLeft;
-        }
-        obj.data_top = t;
-        obj.data_left = l;
-    }
+</head>
 
-    var oldHtmlWidth = document.documentElement.offsetWidth;
-    window.onresize = function () {
-        var newHtmlWidth = document.documentElement.offsetWidth;
-        if (oldHtmlWidth == newHtmlWidth) {
-            return;
-        }
-        oldHtmlWidth = newHtmlWidth;
-        elFix.style.position = 'static';
-        htmlPosition(elFix);
-        htmlScroll();
-    }
-    window.onscroll = htmlScroll;
+<body id="page-top">
 
-    var elFix = document.getElementById('div1');
-    htmlPosition(elFix);
+    <!-- Page Wrapper -->
+    <div id="wrapper">
 
-</script>
+        <!-- Sidebar -->
+        <ul style="position: fixed;" class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="../index.html">
+                <div class="sidebar-brand-text mx-3">Detect Smell</div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="../overview/overview.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Overview</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Detailed View
+            </div>
+
+            <!-- Nav Item - package level -->
+            <li class="nav-item">
+                <a class="nav-link" href="../detailedPackage/viewPackage.html">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Package Level</span></a>
+            </li>
+
+            <!-- Nav Item - class level -->
+            <li class="nav-item">
+                <a class="nav-link" href="../detailedClass/viewClass.html">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Class Level</span></a>
+            </li>
+
+            <!-- Nav Item - method level -->
+            <li class="nav-item">
+                <a class="nav-link" href="../detailedMethod/viewMethod.html">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Method Level</span></a>
+            </li>
+
+        </ul>
+        <!-- End of Sidebar -->
+    </div>>
+
+    <div style="position: absolute;top: 26%;left: 22%;">
+        <p id="project-name">Project Name</p>
+        <p id="total-smell">Total number of code smell</p>
+        <p id="smell-package">Package level code smell</p>
+        <p id="smell-class">Class level code smell</p>
+        <p id="smell-method">Method level code smell</p>
+    </div>
+    <div style="position: absolute;top: 10%; left: 15%; width: 1250px;  ">
+        <section id="section-chart" style = "width: 800px; height: 900px;position: absolute;top: 0%;left: 13%;">
+            <div id="piechart" style="width: 700px; height: 500px; position: relative; top: 0%; left: 60%; display: block;"></div>
+            <div id="barchart" style="width: 1000px; height: 4000px; position: absolute; top: 44%; left: 0%; display: block;"></div>
+          </section>
+
+    </div>
+
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+
+
 </body>
+
 </html>
