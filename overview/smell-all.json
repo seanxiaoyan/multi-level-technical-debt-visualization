@@ -18,9 +18,9 @@
     "Shotgun_Surgery": "0",
     "Brain_Method": "0",
     "Unstable_Dependency": "0",
-    "Package_Cyclic_Dependency": "0",
-    "Total": "2",
-    "Distinct_Count": "2"
+    "Package_Cyclic_Dependency": "1",
+    "Total": "3",
+    "Distinct_Count": "3"
   },
   {
     "Name": "entities.Course",
