@@ -5,87 +5,87 @@
   ],
   [
     "God Class",
-    627,
+    0,
     "#dc3912"
   ],
   [
     "Lazy Class",
-    1739,
+    4,
     "#dc3912"
   ],
   [
     "Complex Class",
-    424,
+    0,
     "#dc3912"
   ],
   [
     "Large Class",
-    6023,
+    4,
     "#dc3912"
   ],
   [
     "Refused Request",
-    778,
+    3,
     "#dc3912"
   ],
   [
     "Data Class",
-    7814,
+    6,
     "#dc3912"
   ],
   [
     "Feature Envy",
-    1369,
+    0,
     "#dc3912"
   ],
   [
     "Brain Class",
-    1,
+    0,
     "#dc3912"
   ],
   [
     "Hub Like Dependency",
-    1370,
+    1,
     "#dc3912"
   ],
   [
     "Class Cyclic Dependency",
-    1645,
+    1,
     "#dc3912"
   ],
   [
     "Unhealthy Inheritance",
-    620,
+    1,
     "#dc3912"
   ],
   [
     "Long Method",
-    30341,
+    22,
     "#ff9900"
   ],
   [
     "Long Parameter List",
-    36793,
+    24,
     "#ff9900"
   ],
   [
     "Shotgun Surgery",
-    2189,
+    0,
     "#ff9900"
   ],
   [
     "Brain Method",
-    7,
+    0,
     "#ff9900"
   ],
   [
     "Unstable Dependency",
-    125,
+    0,
     "#3366cc"
   ],
   [
     "Package Cyclic Dependency",
-    79,
+    1,
     "#3366cc"
   ]
 ]
