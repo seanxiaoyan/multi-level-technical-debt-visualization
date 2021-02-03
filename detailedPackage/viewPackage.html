@@ -26,73 +26,78 @@
 </head>
 
 <body id="page-top">
-
-    <!-- Page Wrapper -->
-    <div id="wrapper">
+     <!-- Page Wrapper -->
+     <div id="wrapper">
 
         <!-- Sidebar -->
         <ul style="position: fixed;" class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="../index.html">
-                <div class="sidebar-brand-text mx-3">Detect Smell</div>
+            <a class="sidebar-brand d-flex align-items-center justify-content-center">
+                <div class="sidebar-brand-text mx-3">Multi-Level Technical Debt Visualization</div>
             </a>
+            
 
-            <!-- Divider -->
-            <hr class="sidebar-divider my-0">
+            <!-- Sidebar - Content -->
+            <div style="position: absolute; top: 17%;">
+                <!-- Divider -->
+                <hr class="sidebar-divider my-0">
+                <!-- Nav Item - Detect Smell -->
+                <li class="nav-item ">
+                    <a class="nav-link" href="../index.html">
+                        <i class="fas fa-fw fa-tachometer-alt"></i>
+                        <span>Detect Code Smell</span></a>
+                </li>
+                <!-- Divider -->
+                <hr class="sidebar-divider my-0">
 
-            <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
-                <a class="nav-link" href="../overview/overview.html">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Overview</span></a>
-            </li>
+                <!-- Nav Item - Overview -->
+                <li class="nav-item ">
+                    <a class="nav-link" href="../overview/overview.html">
+                        <i class="fas fa-fw fa-tachometer-alt"></i>
+                        <span>Overview</span></a>
+                </li>
 
-            <!-- Divider -->
-            <hr class="sidebar-divider">
+                <!-- Divider -->
+                <hr class="sidebar-divider">
 
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                Detailed View
+                <!-- Heading -->
+                <div class="sidebar-heading">
+                    Detailed View
+                </div>
+
+                <!-- Nav Item - package level -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="../detailedPackage/viewPackage.html">
+                        <i class="fas fa-fw fa-chart-area"></i>
+                        <span>Package Level</span></a>
+                </li>
+
+                <!-- Nav Item - class level -->
+                <li class="nav-item">
+                    <a class="nav-link" href="../detailedClass/viewClass.html">
+                        <i class="fas fa-fw fa-table"></i>
+                        <span>Class Level</span></a>
+                </li>
+
+                <!-- Nav Item - method level -->
+                <li class="nav-item">
+                    <a class="nav-link" href="../detailedMethod/viewMethod.html">
+                        <i class="fas fa-fw fa-chart-area"></i>
+                        <span>Method Level</span></a>
+                </li>
             </div>
-
-            <!-- Nav Item - package level -->
-            <li class="nav-item">
-                <a class="nav-link" href="../detailedPackage/viewPackage.html">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Package Level</span></a>
-            </li>
-
-            <!-- Nav Item - class level -->
-            <li class="nav-item">
-                <a class="nav-link" href="../detailedClass/viewClass.html">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Class Level</span></a>
-            </li>
-
-            <!-- Nav Item - method level -->
-            <li class="nav-item">
-                <a class="nav-link" href="../detailedMethod/viewMethod.html">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Method Level</span></a>
-            </li>
 
         </ul>
         <!-- End of Sidebar -->
-    </div>>
-
+    </div>
 
     <section id="section-chart" style = "width: 1000px; height: 1000px;position: absolute;top: 10%;left: 20%;">
         <div id="chart_div" style="width: 1100px; height: 700px;"></div>
     </section>
 
+
     <!-- End of Page Wrapper -->
-
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
-        <i class="fas fa-angle-up"></i>
-    </a>
-
 
 
 </body>

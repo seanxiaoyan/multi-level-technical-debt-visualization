@@ -6,129 +6,93 @@
     "color"
   ],
   [
-    "gradekeeper",
+    "babel",
     null,
     0,
     0
   ],
   [
-    "gradekeeper/src",
-    "gradekeeper",
+    "babel/src",
+    "babel",
     0,
     0
   ],
   [
-    "gradekeeper/src/containers",
-    "gradekeeper/src",
+    "babel/src/org",
+    "babel/src",
     0,
     0
   ],
   [
-    "gradekeeper/src/containers/courseTree",
-    "gradekeeper/src/containers",
-    1,
-    0
-  ],
-  [
-    "gradekeeper/src/entities",
-    "gradekeeper/src",
+    "babel/src/org/apache",
+    "babel/src/org",
     0,
     0
   ],
   [
-    "gradekeeper/src/entities/Course",
-    "gradekeeper/src/entities",
+    "babel/src/org/apache/calcite",
+    "babel/src/org/apache",
+    0,
+    0
+  ],
+  [
+    "babel/src/org/apache/calcite/test",
+    "babel/src/org/apache/calcite",
+    0,
+    0
+  ],
+  [
+    "babel/src/org/apache/calcite/test/BabelQuidemTest",
+    "babel/src/org/apache/calcite/test",
     2,
     0
   ],
   [
-    "gradekeeper/src/commands",
-    "gradekeeper/src",
-    0,
-    0
-  ],
-  [
-    "gradekeeper/src/commands/addCourseCommand",
-    "gradekeeper/src/commands",
-    1,
-    0
-  ],
-  [
-    "gradekeeper/src/commands/commandStatus",
-    "gradekeeper/src/commands",
-    1,
-    0
-  ],
-  [
-    "gradekeeper/src/commands/readInputCourseCommand",
-    "gradekeeper/src/commands",
-    1,
-    0
-  ],
-  [
-    "gradekeeper/src/commands/deleteCourseCommand",
-    "gradekeeper/src/commands",
-    0,
-    0
-  ],
-  [
-    "gradekeeper/src/startup",
-    "gradekeeper/src",
-    0,
-    0
-  ],
-  [
-    "gradekeeper/src/startup/gradeKeeper",
-    "gradekeeper/src/startup",
-    4,
-    0
-  ],
-  [
-    "gradekeeper/src/userInterfaces",
-    "gradekeeper/src",
-    0,
-    0
-  ],
-  [
-    "gradekeeper/src/userInterfaces/ConsoleIO",
-    "gradekeeper/src/userInterfaces",
+    "babel/src/org/apache/calcite/test/BabelQuidemTest-self",
+    "babel/src/org/apache/calcite/test/BabelQuidemTest",
     2,
     0
   ],
   [
-    "gradekeeper/src/userInterfaces/DialogIO",
-    "gradekeeper/src/userInterfaces",
+    "babel/src/org/apache/calcite/test/BabelQuidemTest/BabelCommandHandler",
+    "babel/src/org/apache/calcite/test/BabelQuidemTest",
     2,
     0
   ],
   [
-    "gradekeeper/src/commands/currentStateCommand",
-    "gradekeeper/src/commands",
+    "babel/src/org/apache/calcite/test/BabelQuidemTest/ExplainValidatedCommand",
+    "babel/src/org/apache/calcite/test/BabelQuidemTest",
     1,
     0
   ],
   [
-    "gradekeeper/src/commands/outputCourseCommand",
-    "gradekeeper/src/commands",
+    "babel/src/org/apache/calcite/test/BabelTest",
+    "babel/src/org/apache/calcite/test",
     0,
     0
   ],
   [
-    "gradekeeper/src/commands/weightedAverageCommand",
-    "gradekeeper/src/commands",
-    3,
-    0
-  ],
-  [
-    "gradekeeper/src/entities/basicCourse",
-    "gradekeeper/src/entities",
+    "babel/src/org/apache/calcite/test/BabelParserTest",
+    "babel/src/org/apache/calcite/test",
     1,
     0
   ],
   [
-    "gradekeeper/src/userInterfaces/AbstractDialogIO",
-    "gradekeeper/src/userInterfaces",
-    1,
+    "babel/src/org/apache/calcite/sql",
+    "babel/src/org/apache/calcite",
+    0,
+    0
+  ],
+  [
+    "babel/src/org/apache/calcite/sql/babel",
+    "babel/src/org/apache/calcite/sql",
+    0,
+    0
+  ],
+  [
+    "babel/src/org/apache/calcite/sql/babel/SqlBabelCreateTable",
+    "babel/src/org/apache/calcite/sql/babel",
+    0,
     0
   ]
 ]

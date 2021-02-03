@@ -34,74 +34,86 @@
         <ul style="position: fixed;" class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="../index.html">
-                <div class="sidebar-brand-text mx-3">Detect Smell</div>
+            <a class="sidebar-brand d-flex align-items-center justify-content-center">
+                <div class="sidebar-brand-text mx-3">Multi-Level Technical Debt Visualization</div>
             </a>
+            
 
-            <!-- Divider -->
-            <hr class="sidebar-divider my-0">
+            <!-- Sidebar - Content -->
+            <div style="position: absolute; top: 17%;">
+                <!-- Divider -->
+                <hr class="sidebar-divider my-0">
+                <!-- Nav Item - Detect Smell -->
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">
+                        <i class="fas fa-fw fa-tachometer-alt"></i>
+                        <span>Detect Code Smell</span></a>
+                </li>
+                <!-- Divider -->
+                <hr class="sidebar-divider my-0">
 
-            <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
-                <a class="nav-link" href="../overview/overview.html">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Overview</span></a>
-            </li>
+                <!-- Nav Item - Overview -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="../overview/overview.html">
+                        <i class="fas fa-fw fa-tachometer-alt"></i>
+                        <span>Overview</span></a>
+                </li>
 
-            <!-- Divider -->
-            <hr class="sidebar-divider">
+                <!-- Divider -->
+                <hr class="sidebar-divider">
 
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                Detailed View
+                <!-- Heading -->
+                <div class="sidebar-heading">
+                    Detailed View
+                </div>
+
+                <!-- Nav Item - package level -->
+                <li class="nav-item">
+                    <a class="nav-link" href="../detailedPackage/viewPackage.html">
+                        <i class="fas fa-fw fa-chart-area"></i>
+                        <span>Package Level</span></a>
+                </li>
+
+                <!-- Nav Item - class level -->
+                <li class="nav-item">
+                    <a class="nav-link" href="../detailedClass/viewClass.html">
+                        <i class="fas fa-fw fa-table"></i>
+                        <span>Class Level</span></a>
+                </li>
+
+                <!-- Nav Item - method level -->
+                <li class="nav-item">
+                    <a class="nav-link" href="../detailedMethod/viewMethod.html">
+                        <i class="fas fa-fw fa-chart-area"></i>
+                        <span>Method Level</span></a>
+                </li>
             </div>
-
-            <!-- Nav Item - package level -->
-            <li class="nav-item">
-                <a class="nav-link" href="../detailedPackage/viewPackage.html">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Package Level</span></a>
-            </li>
-
-            <!-- Nav Item - class level -->
-            <li class="nav-item">
-                <a class="nav-link" href="../detailedClass/viewClass.html">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Class Level</span></a>
-            </li>
-
-            <!-- Nav Item - method level -->
-            <li class="nav-item">
-                <a class="nav-link" href="../detailedMethod/viewMethod.html">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Method Level</span></a>
-            </li>
 
         </ul>
         <!-- End of Sidebar -->
-    </div>>
+    </div>
 
-    <div style="position: absolute;top: 15%;left: 28%;">
-        <span style="position: relative; left: 38%;">Statistic</span>
+    <div style="position: absolute;top: 15%;left: 28%; color: black;">
+        <h3 style="position: relative; left: 38%;">Statistics</h3>
         <table id="statistic">
             <tr>
-                <td>Project name</td>
-                <td class="td" id="project-name">Maria Anders</td>
+                <td>Project Name</td>
+                <td class="td" id="project-name"></td>
             </tr>
             <tr>
-                <td>Total code smell</td>
+                <td>Total Code Smell</td>
                 <td class="td" id="total-smell"></td>
             </tr>
             <tr>
-                <td>Package level code smell</td>
+                <td>Package Level Code Smell</td>
                 <td class="td" id="smell-package"></td>
             </tr> 
             <tr>
-                <td>Class level code smell</td>
+                <td>Class Level Code Smell</td>
                 <td class="td" id="smell-class"></td>
             </tr>
             <tr>
-                <td>Method level code smell</td>
+                <td>Method Level Code Smell</td>
                 <td class="td" id="smell-method"></td>
             </tr>
           
@@ -109,10 +121,14 @@
     </div>
     <div style="position: absolute;top: 1%; left: 10%; width: 1250px;  ">
         <section id="section-chart" style = "width: 800px; height: 900px;position: absolute;top: 0%;left: 13%;">
-            <div id="piechart" style="width: 700px; height: 500px; position: relative; top: 0%; left: 60%; display: block;"></div>
-            <div id="barchart" style="width: 1000px; height: 4000px; position: absolute; top: 43%; left: 3%; display: block;"></div>
+            <div id="piechart" style="width: 600px; height: 400px; position: relative; top: 5%; left: 60%; display: block;"></div>
+            <div id="barchart" style="width: 1000px; height: 4000px; position: absolute; top: 47%; left: 3%; display: block;"></div>
           </section>
 
+    </div>
+    <div>
+        <h3 style="position: absolute;top: 8%; left: 65%;color: black; "class="piechartheader">Code Smell per Categories</h2>
+        <h3 style="position: absolute;top: 60%; left: 48%;color: black; "class="piechartheader">Code Smell Count</h2>
     </div>
 
     <!-- End of Page Wrapper -->

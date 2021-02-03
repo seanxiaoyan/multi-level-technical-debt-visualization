@@ -3,6 +3,7 @@ const csv=require('csvtojson');
 const ipc = require('electron').ipcRenderer;
 
 let data_json;
+
 try {
    data_json = fs.readFileSync('./detailedPackage/data.json', 'utf8');
 } catch (err) {
@@ -10,14 +11,9 @@ try {
 }
 dataArray = JSON.parse(data_json);
 
-
-
-
 function drawChart() {
     var data = google.visualization.arrayToDataTable(dataArray);
-
     tree = new google.visualization.TreeMap(document.getElementById('chart_div'));
-
     tree.draw(data, {
       minColor: '#f00',
       midColor: '#ddd',
@@ -26,9 +22,7 @@ function drawChart() {
       fontColor: 'black',
       generateTooltip: showStaticTooltip
     });
-
     function showStaticTooltip(row, size, value) {
         return size;
       }
-
 };

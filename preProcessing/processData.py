@@ -19,9 +19,9 @@ array_methodlevel=[['child', 'Parent', 'size', 'color'],
 
 pieChartArray = [
   ['Smell Name', 'Count'],
-  ['packageLevel', 0],
-  ['classLevel', 0],
-  ['methodLevel', 0]
+  ['Package Level', 0],
+  ['Class Level', 0],
+  ['Method Level', 0]
 ]
 
 barChartArray = [

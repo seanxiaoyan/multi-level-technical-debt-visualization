@@ -10,7 +10,7 @@
   ],
   [
     "Lazy Class",
-    4,
+    2,
     "#dc3912"
   ],
   [
@@ -20,17 +20,17 @@
   ],
   [
     "Large Class",
-    4,
+    2,
     "#dc3912"
   ],
   [
     "Refused Request",
-    3,
+    0,
     "#dc3912"
   ],
   [
     "Data Class",
-    6,
+    1,
     "#dc3912"
   ],
   [
@@ -50,22 +50,22 @@
   ],
   [
     "Class Cyclic Dependency",
-    1,
+    0,
     "#dc3912"
   ],
   [
     "Unhealthy Inheritance",
-    1,
+    0,
     "#dc3912"
   ],
   [
     "Long Method",
-    22,
+    12,
     "#ff9900"
   ],
   [
     "Long Parameter List",
-    24,
+    20,
     "#ff9900"
   ],
   [
@@ -85,7 +85,7 @@
   ],
   [
     "Package Cyclic Dependency",
-    1,
+    0,
     "#3366cc"
   ]
 ]

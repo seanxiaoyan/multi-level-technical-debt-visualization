@@ -33,7 +33,6 @@ function drawPieChart() {
   document.getElementById("smell-method").innerHTML = pieChartArray[3][1].toString();
   let data = google.visualization.arrayToDataTable(pieChartArray);
   let options = {sliceVisibilityThreshold: 0.001,
-    title: 'Code smell in categories'
   };
   let chart = new google.visualization.PieChart(document.getElementById('piechart'));
   chart.draw(data, options);
@@ -49,7 +48,6 @@ function drawBarChart() {
                      role: "annotation" },
                    2]);
   var options = {
-    title: "Detailed code smells count",
     width: 1000,
     height: 750,
     bar: {groupWidth: "95%"},
