@@ -5,7 +5,7 @@ const ipc = require('electron').ipcRenderer;
 let data_json;
 
 try {
-   data_json = fs.readFileSync('./detailedPackage/data.json', 'utf8');
+   data_json = fs.readFileSync('./detailedPackage/data-cyclic-dependency.json', 'utf8');
 } catch (err) {
   console.error(err)
 }

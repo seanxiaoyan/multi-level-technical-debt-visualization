@@ -19,7 +19,7 @@ barChartArray[0].push({ role: "style" })
 
 let data_json;
 try {
-   data_json = fs.readFileSync('./detailedPackage/data.json', 'utf8');
+   data_json = fs.readFileSync('./detailedPackage/data-all.json', 'utf8');
 } catch (err) {
   console.error(err)
 }

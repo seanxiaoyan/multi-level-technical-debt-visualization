@@ -10,6 +10,11 @@ subfolders = [ f.path for f in os.scandir(data_path) if f.is_dir() ]
 
 array_packagelevel=[['child', 'Parent', 'size', 'color'],
 [f'{proj_name}',None,0,0]]
+array_unstable_dep=[['child', 'Parent', 'size', 'color'],
+[f'{proj_name}',None,0,0]]
+array_pk_cyc_dep=[['child', 'Parent', 'size', 'color'],
+[f'{proj_name}',None,0,0]]
+
 
 array_classlevel=[['child', 'Parent', 'size', 'color'],
 [f'{proj_name}',None,0,0]]
@@ -70,8 +75,13 @@ for folder in subfolders:
     # process csv data for package-level-smell visualization
     if(os.path.exists(smells_packages)):
         folder_name = folder.split('/')[-1]
+
         array_packagelevel.append([f'{proj_name}/{folder_name}',f'{proj_name}',0,0])
+        array_unstable_dep.append([f'{proj_name}/{folder_name}',f'{proj_name}',0,0])
+        array_pk_cyc_dep.append([f'{proj_name}/{folder_name}',f'{proj_name}',0,0])
+
         package_array_index+=1
+
         with open(smells_packages) as csv_file:
             csv_reader = csv.reader(csv_file, delimiter=',')
             line_count = 0
@@ -92,23 +102,51 @@ for folder in subfolders:
 
                     # count 
                     total_smell = 0 
-                    for j in range(1,3):
-                        bar_chart_array_index = 15+j
-                        barChartArray[bar_chart_array_index][1]+=int(row[j])
-                        total_smell += int(row[j])
+                    unstable_dep_smell = 0
+                    pk_cyc_dep_smell = 0
+
+                    j = 1
+                    bar_chart_array_index = 15+j
+                    barChartArray[bar_chart_array_index][1]+=int(row[j])
+
+                    total_smell += int(row[j]) 
+                    unstable_dep_smell += int(row[j]) 
+
+                    j = 2
+                    bar_chart_array_index = 15+j
+                    barChartArray[bar_chart_array_index][1]+=int(row[j])
+                    
+                    total_smell += int(row[j]) 
+                    pk_cyc_dep_smell += int(row[j]) 
+
                     for i in range(len(name_list)):
                         if i == len(name_list)-1:
                             if name_list[i] in nonleaf_dict_package:
-                                newName = name_list[i]+'-self'             
+                                newName = name_list[i]+'-self'       
+
                                 array_packagelevel.append([newName,name_list[i],total_smell,0])
+                                array_pk_cyc_dep.append([newName,name_list[i],pk_cyc_dep_smell,0])
+                                array_unstable_dep.append([newName,name_list[i],unstable_dep_smell,0])
+
                                 package_array_index+=1
+
+
                             else:
                                 if i == 0:
                                     array_packagelevel.append([name_list[i],f'{proj_name}/{folder_name}',total_smell,0])
+                                    array_pk_cyc_dep.append([name_list[i],f'{proj_name}/{folder_name}',pk_cyc_dep_smell,0])
+                                    array_unstable_dep.append([name_list[i],f'{proj_name}/{folder_name}',unstable_dep_smell,0])
+
                                 else:
                                     array_packagelevel.append([name_list[i],name_list[i-1],total_smell,0])
-                                package_array_index+=1                      
+                                    array_pk_cyc_dep.append([name_list[i],name_list[i-1],pk_cyc_dep_smell,0])
+                                    array_unstable_dep.append([name_list[i],name_list[i-1],unstable_dep_smell,0])
+
+                                package_array_index+=1   
+
                                 leaf_dict_package[name_list[i]]=package_array_index
+
+
                             pieChartArray[1][1] += total_smell
                        
 
@@ -122,8 +160,15 @@ for folder in subfolders:
                                     idx = leaf_dict_package[name_list[i]]
                                     newName = array_packagelevel[idx][0]+'-self'
                                     count = array_packagelevel[idx][2]
+
                                     array_packagelevel.append([newName,name_list[i],count,0])
+                                    array_pk_cyc_dep.append([newName,name_list[i],count,0])
+                                    array_unstable_dep.append([newName,name_list[i],count,0])
+
                                     array_packagelevel[idx][2]=0
+                                    array_pk_cyc_dep[idx][2]=0
+                                    array_unstable_dep[idx][2]=0
+
                                     package_array_index+=1
                                     self_dict_package[name_list[i]]=1
                                 continue # continue to avoid duplicate
@@ -131,8 +176,12 @@ for folder in subfolders:
 
                             if i == 0:
                                 array_packagelevel.append([name_list[i],f'{proj_name}/{folder_name}',0,0])
+                                array_pk_cyc_dep.append([name_list[i],f'{proj_name}/{folder_name}',0,0])
+                                array_unstable_dep.append([name_list[i],f'{proj_name}/{folder_name}',0,0])
                             else:
                                 array_packagelevel.append([name_list[i],name_list[i-1],0,0])
+                                array_pk_cyc_dep.append([name_list[i],name_list[i-1],0,0])
+                                array_unstable_dep.append([name_list[i],name_list[i-1],0,0])
                       
                             
                             package_array_index+=1
@@ -264,17 +313,23 @@ for folder in subfolders:
 json_object_piechartArray = json.dumps(pieChartArray, indent = 2) 
 json_object_barchartArray = json.dumps(barChartArray, indent = 2) 
 json_object_package = json.dumps(array_packagelevel, indent = 2) 
+json_object_package_unstable = json.dumps(array_unstable_dep, indent = 2) 
+json_object_package_cyc = json.dumps(array_pk_cyc_dep, indent = 2) 
 json_object_class = json.dumps(array_classlevel, indent = 2) 
 json_object_method = json.dumps(array_methodlevel, indent = 2) 
   
 # Writing to data.json 
-with open("./detailedPackage/data.json", "w") as outfile: 
+with open("./detailedPackage/data-all.json", "w") as outfile: 
     outfile.write(json_object_package) 
+with open("./detailedPackage/data-unstable-dependency.json", "w") as outfile: 
+    outfile.write(json_object_package_unstable) 
+with open("./detailedPackage/data-cyclic-dependency.json", "w") as outfile: 
+    outfile.write(json_object_package_cyc) 
 
-with open("./detailedClass/data.json", "w") as outfile: 
+with open("./detailedClass/data-all.json", "w") as outfile: 
     outfile.write(json_object_class) 
 
-with open("./detailedMethod/data.json", "w") as outfile: 
+with open("./detailedMethod/data-all.json", "w") as outfile: 
     outfile.write(json_object_method) 
 
 with open("./overview/pieChartData.json", "w") as outfile: 
