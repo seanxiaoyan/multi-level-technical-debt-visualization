@@ -44,6 +44,16 @@ array_classlevel_unhealthy=[['child', 'Parent', 'size', 'color'],
 
 array_methodlevel=[['child', 'Parent', 'size', 'color'],
 [f'{proj_name}',None,0,0]]
+array_methodlevel_lmethod=[['child', 'Parent', 'size', 'color'],
+[f'{proj_name}',None,0,0]]
+array_methodlevel_lparemeterlist=[['child', 'Parent', 'size', 'color'],
+[f'{proj_name}',None,0,0]]
+array_methodlevel_shotgun=[['child', 'Parent', 'size', 'color'],
+[f'{proj_name}',None,0,0]]
+array_methodlevel_brain=[['child', 'Parent', 'size', 'color'],
+[f'{proj_name}',None,0,0]]
+
+
 
 pieChartArray = [
   ['Smell Name', 'Count'],
@@ -444,6 +454,10 @@ for folder in subfolders:
     if(os.path.exists(smells_methods)):
         folder_name = folder.split('/')[-1]
         array_methodlevel.append([f'{proj_name}/{folder_name}',f'{proj_name}',0,0])
+        array_methodlevel_lmethod.append([f'{proj_name}/{folder_name}',f'{proj_name}',0,0])
+        array_methodlevel_lparemeterlist.append([f'{proj_name}/{folder_name}',f'{proj_name}',0,0])
+        array_methodlevel_brain.append([f'{proj_name}/{folder_name}',f'{proj_name}',0,0])
+        array_methodlevel_shotgun.append([f'{proj_name}/{folder_name}',f'{proj_name}',0,0])
 
         with open(smells_methods) as csv_file:
             csv_reader = csv.reader(csv_file, delimiter=',')
@@ -468,21 +482,62 @@ for folder in subfolders:
                             if name_list[i] in nonleaf_dict_method:
                                 continue
                             array_methodlevel.append([name_list[i],f'{proj_name}/{folder_name}',0,0])
+                            array_methodlevel_lmethod.append([name_list[i],f'{proj_name}/{folder_name}',0,0])
+                            array_methodlevel_lparemeterlist.append([name_list[i],f'{proj_name}/{folder_name}',0,0])
+                            array_methodlevel_shotgun.append([name_list[i],f'{proj_name}/{folder_name}',0,0])
+                            array_methodlevel_brain.append([name_list[i],f'{proj_name}/{folder_name}',0,0])
+
                             nonleaf_dict_method[name_list[i]]=1
 
                         elif i == len(name_list)-1:
+                            #count smell
                             total_smell = 0 
-                            for j in range(1,5):
-                                bar_chart_array_index = 11+j
-                                barChartArray[bar_chart_array_index][1]+=int(row[j])
-                                total_smell += int(row[j])
+                            smell_lmethod = 0
+                            smell_lparameter = 0
+                            smell_shotgun = 0
+                            smell_brain = 0
+
+                            j=1
+                            bar_chart_array_index = 11+j
+                            barChartArray[bar_chart_array_index][1]+=int(row[j])
+                            total_smell += int(row[j])
+                            smell_lmethod += int(row[j])
+
+                            j=2
+                            bar_chart_array_index = 11+j
+                            barChartArray[bar_chart_array_index][1]+=int(row[j])
+                            total_smell += int(row[j])
+                            smell_lparameter += int(row[j])
+
+                            j=3
+                            bar_chart_array_index = 11+j
+                            barChartArray[bar_chart_array_index][1]+=int(row[j])
+                            total_smell += int(row[j])
+                            smell_shotgun += int(row[j])
+
+                            j=4
+                            bar_chart_array_index = 11+j
+                            barChartArray[bar_chart_array_index][1]+=int(row[j])
+                            total_smell += int(row[j])
+                            smell_brain += int(row[j])
+    
                             array_methodlevel.append([name_list[i],name_list[i-1],total_smell,0])
+                            array_methodlevel_lmethod.append([name_list[i],name_list[i-1],smell_lmethod,0])
+                            array_methodlevel_lparemeterlist.append([name_list[i],name_list[i-1],smell_lparameter,0])
+                            array_methodlevel_shotgun.append([name_list[i],name_list[i-1],smell_shotgun,0])
+                            array_methodlevel_brain.append([name_list[i],name_list[i-1],smell_brain,0])
+
                             pieChartArray[3][1] += total_smell
 
                         else:
                             if name_list[i] in nonleaf_dict_method:
                                 continue
                             array_methodlevel.append([name_list[i],name_list[i-1],0,0])
+                            array_methodlevel_lmethod.append([name_list[i],name_list[i-1],0,0])
+                            array_methodlevel_lparemeterlist.append([name_list[i],name_list[i-1],0,0])
+                            array_methodlevel_shotgun.append([name_list[i],name_list[i-1],0,0])
+                            array_methodlevel_brain.append([name_list[i],name_list[i-1],0,0])
+
                             nonleaf_dict_method[name_list[i]]=1
 
                     line_count += 1
@@ -511,6 +566,10 @@ json_object_class_cyc = json.dumps(array_classlevel_cyc, indent = 2)
 json_object_unhealthy = json.dumps(array_classlevel_unhealthy, indent = 2) 
 
 json_object_method = json.dumps(array_methodlevel, indent = 2) 
+json_object_lmethod = json.dumps(array_methodlevel_lmethod, indent = 2) 
+json_object_lparameter = json.dumps(array_methodlevel_lparemeterlist, indent = 2) 
+json_object_shotgun = json.dumps(array_methodlevel_shotgun, indent = 2) 
+json_object_brain_method = json.dumps(array_methodlevel_brain, indent = 2) 
   
 # Writing to data.json 
 # package level
@@ -548,6 +607,14 @@ with open("./detailedClass/data-unhealthy-inheritance-dependency.json", "w") as 
 # method level
 with open("./detailedMethod/data-all.json", "w") as outfile: 
     outfile.write(json_object_method) 
+with open("./detailedMethod/data-long-method.json", "w") as outfile: 
+    outfile.write(json_object_lmethod) 
+with open("./detailedMethod/data-long-parameter-list.json", "w") as outfile: 
+    outfile.write(json_object_lparameter) 
+with open("./detailedMethod/data-shotgun-surgery.json", "w") as outfile: 
+    outfile.write(json_object_shotgun) 
+with open("./detailedMethod/data-brain-method.json", "w") as outfile: 
+    outfile.write(json_object_brain_method) 
 # overview
 with open("./overview/pieChartData.json", "w") as outfile: 
     outfile.write(json_object_piechartArray) 
