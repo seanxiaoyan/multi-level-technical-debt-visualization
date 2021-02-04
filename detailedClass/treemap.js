@@ -4,7 +4,7 @@ const ipc = require('electron').ipcRenderer;
 
 let data_json;
 try {
-   data_json = fs.readFileSync('./detailedClass/data.json', 'utf8');
+   data_json = fs.readFileSync('./detailedClass/data-god-class.json', 'utf8');
 } catch (err) {
   console.error(err)
 }
