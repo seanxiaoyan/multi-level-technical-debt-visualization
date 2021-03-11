@@ -25,12 +25,14 @@ try {
 }
 dataArray = JSON.parse(data_json);
 
+
 function drawPieChart() {
+
   document.getElementById("project-name").innerHTML = dataArray[1][0].toString('utf8');
-  document.getElementById("total-smell").innerHTML = (pieChartArray[1][1]+pieChartArray[2][1]+pieChartArray[3][1]).toString();
-  document.getElementById("smell-package").innerHTML =  pieChartArray[1][1].toString();
-  document.getElementById("smell-class").innerHTML = pieChartArray[2][1].toString();
-  document.getElementById("smell-method").innerHTML = pieChartArray[3][1].toString();
+  document.getElementById("total-smell").innerHTML = (pieChartArray[1][1]+pieChartArray[2][1]+pieChartArray[3][1]).toLocaleString();
+  document.getElementById("smell-package").innerHTML =  pieChartArray[1][1].toLocaleString();
+  document.getElementById("smell-class").innerHTML = pieChartArray[2][1].toLocaleString();
+  document.getElementById("smell-method").innerHTML = pieChartArray[3][1].toLocaleString();
   let data = google.visualization.arrayToDataTable(pieChartArray);
   let options = {
     sliceVisibilityThreshold: 0.001,
