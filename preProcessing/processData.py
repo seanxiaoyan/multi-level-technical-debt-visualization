@@ -64,23 +64,23 @@ pieChartArray = [
 
 barChartArray = [
   ["Smell Name", "Count"],
-  ["God Class", 0, "#FAEACB"],
-  ["Lazy Class", 0, "#FAEACB"],
-  ["Complex Class", 0, "#FAEACB"],
-  ["Large Class", 0, "#FAEACB"],
-  ["Refused Request", 0, "#FAEACB"],
-  ["Data Class", 0, "#FAEACB"],
-  ["Feature Envy", 0, "#FAEACB"],
-  ["Brain Class", 0, "#FAEACB"],
-  ["Hub Like Dependency", 0, "#FAEACB"],
-  ["Class Cyclic Dependency", 0, "#FAEACB"],
-  ["Unhealthy Inheritance", 0, "#FAEACB"],
-  ["Long Method", 0, "#9CC0E7"],
-  ["Long Parameter List", 0, "#9CC0E7"],
-  ["Shotgun Surgery", 0, "#9CC0E7"],
-  ["Brain Method", 0, "#9CC0E7"],
-  ["Unstable Dependency", 0, "#D3D0C9"],
-  ["Package Cyclic Dependency", 0, "#D3D0C9"]
+  ["God Class", 0, "#D5BB9E"],
+  ["Lazy Class", 0, "#D5BB9E"],
+  ["Complex Class", 0, "#D5BB9E"],
+  ["Large Class", 0, "#D5BB9E"],
+  ["Refused Request", 0, "#D5BB9E"],
+  ["Data Class", 0, "#D5BB9E"],
+  ["Feature Envy", 0, "#D5BB9E"],
+  ["Brain Class", 0, "#D5BB9E"],
+  ["Hub Like Dependency", 0, "#D5BB9E"],
+  ["Class Cyclic Dependency", 0, "#D5BB9E"],
+  ["Unhealthy Inheritance", 0, "#D5BB9E"],
+  ["Long Method", 0, "#178CCB"],
+  ["Long Parameter List", 0, "#178CCB"],
+  ["Shotgun Surgery", 0, "#178CCB"],
+  ["Brain Method", 0, "#178CCB"],
+  ["Unstable Dependency", 0, "#803C05"],
+  ["Package Cyclic Dependency", 0, "#803C05"]
   
 ]
 

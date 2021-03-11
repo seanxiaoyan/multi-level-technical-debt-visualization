@@ -36,7 +36,7 @@ function drawPieChart() {
   let data = google.visualization.arrayToDataTable(pieChartArray);
   let options = {
     sliceVisibilityThreshold: 0.001,
-    colors: ['#D3D0C9', '#FAEACB','#9CC0E7']
+    colors: ['#803C05', '#D5BB9E','#178CCB']
   };
   let chart = new google.visualization.PieChart(document.getElementById('piechart'));
   chart.draw(data, options);
