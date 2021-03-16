@@ -50,8 +50,16 @@ function drawBarChart() {
                      sourceColumn: 1,
                      type: "string",
                      role: "annotation" },
-                   2]);
+                     2
+                   ]);
   var options = {
+    annotations: {
+      textStyle: {
+        // The color of the text.
+        color: 'cyan',
+        fontSize:20
+      }
+    },
     width: 1000,
     height: 750,
     bar: {groupWidth: "95%"},
