@@ -132,10 +132,10 @@ for folder in subfolders:
                     for i in range(len(name_list)):
                         if i == 0:
                             temp = name_list[i]
-                            name_list[i]= os.path.join(f'{proj_name}/{folder_name}/{temp}')
+                            name_list[i]= os.path.join(f'{proj_name}/{folder_name}/{temp}').replace('\\','/')
                         else:
                             temp = name_list[i]
-                            name_list[i] = os.path.join(name_list[i-1],temp)
+                            name_list[i] = os.path.join(name_list[i-1],temp).replace('\\','/')
 
                     # count 
                     total_smell = 0 
@@ -261,10 +261,10 @@ for folder in subfolders:
                     for i in range(len(name_list)):
                         if i == 0:
                             temp = name_list[i]
-                            name_list[i]= os.path.join(f'{proj_name}/{folder_name}/{temp}')
+                            name_list[i]= os.path.join(f'{proj_name}/{folder_name}/{temp}').replace('\\','/')
                         else:
                             temp = name_list[i]
-                            name_list[i] = os.path.join(name_list[i-1],temp)
+                            name_list[i] = os.path.join(name_list[i-1],temp).replace('\\','/')
 
                     for i in range(len(name_list)):
                         if i == 0:
@@ -480,11 +480,11 @@ for folder in subfolders:
                     for i in range(len(name_list)):
                         if i == 0:
                             temp = name_list[i]
-                            name_list[i]= os.path.join(f'{proj_name}/{folder_name}/{temp}')
+                            name_list[i]= os.path.join(f'{proj_name}/{folder_name}/{temp}').replace('\\','/')
 
                         else:
                             temp = name_list[i]
-                            name_list[i] = os.path.join(name_list[i-1],temp)
+                            name_list[i] = os.path.join(name_list[i-1],temp).replace('\\','/')
                     for i in range(len(name_list)):
                         if i == 0:
                             if name_list[i] in nonleaf_dict_method:
