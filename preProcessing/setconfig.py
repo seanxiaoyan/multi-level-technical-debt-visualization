@@ -10,8 +10,8 @@ file_path = os.path.realpath(__file__)
 dir_path = os.path.dirname(file_path)
 root_path = Path(dir_path).parent
 
-proj_path = sys.argv[1]
-proj_name = proj_path.split('/')[-1]
+proj_path = sys.argv[1].replace('\\','/')
+proj_name = proj_path.replace('\\','/').split('/')[-1]
 
 parser = configparser.ConfigParser()
 config_path = os.path.join(root_path,'GetSmells/config.ini')

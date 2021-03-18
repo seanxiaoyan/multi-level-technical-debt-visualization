@@ -108,7 +108,8 @@ for folder in subfolders:
 
     # process csv data for package-level-smell visualization
     if(os.path.exists(smells_packages)):
-        folder_name = folder.split('/')[-1]
+        folder_name = folder.replace('\\','/').split('/')[-1]
+        
 
         array_packagelevel.append([f'{proj_name}/{folder_name}',f'{proj_name}',0,0])
         array_unstable_dep.append([f'{proj_name}/{folder_name}',f'{proj_name}',0,0])
@@ -120,6 +121,8 @@ for folder in subfolders:
             csv_reader = csv.reader(csv_file, delimiter=',')
             line_count = 0
             for row in csv_reader:
+                if not row:
+                    continue
                 if line_count == 0:
                     line_count += 1
                 else:
@@ -228,7 +231,7 @@ for folder in subfolders:
 
     # process csv data for class-level-smell visualizaiton
     if(os.path.exists(smells_classes)):
-        folder_name = folder.split('/')[-1]
+        folder_name = folder.replace('\\','/').split('/')[-1]
 
         array_classlevel.append([f'{proj_name}/{folder_name}',f'{proj_name}',0,0])
         array_classlevel_god.append([f'{proj_name}/{folder_name}',f'{proj_name}',0,0])
@@ -248,6 +251,8 @@ for folder in subfolders:
             csv_reader = csv.reader(csv_file, delimiter=',')
             line_count = 0
             for row in csv_reader:
+                if not row:
+                    continue
                 if line_count == 0:
                     line_count += 1
                 else:
@@ -453,7 +458,7 @@ for folder in subfolders:
 
     # process csv data for method-level-smell visualizaiton
     if(os.path.exists(smells_methods)):
-        folder_name = folder.split('/')[-1]
+        folder_name = folder.replace('\\','/').split('/')[-1]
         array_methodlevel.append([f'{proj_name}/{folder_name}',f'{proj_name}',0,0])
         array_methodlevel_lmethod.append([f'{proj_name}/{folder_name}',f'{proj_name}',0,0])
         array_methodlevel_lparemeterlist.append([f'{proj_name}/{folder_name}',f'{proj_name}',0,0])
@@ -465,6 +470,8 @@ for folder in subfolders:
             line_count = 0
 
             for row in csv_reader:
+                if not row:
+                    continue
                 if line_count == 0:
                     line_count += 1
 
@@ -637,7 +644,7 @@ with open(pathCUD, "w") as outfile:
 
 # method level
 pathMAll = os.path.join(os.getcwd(),'detailedMethod','data-all.json')
-with open("./detailedMethod/data-all.json", "w") as outfile: 
+with open(pathMAll, "w") as outfile: 
     outfile.write(json_object_method) 
 
 pathMLM = os.path.join(os.getcwd(),'detailedMethod','data-long-method.json')

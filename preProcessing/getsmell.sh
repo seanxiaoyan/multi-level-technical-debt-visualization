@@ -1,7 +1,8 @@
 #!/bin/bash
 
-
+if [[ "$OSTYPE" == "darwin"* ]]; then
 export PYTHONPATH="$PWD/GetSmells:/Applications/Understand.app/Contents/MacOS/Python"
+fi
 
 
-python3 -W ignore ./GetSmells/src/main.py
+py -W ignore ./GetSmells/src/main.py

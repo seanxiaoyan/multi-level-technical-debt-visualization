@@ -15,10 +15,11 @@ function detectSmell(){
         properties: ['openDirectory']
     });
     let proj_path = pathArray[0];
+    console.log(proj_path);
 
     let pathSetconfig = path.join(__dirname,'preProcessing','setconfig.py');
 
-    let process_config = require('child_process').spawn('python3', [pathSetconfig,proj_path]);
+    let process_config = require('child_process').spawn('py', [pathSetconfig,proj_path]);
 
     process_config.on('close',(code)=>{
         console.log(`set config exited with ${code}`);
@@ -35,7 +36,7 @@ function detectSmell(){
     process_detectsmell.on('close',(code)=>{
             console.log(`set PYTHONPATH and execute GetSmells process exited with code ${code}`);
             
-            let splits = proj_path.split('/');
+            let splits = proj_path.replaceAll('\\','/').split('/');
             let len = splits.length;
             projName = splits[len-1];
             
@@ -55,7 +56,7 @@ function detectSmell(){
                     }
                 });
                 let pathProcessData = path.join(__dirname,'preProcessing','processData.py');
-                let process_getDataArray = require('child_process').spawn('python3', [pathProcessData,projName.toLowerCase()]);
+                let process_getDataArray = require('child_process').spawn('py', [pathProcessData,projName.toLowerCase()]);
                 process_getDataArray.on('close',(code)=>{
                     console.log(`Data-processing process exited with ${code}`);
                     ipc.send('get-smell-finished',"get-smell-done");
