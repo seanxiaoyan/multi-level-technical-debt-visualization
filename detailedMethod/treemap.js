@@ -1,6 +1,7 @@
 const fs = require('fs');
 const csv=require('csvtojson');
 const ipc = require('electron').ipcRenderer;
+const path = require('path');
 
 let data_json;
 
@@ -8,34 +9,39 @@ function drawChart() {
   var x = document.getElementById("select").value;
   if(x=="1"){
     try {
-      data_json = fs.readFileSync('./detailedMethod/data-all.json', 'utf8');
+      let pathDataAll = path.join(__dirname,'data-all.json');
+      data_json = fs.readFileSync(pathDataAll, 'utf8');
   } catch (err) {
     console.error(err);
   }}
   else if(x=="2"){
       try {
-        data_json = fs.readFileSync('./detailedMethod/data-long-method.json', 'utf8');
+        let pathDataLM = path.join(__dirname,'data-long-method.json');
+        data_json = fs.readFileSync(pathDataLM, 'utf8');
       } catch (err) {
         console.error(err);
       }
   }
   else if(x=="3"){
       try {
-        data_json = fs.readFileSync('./detailedMethod/data-long-parameter-list.json', 'utf8');
+        let pathDataLPL = path.join(__dirname,'data-long-parameter-list.json');
+        data_json = fs.readFileSync(pathDataLPL, 'utf8');
       } catch (err) {
         console.error(err);
       }
   }
   else if(x=="4"){
     try {
-      data_json = fs.readFileSync('./detailedMethod/data-shotgun-surgery.json', 'utf8');
+      let pathDataSS = path.join(__dirname,'data-shotgun-surgery.json');
+      data_json = fs.readFileSync(pathDataSS, 'utf8');
     } catch (err) {
       console.error(err);
     }
   }
   else{
     try {
-      data_json = fs.readFileSync('./detailedMethod/data-brain-method.json', 'utf8');
+      let pathDataBM = path.join(__dirname,'data-brain-method.json');
+      data_json = fs.readFileSync(pathDataBM, 'utf8');
     } catch (err) {
       console.error(err);
     }

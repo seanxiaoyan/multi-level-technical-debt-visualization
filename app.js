@@ -1,4 +1,5 @@
 const {app, BrowserWindow} = require('electron');
+const path = require('path');
 
 function createWindow () {
     
@@ -10,11 +11,13 @@ function createWindow () {
         },
         width: 2400, height: 1800
     });
-    window.loadFile('index.html');
+    let pathIndex = path.join(__dirname,'index.html');
+    window.loadFile(pathIndex);
     const ipc = require('electron').ipcMain;
     // listen on ipc channel wait for GetSmells completed
+    let pathOverview = path.join(__dirname,'overview','overview.html');
     ipc.on('get-smell-finished', function(event,arg){
-        window.loadFile('./overview/overview.html');
+        window.loadFile(pathOverview);
     });
 
 

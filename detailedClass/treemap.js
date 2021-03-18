@@ -1,6 +1,7 @@
 const fs = require('fs');
 const csv=require('csvtojson');
 const ipc = require('electron').ipcRenderer;
+const path = require('path');
 
 let data_json;
 
@@ -8,69 +9,79 @@ function drawChart() {
   var x = document.getElementById("select").value;
   if(x=="1"){
     try {
-      data_json = fs.readFileSync('./detailedClass/data-all.json', 'utf8');
+      let pathDataAll = path.join(__dirname,'data-all.json');
+      data_json = fs.readFileSync(pathDataAll, 'utf8');
   } catch (err) {
     console.error(err);
   }}
   else if(x=="2"){
       try {
-        data_json = fs.readFileSync('./detailedClass/data-god-class.json', 'utf8');
+        let pathDataGC = path.join(__dirname,'data-god-class.json');
+        data_json = fs.readFileSync(pathDataGC, 'utf8');
       } catch (err) {
         console.error(err);
       }
   }
   else if(x=="3"){
     try {
-      data_json = fs.readFileSync('./detailedClass/data-lazy-class.json', 'utf8');
+      let pathDataLC = path.join(__dirname,'data-lazy-class.json');
+      data_json = fs.readFileSync(pathDataLC, 'utf8');
     } catch (err) {
       console.error(err);
     }
   }
   else if(x=="4"){
     try {
-      data_json = fs.readFileSync('./detailedClass/data-complex-class.json', 'utf8');
+      let pathDataCC = path.join(__dirname,'data-complex-class.json');
+      data_json = fs.readFileSync(pathDataCC, 'utf8');
     } catch (err) {
       console.error(err);
     }
   }
   else if(x=="5"){
     try {
-      data_json = fs.readFileSync('./detailedClass/data-large-class.json', 'utf8');
+      let pathDataLargeC = path.join(__dirname,'data-large-class.json');
+      data_json = fs.readFileSync(pathDataLargeC, 'utf8');
     } catch (err) {
       console.error(err);
     }
   }
   else if(x=="6"){
     try {
-      data_json = fs.readFileSync('./detailedClass/data-refused-request.json', 'utf8');
+      let pathDataRR = path.join(__dirname,'data-refused-request.json');
+      data_json = fs.readFileSync(pathDataRR, 'utf8');
     } catch (err) {
       console.error(err);
     }
   }
   else if(x=="7"){
     try {
-      data_json = fs.readFileSync('./detailedClass/data-data-class.json', 'utf8');
+      let pathDataDC = path.join(__dirname,'data-data-class.json.json');
+      data_json = fs.readFileSync(pathDataDC, 'utf8');
     } catch (err) {
       console.error(err);
     }
   }
   else if(x=="8"){
     try {
-      data_json = fs.readFileSync('./detailedClass/data-feature-envy.json', 'utf8');
+      let pathDataFC = path.join(__dirname,'data-feature-envy.json');
+      data_json = fs.readFileSync(pathDataFC, 'utf8');
     } catch (err) {
       console.error(err);
     }
   }
   else if(x=="9"){
     try {
-      data_json = fs.readFileSync('./detailedClass/data-brain-class.json', 'utf8');
+      let pathDataBC = path.join(__dirname,'data-brain-class.json');
+      data_json = fs.readFileSync(pathDataBC, 'utf8');
     } catch (err) {
       console.error(err);
     }
   }
   else if(x=="10"){
     try {
-      data_json = fs.readFileSync('./detailedClass/data-hub-like-dependency.json', 'utf8');
+      let pathDataHLD = path.join(__dirname,'data-hub-like-dependency.json');
+      data_json = fs.readFileSync(pathDataHLD, 'utf8');
     } catch (err) {
       console.error(err);
     }
@@ -78,7 +89,8 @@ function drawChart() {
 
   else{
     try {
-      data_json = fs.readFileSync('./detailedClass/data-class-cyclic-dependency.json', 'utf8');
+      let pathDataCCD = path.join(__dirname,'data-class-cyclic-dependency.json');
+      data_json = fs.readFileSync(pathDataCCD, 'utf8');
     } catch (err) {
       console.error(err);
     }

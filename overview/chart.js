@@ -1,8 +1,10 @@
 const fs = require('fs');
+const path = require('path');
 
 let pieChart_data_json;
 try {
-   pieChart_data_json = fs.readFileSync('./overview/pieChartData.json', 'utf8');
+  let pathPiechartData = path.join(__dirname,'pieChartData.json');
+   pieChart_data_json = fs.readFileSync(pathPiechartData, 'utf8');
 } catch (err) {
   console.error(err);
 }
@@ -10,7 +12,8 @@ let pieChartArray = JSON.parse(pieChart_data_json);
 
 let barChart_data_json;
 try {
-   barChart_data_json = fs.readFileSync('./overview/barChartData.json', 'utf8');
+  let pathBarchartData = path.join(__dirname,'barChartData.json');
+   barChart_data_json = fs.readFileSync(pathBarchartData, 'utf8');
 } catch (err) {
   console.error(err);
 }
@@ -19,7 +22,8 @@ barChartArray[0].push({ role: "style" })
 
 let data_json;
 try {
-   data_json = fs.readFileSync('./detailedPackage/data-all.json', 'utf8');
+  let pathDataAll = path.join(require('path').resolve(__dirname, '..'),'detailedPackage','data-all.json');
+   data_json = fs.readFileSync(pathDataAll, 'utf8');
 } catch (err) {
   console.error(err)
 }

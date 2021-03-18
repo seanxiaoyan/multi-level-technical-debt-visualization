@@ -3,6 +3,7 @@ const ipc = require('electron').ipcRenderer;
 const fs = require('fs');
 const {dialog} = require('electron').remote;
 const csv=require('csvtojson');
+const path = require('path');
 
 let overviewReady = 0;
 let detailedClassReady = 0;
@@ -15,14 +16,17 @@ function detectSmell(){
     });
     let proj_path = pathArray[0];
 
-    let process_config = require('child_process').spawn('python3', ['./preProcessing/setconfig.py',proj_path]);
+    let pathSetconfig = path.join(__dirname,'preProcessing','setconfig.py');
+
+    let process_config = require('child_process').spawn('python3', [pathSetconfig,proj_path]);
 
     process_config.on('close',(code)=>{
         console.log(`set config exited with ${code}`);
     });
 
     //set PYTHONPATH for GetSmells and Execute GetSmells
-    let process_detectsmell = require('child_process').exec('./preProcessing/getsmell.sh');
+    let pathGetsmell = path.join(__dirname,'preProcessing','getsmell.sh');
+    let process_detectsmell = require('child_process').exec(pathGetsmell);
     process_detectsmell.stdout.on('data',function(data){
         document.getElementById("progressBar").innerHTML = data.toString('utf8');
     });
@@ -34,7 +38,8 @@ function detectSmell(){
             let splits = proj_path.split('/');
             let len = splits.length;
             projName = splits[len-1];
-            const csvFilePath_overview = './GetSmells/getsmells-output/smells/'+projName+'.csv';
+            
+            const csvFilePath_overview = path.join(__dirname,'GetSmells','getsmells-output','smells',projName+'.csv');
 
             // if smell detected, then proceed to process csv files
             if (fs.existsSync(csvFilePath_overview)){
@@ -42,13 +47,15 @@ function detectSmell(){
                 .fromFile(csvFilePath_overview)
                 .then((jsonObj)=>{
                     try {
-                        fs.writeFileSync('./overview/smell-all.json', JSON.stringify(jsonObj,null,2));
+                        let pathSmellAll = path.join(__dirname,'overview','smell-all.json');
+                        fs.writeFileSync(pathSmellAll, JSON.stringify(jsonObj,null,2));
                         
                     } catch (err) {
                         console.error(err);
                     }
                 });
-                let process_getDataArray = require('child_process').spawn('python3', ['./preProcessing/processData.py',projName.toLowerCase()]);
+                let pathProcessData = path.join(__dirname,'preProcessing','processData.py');
+                let process_getDataArray = require('child_process').spawn('python3', [pathProcessData,projName.toLowerCase()]);
                 process_getDataArray.on('close',(code)=>{
                     console.log(`detailedClass exited with ${code}`);
                     ipc.send('get-smell-finished',"get-smell-done");

@@ -1,6 +1,7 @@
 const fs = require('fs');
 const csv=require('csvtojson');
 const ipc = require('electron').ipcRenderer;
+const path = require('path');
 
 let data_json;
 
@@ -9,20 +10,23 @@ function drawChart() {
     var x = document.getElementById("select").value;
     if(x=="1"){
       try {
-        data_json = fs.readFileSync('./detailedPackage/data-all.json', 'utf8');
+        let pathDataAll = path.join(__dirname,'data-all.json');
+        data_json = fs.readFileSync(pathDataAll, 'utf8');
     } catch (err) {
       console.error(err);
     }}
     else if(x=="2"){
         try {
-          data_json = fs.readFileSync('./detailedPackage/data-unstable-dependency.json', 'utf8');
+          let pathDataUD = path.join(__dirname,'data-unstable-dependency.json');
+          data_json = fs.readFileSync(pathDataUD, 'utf8');
         } catch (err) {
           console.error(err);
         }
     }
     else{
         try {
-          data_json = fs.readFileSync('./detailedPackage/data-cyclic-dependency.json', 'utf8');
+          let pathDataCD = path.join(__dirname,'data-cyclic-dependency.json');
+          data_json = fs.readFileSync(pathDataCD, 'utf8');
         } catch (err) {
           console.error(err);
         }
