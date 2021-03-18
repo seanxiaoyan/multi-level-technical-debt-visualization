@@ -57,7 +57,7 @@ function detectSmell(){
                 let pathProcessData = path.join(__dirname,'preProcessing','processData.py');
                 let process_getDataArray = require('child_process').spawn('python3', [pathProcessData,projName.toLowerCase()]);
                 process_getDataArray.on('close',(code)=>{
-                    console.log(`detailedClass exited with ${code}`);
+                    console.log(`Data-processing process exited with ${code}`);
                     ipc.send('get-smell-finished',"get-smell-done");
                 });
             }

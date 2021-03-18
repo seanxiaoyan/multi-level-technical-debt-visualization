@@ -5,7 +5,8 @@ import json
 
 
 proj_name = sys.argv[1]
-data_path='./GetSmells/getsmells-output/smells/{}/'.format(proj_name)
+data_path = os.path.join(os.getcwd(),'GetSmells','getsmells-output','smells','{}'.format(proj_name))
+
 subfolders = [ f.path for f in os.scandir(data_path) if f.is_dir() ]
 
 array_packagelevel=[['child', 'Parent', 'size', 'color'],
@@ -573,51 +574,93 @@ json_object_brain_method = json.dumps(array_methodlevel_brain, indent = 2)
   
 # Writing to data.json 
 # package level
-with open("./detailedPackage/data-all.json", "w") as outfile: 
+pathPAll = os.path.join(os.getcwd(),'detailedPackage','data-all.json')
+with open(pathPAll, "w") as outfile: 
     outfile.write(json_object_package) 
-with open("./detailedPackage/data-unstable-dependency.json", "w") as outfile: 
+
+pathPUD = os.path.join(os.getcwd(),'detailedPackage','data-unstable-dependency.json')
+with open(pathPUD, "w") as outfile: 
     outfile.write(json_object_package_unstable) 
-with open("./detailedPackage/data-cyclic-dependency.json", "w") as outfile: 
+
+pathPCD = os.path.join(os.getcwd(),'detailedPackage','data-cyclic-dependency.json')
+with open(pathPCD, "w") as outfile: 
     outfile.write(json_object_package_cyc) 
+
 # class level
-with open("./detailedClass/data-all.json", "w") as outfile: 
+pathCAll = os.path.join(os.getcwd(),'detailedClass','data-all.json')
+with open(pathCAll, "w") as outfile: 
     outfile.write(json_object_class) 
-with open("./detailedClass/data-god-class.json", "w") as outfile: 
+
+pathCGC = os.path.join(os.getcwd(),'detailedClass','data-god-class.json')
+with open(pathCGC, "w") as outfile: 
     outfile.write(json_object_god) 
-with open("./detailedClass/data-lazy-class.json", "w") as outfile: 
+
+pathCLC = os.path.join(os.getcwd(),'detailedClass','data-lazy-class.json')
+with open(pathCLC, "w") as outfile: 
     outfile.write(json_object_lazy) 
-with open("./detailedClass/data-complex-class.json", "w") as outfile: 
+
+pathCCC = os.path.join(os.getcwd(),'detailedClass','data-complex-class.json')
+with open(pathCCC, "w") as outfile: 
     outfile.write(json_object_complex) 
-with open("./detailedClass/data-large-class.json", "w") as outfile: 
+
+pathClargeC = os.path.join(os.getcwd(),'detailedClass','data-large-class.json')
+with open(pathClargeC, "w") as outfile: 
     outfile.write(json_object_large) 
-with open("./detailedClass/data-refused-request.json", "w") as outfile: 
+
+pathCRR = os.path.join(os.getcwd(),'detailedClass','data-refused-request.json')
+with open(pathCRR, "w") as outfile: 
     outfile.write(json_object_refused) 
-with open("./detailedClass/data-data-class.json", "w") as outfile: 
+
+pathCDC = os.path.join(os.getcwd(),'detailedClass','data-data-class.json')
+with open(pathCDC, "w") as outfile: 
     outfile.write(json_object_data) 
-with open("./detailedClass/data-feature-envy.json", "w") as outfile: 
+
+pathCFE = os.path.join(os.getcwd(),'detailedClass','data-feature-envy.json')
+with open(pathCFE, "w") as outfile: 
     outfile.write(json_object_feature) 
-with open("./detailedClass/data-brain-class.json", "w") as outfile: 
+
+pathCBC = os.path.join(os.getcwd(),'detailedClass','data-brain-class.json')
+with open(pathCBC, "w") as outfile: 
     outfile.write(json_object_brain) 
-with open("./detailedClass/data-hub-like-dependency.json", "w") as outfile: 
+
+pathCHD = os.path.join(os.getcwd(),'detailedClass','data-hub-like-dependency.json')
+with open(pathCHD, "w") as outfile: 
     outfile.write(json_object_hub) 
-with open("./detailedClass/data-class-cyclic-dependency.json", "w") as outfile: 
+
+pathCCCC = os.path.join(os.getcwd(),'detailedClass','data-class-cyclic-dependency.json')
+with open(pathCCCC, "w") as outfile: 
     outfile.write(json_object_class_cyc) 
-with open("./detailedClass/data-unhealthy-inheritance-dependency.json", "w") as outfile: 
+
+pathCUD = os.path.join(os.getcwd(),'detailedClass','data-unhealthy-inheritance-dependency.json')
+with open(pathCUD, "w") as outfile: 
     outfile.write(json_object_unhealthy) 
+
 # method level
+pathMAll = os.path.join(os.getcwd(),'detailedMethod','data-all.json')
 with open("./detailedMethod/data-all.json", "w") as outfile: 
     outfile.write(json_object_method) 
-with open("./detailedMethod/data-long-method.json", "w") as outfile: 
+
+pathMLM = os.path.join(os.getcwd(),'detailedMethod','data-long-method.json')
+with open(pathMLM, "w") as outfile: 
     outfile.write(json_object_lmethod) 
-with open("./detailedMethod/data-long-parameter-list.json", "w") as outfile: 
+
+pathMLPL = os.path.join(os.getcwd(),'detailedMethod','data-long-parameter-list.json')
+with open(pathMLPL, "w") as outfile: 
     outfile.write(json_object_lparameter) 
-with open("./detailedMethod/data-shotgun-surgery.json", "w") as outfile: 
+
+pathMSS = os.path.join(os.getcwd(),'detailedMethod','data-shotgun-surgery.json')
+with open(pathMSS, "w") as outfile: 
     outfile.write(json_object_shotgun) 
-with open("./detailedMethod/data-brain-method.json", "w") as outfile: 
+
+pathMBM = os.path.join(os.getcwd(),'detailedMethod','data-brain-method.json')
+with open(pathMBM, "w") as outfile: 
     outfile.write(json_object_brain_method) 
+
 # overview
-with open("./overview/pieChartData.json", "w") as outfile: 
+pathPiechart = os.path.join(os.getcwd(),'overview','pieChartData.json')
+with open(pathPiechart, "w") as outfile: 
     outfile.write(json_object_piechartArray) 
 
-with open("./overview/barChartData.json", "w") as outfile: 
+pathBarchart = os.path.join(os.getcwd(),'overview','barChartData.json')
+with open(pathBarchart, "w") as outfile: 
     outfile.write(json_object_barchartArray) 
