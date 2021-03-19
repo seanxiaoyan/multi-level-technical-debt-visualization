@@ -39,7 +39,7 @@ function drawPieChart() {
   document.getElementById("smell-method").innerHTML = pieChartArray[3][1].toLocaleString();
   let data = google.visualization.arrayToDataTable(pieChartArray);
   let options = {
-    sliceVisibilityThreshold: 0.001,
+    sliceVisibilityThreshold: 0.000001,
     colors: ['#803C05', '#D5BB9E','#178CCB']
   };
   let chart = new google.visualization.PieChart(document.getElementById('piechart'));
