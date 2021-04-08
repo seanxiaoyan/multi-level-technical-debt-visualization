@@ -1,5 +1,5 @@
 # multi-level-technical-debt-visualization(MLTDVT)
-# 0. Instruction
+# Instruction
 MLTDVT visualizes code/design and architecture smells from Java source code using the [GetSmells](https://github.com/tdresearchgroup/GetSmells/).
 
 # Prerequisites
