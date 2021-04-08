@@ -12,7 +12,7 @@ MLTDVT is written to work on either Windows or MacOS (tested on Windows 7 and Ma
 the top of both `understandapi.py` and `understandcli.py`.
 2. GetSmells: 
   *  You must have the [GetSmells](https://github.com/tdresearchgroup/GetSmells/) to run the MLTDVT.
-  *  Put the folder of GetSmells under the project root folder (See #2 Project structure)
+  *  Put the folder of GetSmells under the project root folder [Project structure](#Project-structure-on-directory-level)
 3. Python: 
   * Python 3.6+ is required 
   * [NumPy](https://docs.scipy.org/doc/numpy/index.html) is required: `pip3 install numpy`
