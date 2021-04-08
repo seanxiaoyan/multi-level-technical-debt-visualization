@@ -2,7 +2,7 @@
 # 0. Instruction
 MLTDVT visualizes code/design and architecture smells from Java source code using the [GetSmells](https://github.com/tdresearchgroup/GetSmells/).
 
-# 1. Prerequisites
+# Prerequisites
 MLTDVT is written to work on either Windows or MacOS (tested on Windows 7 and MacOS 10.14)
 
 1. Understand: 
@@ -12,13 +12,13 @@ MLTDVT is written to work on either Windows or MacOS (tested on Windows 7 and Ma
 the top of both `understandapi.py` and `understandcli.py`.
 2. GetSmells: 
   *  You must have the [GetSmells](https://github.com/tdresearchgroup/GetSmells/) to run the MLTDVT.
-  *  Put the folder of GetSmells under the project root folder [Project structure](#Project-structure-on-directory-level)
+  *  Put the folder of GetSmells under the project root folder (see [Project structure](#Project-structure-on-directory-level))
 3. Python: 
   * Python 3.6+ is required 
   * [NumPy](https://docs.scipy.org/doc/numpy/index.html) is required: `pip3 install numpy`
   * Add project GetSmells in PYTHONPATH
 
-# 2. Project structure on directory level
+# Project structure on directory level
 ```
 multi-level-technical-debt-visualization
 ├─detailedClass
@@ -29,7 +29,7 @@ multi-level-technical-debt-visualization
 └─preProcessing
 ``` 
 
-# 3. Usage
+# Usage
 ## Under the project root directory, do the following commands
 npm install <br/>
 npm start <br/>
