@@ -11,7 +11,7 @@ MLTDVT is written to work on either Windows or MacOS (tested on Windows 7 and Ma
 `/Applications/Understand.app` on MacOS); if it is not in the default location, you can modify the paths at 
 the top of both `understandapi.py` and `understandcli.py`.
 2. GetSmells: 
-  *  You must have the [GetSmells](https://github.com/tdresearchgroup/GetSmells/) to run the MLTDVT.
+  *  You must have [GetSmells](https://github.com/tdresearchgroup/GetSmells/) to run the MLTDVT.
   *  Put the folder of GetSmells under the project root folder (see [Project structure](#Project-structure-on-directory-level))
 3. Python: 
   * Python 3.6+ is required 
