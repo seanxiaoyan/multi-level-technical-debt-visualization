@@ -13,24 +13,40 @@ the top of both `understandapi.py` and `understandcli.py`.
 2. GetSmells: 
   *  You must have [GetSmells](https://github.com/tdresearchgroup/GetSmells/) to run the MLTDVT.
   *  Put the folder of GetSmells under the project root folder (see [Project structure](#Project-structure-on-directory-level))
+  *  Add the path of GetSmells in PYTHONPATH
 3. Python: 
   * Python 3.6+ is required 
   * [NumPy](https://docs.scipy.org/doc/numpy/index.html) is required: `pip3 install numpy`
-  * Add project GetSmells in PYTHONPATH
+
+4. Node.js and npm
+  * You need to install Node.js; npm is distributed with Node.js- which means that when you download Node.js, you automatically get npm installed on your computer.
 
 # Project structure on directory level
 ```
 multi-level-technical-debt-visualization
-├─detailedClass
-├─detailedMethod
-├─detailedPackage
-├─GetSmells
-├─overview
+├─detailedClass: detailed view - class level visualization
+│   ├──treemap.js: treemap that visualizes class level smells
+│   ├──viewClass.html: detailed view - class level page
+├─detailedMethod: detailed view - class level visualization
+│   ├──treemap.js: treemap that visualizes method level smells
+│   ├──viewMethod.html: detailed view - method level page
+├─detailedPackage: detailed view - package level visualization
+│   ├──treemap.js: treemap that visualizes package level smells
+│   ├──viewPackage.html: detailed view - package level page
+├─GetSmells: The code smell detection tool
+├─overview: overview for code smells
+│   ├──chart.js: pie chart and bar chart
+│   ├──overview.html: overview page
 └─preProcessing
+    ├──getSmell.js: code for executing setconfig.py, executing getsmell.sh and executing processData.py
+    ├──getsmell.sh: shell script for executing GetSmells
+    ├──processData.py: python script for process code smells data 
+    ├──setconfig.py: python script for setting Java source code path for the execution of GetSmells
 ``` 
 
 # Usage
 ## Under the project root directory, do the following commands
+Under the MLTDVT project root folder, executing these following commands: <br/>
 npm install <br/>
 npm start <br/>
 
