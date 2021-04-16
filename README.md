@@ -49,4 +49,5 @@ multi-level-technical-debt-visualization
 Under the MLTDVT project root folder, executing these following commands: <br/>
 npm install <br/>
 npm start <br/>
+![usage](https://user-images.githubusercontent.com/51433033/115074904-8f945980-9eb7-11eb-8ab7-b611d5070670.png)
 
