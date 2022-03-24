@@ -27,7 +27,7 @@ multi-level-technical-debt-visualization
 ├─detailedClass: detailed view - class level visualization
 │   ├──treemap.js: treemap that visualizes class level smells
 │   ├──viewClass.html: detailed view - class level page
-├─detailedMethod: detailed view - class level visualization
+├─detailedMethod: detailed view - Method level visualization
 │   ├──treemap.js: treemap that visualizes method level smells
 │   ├──viewMethod.html: detailed view - method level page
 ├─detailedPackage: detailed view - package level visualization
